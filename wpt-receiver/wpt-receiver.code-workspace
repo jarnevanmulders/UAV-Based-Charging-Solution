@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"nrf-connect.topdir": "${nrf-connect.sdk:2.4.0}",
+		"nrf-connect.toolchain.path": "${nrf-connect.toolchain:2.4.0}",
+		"files.associations": {
+			"typeinfo": "c",
+			"printk.h": "c",
+			"array": "c",
+			"compare": "c",
+			"functional": "c",
+			"ratio": "c",
+			"tuple": "c",
+			"type_traits": "c",
+			"utility": "c",
+			"bluetooth.h": "c",
+			"adv-transmitter.h": "c",
+			"adv_transmitter.h": "c",
+			"advertisement.h": "c",
+			"queue": "c"
+		},
+		"nrf-connect.boardRoots": [
+			"\\Users\\jarne\\Documents\\GitHub\\IoT_energystorage_charger_ble\\wpt-receiver\\boards"
+		]
+	}
+}

@@ -10,20 +10,14 @@
 
 int observer_start(void);
 
-/* The devicetree node identifier for the "led0" alias. */
-#define LED0_NODE DT_ALIAS(led0)
+#define LED0_NODE DT_ALIAS(led0)	// The devicetree node identifier for the "led0" alias.
 
-/*
- * A build error on this line means your board is unsupported.
- * See the sample documentation for information on how to fix this.
- */
+/* STATIC constants */
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 
 int main(void)
 {
 	int err;
-
-	printk("Starting Observer Demo\n");
 
 	/* Initialize the Bluetooth Subsystem */
 	err = bt_enable(NULL);
@@ -32,6 +26,7 @@ int main(void)
 		return 0;
 	}
 
+	
 	gpio_pin_configure_dt(&led, GPIO_OUTPUT_INACTIVE);
 
 	
