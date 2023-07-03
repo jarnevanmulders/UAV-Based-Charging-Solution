@@ -3622,6 +3622,8 @@ design rules under a new name.</description>
 <via x="16.49095" y="5.445125" extent="1-16" drill="0.3048"/>
 <wire x1="16.49095" y1="5.445125" x2="16.51" y2="5.426075" width="0.254" layer="1"/>
 <wire x1="16.51" y1="5.426075" x2="16.51" y2="5.3975" width="0.254" layer="1"/>
+<contactref element="IC12" pad="5"/>
+<wire x1="16.335375" y1="4.04495" x2="-8.093975" y2="-21.49165" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FB">
 <contactref element="D1" pad="K"/>
@@ -3871,6 +3873,8 @@ design rules under a new name.</description>
 <wire x1="47.76" y1="5.1355" x2="47.76" y2="6.065" width="0.254" layer="1"/>
 <wire x1="48.9331" y1="4.4338875" x2="48.777525" y2="4.5894625" width="0.254" layer="16"/>
 <wire x1="48.777525" y1="4.5894625" x2="48.7553" y2="4.5894625" width="0.254" layer="16"/>
+<contactref element="IC12" pad="17"/>
+<wire x1="-5.733975" y1="-25.05165" x2="11.11" y2="18.145" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC1">
 <contactref element="IC2" pad="8"/>
@@ -3911,6 +3915,8 @@ design rules under a new name.</description>
 <wire x1="30.8726375" y1="3.5433" x2="31.78324375" y2="4.45390625" width="0.254" layer="1"/>
 <wire x1="32.108775" y1="4.88315" x2="46.14545" y2="4.88315" width="0.254" layer="16"/>
 <wire x1="46.14545" y1="4.88315" x2="48.694975" y2="2.333625" width="0.254" layer="16"/>
+<contactref element="IC12" pad="4"/>
+<wire x1="23.3925" y1="3.81" x2="-8.093975" y2="-21.09165" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUCK_EN">
 <contactref element="IC2" pad="14"/>
@@ -3933,6 +3939,8 @@ design rules under a new name.</description>
 <wire x1="47.625" y1="9.525" x2="50.165" y2="9.525" width="0.254" layer="16"/>
 <wire x1="27.536775" y1="5.28955" x2="46.383575" y2="5.28955" width="0.254" layer="16"/>
 <wire x1="46.383575" y1="5.28955" x2="46.99" y2="5.895975" width="0.254" layer="16"/>
+<contactref element="IC12" pad="16"/>
+<wire x1="16.1925" y1="10.6553" x2="-6.133975" y2="-25.05165" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED">
 <contactref element="IC2" pad="11"/>
@@ -3943,6 +3951,8 @@ design rules under a new name.</description>
 <wire x1="50.476025" y1="6.62" x2="50.71745" y2="6.378575" width="0.254" layer="1"/>
 <wire x1="50.71745" y1="6.378575" x2="55.591075" y2="6.378575" width="0.254" layer="1"/>
 <wire x1="55.591075" y1="6.378575" x2="56.8325" y2="7.62" width="0.254" layer="1"/>
+<contactref element="IC12" pad="20"/>
+<wire x1="-4.533975" y1="-25.05165" x2="49.815" y2="6.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USART2_TX">
 <contactref element="IC2" pad="18"/>
@@ -4003,6 +4013,8 @@ design rules under a new name.</description>
 <via x="41.94565" y="13.31985" extent="1-16" drill="0.3048"/>
 <wire x1="41.94565" y1="13.31985" x2="41.94565" y2="8.927375" width="0.254" layer="16"/>
 <wire x1="41.94565" y1="8.927375" x2="44.961175" y2="5.91185" width="0.254" layer="16"/>
+<contactref element="IC12" pad="14"/>
+<wire x1="-6.933975" y1="-25.05165" x2="44.961175" y2="5.91185" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VMEAS">
 <contactref element="LS1" pad="1"/>
@@ -4086,6 +4098,8 @@ design rules under a new name.</description>
 <wire x1="46.8756375" y1="4.822825" x2="40.897175" y2="4.822825" width="0.254" layer="1"/>
 <wire x1="14.1224" y1="11.97246875" x2="13.846175" y2="12.24869375" width="0.254" layer="1"/>
 <wire x1="14.1224" y1="6.947025" x2="14.1224" y2="11.97246875" width="0.254" layer="1"/>
+<contactref element="IC12" pad="6"/>
+<wire x1="15.875" y1="12.585" x2="-8.093975" y2="-21.89165" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="R5" pad="1"/>
@@ -4157,6 +4171,8 @@ design rules under a new name.</description>
 <wire x1="42.62755" y1="9.178925" x2="42.62755" y2="6.223" width="0.254" layer="1"/>
 <wire x1="42.62755" y1="6.223" x2="43.561" y2="5.28955" width="0.254" layer="1"/>
 <wire x1="42.9387" y1="12.9610375" x2="42.35205" y2="12.3743875" width="0.254" layer="16"/>
+<contactref element="IC12" pad="15"/>
+<wire x1="-6.533975" y1="-25.05165" x2="42.62755" y2="9.178925" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="Q1" pad="3"/>
@@ -4314,12 +4330,6 @@ design rules under a new name.</description>
 <contactref element="DEBUG1" pad="6"/>
 <wire x1="15.401925" y1="-20.21205" x2="-4.133975" y2="-25.05165" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="P17">
-<contactref element="IC12" pad="20"/>
-</signal>
-<signal name="P13">
-<contactref element="IC12" pad="16"/>
-</signal>
 <signal name="P06">
 <contactref element="IC12" pad="8"/>
 <contactref element="R48" pad="1"/>
@@ -4331,12 +4341,6 @@ design rules under a new name.</description>
 <contactref element="IC12" pad="7"/>
 <contactref element="UART_INTERFACE" pad="3"/>
 <wire x1="-8.093975" y1="-22.29165" x2="1.58115" y2="-34.2265" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="P04">
-<contactref element="IC12" pad="6"/>
-</signal>
-<signal name="P02">
-<contactref element="IC12" pad="4"/>
 </signal>
 <signal name="DCC">
 <contactref element="IC12" pad="47"/>
@@ -4377,15 +4381,6 @@ design rules under a new name.</description>
 <contactref element="UART_INTERFACE" pad="4"/>
 <wire x1="4.12115" y1="-34.2265" x2="-8.093975" y2="-23.09165" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="P11">
-<contactref element="IC12" pad="14"/>
-</signal>
-<signal name="P12">
-<contactref element="IC12" pad="15"/>
-</signal>
-<signal name="P14">
-<contactref element="IC12" pad="17"/>
-</signal>
 <signal name="P15">
 <contactref element="IC12" pad="18"/>
 </signal>
@@ -4413,9 +4408,6 @@ design rules under a new name.</description>
 <contactref element="LED24" pad="C"/>
 <contactref element="R48" pad="2"/>
 <wire x1="4.04495" y1="-27.26465" x2="-5.9953" y2="-55.229125" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="P03">
-<contactref element="IC12" pad="5"/>
 </signal>
 <signal name="N$53">
 <contactref element="L5" pad="2"/>

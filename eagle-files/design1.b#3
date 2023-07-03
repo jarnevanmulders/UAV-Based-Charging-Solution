@@ -3370,16 +3370,6 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="NDUC-13457" x="-103.61295" y="-114.969925" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="13.0683" y="-50.079275" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="LS3" library="MIC94081YFT-TR" package="IC_MIC94081YFT-TR" value="MIC94081YFT-TR" x="-1.711325" y="-45.583475" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="-103.768525" y="-118.54815" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" Power Switch/Driver 1:1 P-Channel 2A 4-TMLF® (0.85x0.85) " x="-103.768525" y="-118.54815" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Microchip" x="-103.768525" y="-118.54815" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="MIC94081YFT-TR" x="-103.768525" y="-118.54815" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-2.961325" y="-44.583475" size="0.6096" layer="25"/>
-<attribute name="PACKAGE" value="UFDFN-4 Microchip" x="-103.768525" y="-118.54815" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="-103.768525" y="-118.54815" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-2.961325" y="-46.583475" size="0.6096" layer="27" align="top-left"/>
-</element>
 <element name="UPDATE" library="Eagle_SWITCHES (rev18c)" package="434111043826" value="" x="3.1115" y="-22.4028" smashed="yes">
 <attribute name="NAME" x="2.9559" y="-19.7339" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="-0.2441" y="-26.0798" size="1.27" layer="27"/>
@@ -3487,7 +3477,6 @@ design rules under a new name.</description>
 <via x="34.8488" y="1.2446" extent="1-16" drill="0.3048"/>
 <via x="51.96205" y="4.200525" extent="1-16" drill="0.3048"/>
 <via x="51.0286" y="2.80035" extent="1-16" drill="0.3048"/>
-<contactref element="LS3" pad="2"/>
 <contactref element="C63" pad="2"/>
 <contactref element="C62" pad="1"/>
 <contactref element="C65" pad="1"/>
@@ -3526,7 +3515,6 @@ design rules under a new name.</description>
 <wire x1="1.131325" y1="-49.317275" x2="-1.8246" y2="-49.317275" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.402825" y1="-52.58435" x2="-4.780525" y2="-49.317275" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.892025" y1="-52.58435" x2="-5.402825" y2="-52.58435" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.911325" y1="-45.783475" x2="-1.8246" y2="-49.317275" width="0" layer="19" extent="1-1"/>
 <wire x1="6.8876" y1="-49.317275" x2="1.131325" y2="-49.317275" width="0" layer="19" extent="1-1"/>
 <wire x1="9.68795" y1="-49.317275" x2="6.8876" y2="-49.317275" width="0" layer="19" extent="1-1"/>
 <wire x1="15.133075" y1="-49.317275" x2="9.68795" y2="-49.317275" width="0" layer="19" extent="1-1"/>
@@ -3536,7 +3524,7 @@ design rules under a new name.</description>
 <wire x1="15.7852" y1="-45.4279" x2="15.133075" y2="-49.317275" width="0" layer="19" extent="1-1"/>
 <wire x1="17.622275" y1="-45.4279" x2="15.7852" y2="-45.4279" width="0" layer="19" extent="1-1"/>
 <wire x1="21.893775" y1="-45.4279" x2="17.622275" y2="-45.4279" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.30645" y1="-28.781375" x2="-1.911325" y2="-45.783475" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.30645" y1="-28.781375" x2="-6.57645" y2="-49.317275" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.133975" y1="-22.09165" x2="-6.30645" y2="-28.781375" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.173975" y1="-21.89165" x2="-5.133975" y2="-22.09165" width="0" layer="19" extent="1-1"/>
 <wire x1="-0.2385" y1="-22.4028" x2="-2.173975" y2="-21.89165" width="0" layer="19" extent="1-1"/>
@@ -3700,6 +3688,12 @@ design rules under a new name.</description>
 <wire x1="44.650025" y1="12.912725" x2="44.576975" y2="12.839675" width="0.254" layer="1"/>
 <wire x1="44.576975" y1="12.839675" x2="43.7102" y2="12.839675" width="0.254" layer="1"/>
 <wire x1="52.07" y1="14.605" x2="52.07" y2="12.7" width="0.254" layer="1"/>
+<contactref element="JP4" pad="1"/>
+<wire x1="43.7102" y1="12.839675" x2="43.7102" y2="12.846075" width="0" layer="19" extent="1-1"/>
+<wire x1="44.650025" y1="13.6906" x2="44.650025" y2="12.912725" width="0" layer="19" extent="1-1"/>
+<wire x1="43.208575" y1="10.9855" x2="43.7102" y2="12.846075" width="0" layer="19" extent="1-1"/>
+<wire x1="45.1" y1="6.985" x2="43.208575" y2="10.9855" width="0" layer="19" extent="1-1"/>
+<wire x1="14.21765" y1="-41.6941" x2="45.1" y2="6.985" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
 <contactref element="IC3" pad="3"/>
@@ -3811,12 +3805,8 @@ design rules under a new name.</description>
 <via x="12.912725" y="2.644775" extent="1-16" drill="0.3048"/>
 <wire x1="12.912725" y1="2.644775" x2="12.915" y2="2.6425" width="0.254" layer="1"/>
 <wire x1="12.915" y1="2.6425" x2="13.97" y2="2.6425" width="0.254" layer="1"/>
-<contactref element="JP4" pad="1"/>
-<contactref element="LS3" pad="3"/>
 <contactref element="U1" pad="1"/>
-<wire x1="-1.511325" y1="-45.783475" x2="-7.241275" y2="-66.077825" width="0" layer="19" extent="1-1"/>
-<wire x1="14.21765" y1="-41.6941" x2="-1.511325" y2="-45.783475" width="0" layer="19" extent="1-1"/>
-<wire x1="11.745" y1="2.4925" x2="14.21765" y2="-41.6941" width="0" layer="19" extent="1-1"/>
+<wire x1="11.745" y1="2.4925" x2="-7.241275" y2="-66.077825" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWDCLK">
 <contactref element="DEBUG" pad="4"/>
@@ -4307,13 +4297,13 @@ design rules under a new name.</description>
 <signal name="P28">
 <contactref element="IC12" pad="40"/>
 </signal>
-<signal name="P29">
+<signal name="MISO">
 <contactref element="IC12" pad="41"/>
 </signal>
-<signal name="P30">
+<signal name="MOSI">
 <contactref element="IC12" pad="42"/>
 </signal>
-<signal name="P31">
+<signal name="SCK">
 <contactref element="IC12" pad="43"/>
 </signal>
 <signal name="P22">
@@ -4434,7 +4424,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="VDD_BLE">
 <contactref element="JP4" pad="2"/>
-<contactref element="LS3" pad="1"/>
 <contactref element="C66" pad="1"/>
 <contactref element="C68" pad="1"/>
 <contactref element="C67" pad="1"/>
@@ -4446,21 +4435,17 @@ design rules under a new name.</description>
 <contactref element="DEBUG1" pad="1"/>
 <contactref element="R50" pad="2"/>
 <contactref element="R60" pad="1"/>
-<wire x1="-1.911325" y1="-45.383475" x2="-7.73645" y2="-49.317275" width="0" layer="19" extent="1-1"/>
-<wire x1="6.13955" y1="-55.229125" x2="-1.911325" y2="-45.383475" width="0" layer="19" extent="1-1"/>
-<wire x1="4.43955" y1="-57.56275" x2="6.13955" y2="-55.229125" width="0" layer="19" extent="1-1"/>
+<wire x1="4.43955" y1="-57.56275" x2="-7.73645" y2="-49.317275" width="0" layer="19" extent="1-1"/>
+<wire x1="6.13955" y1="-55.229125" x2="4.43955" y2="-57.56275" width="0" layer="19" extent="1-1"/>
 <wire x1="14.0852" y1="-45.4279" x2="6.13955" y2="-55.229125" width="0" layer="19" extent="1-1"/>
 <wire x1="15.03045" y1="-41.6941" x2="14.0852" y2="-45.4279" width="0" layer="19" extent="1-1"/>
 <wire x1="20.733775" y1="-45.4279" x2="14.0852" y2="-45.4279" width="0" layer="19" extent="1-1"/>
-<wire x1="-0.155575" y1="-29.36465" x2="-1.911325" y2="-45.383475" width="0" layer="19" extent="1-1"/>
-<wire x1="4.04495" y1="-29.36465" x2="-0.155575" y2="-29.36465" width="0" layer="19" extent="1-1"/>
+<wire x1="4.04495" y1="-29.36465" x2="15.03045" y2="-41.6941" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.155575" y1="-29.36465" x2="4.04495" y2="-29.36465" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.333975" y1="-25.05165" x2="-0.155575" y2="-29.36465" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.333975" y1="-19.13165" x2="-7.333975" y2="-25.05165" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.173975" y1="-19.89165" x2="-7.333975" y2="-19.13165" width="0" layer="19" extent="1-1"/>
 <wire x1="12.861925" y1="-21.48205" x2="4.04495" y2="-29.36465" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="VDD_BLE_EN">
-<contactref element="LS3" pad="4"/>
 </signal>
 <signal name="N$13">
 <contactref element="C2" pad="1"/>

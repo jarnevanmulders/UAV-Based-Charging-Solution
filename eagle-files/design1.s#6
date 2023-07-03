@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16935,6 +16935,89 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="MAX5422ETA-T">
+<packages>
+<package name="SON65P300X300X80-9N">
+<rectangle x1="-0.47" y1="-0.73" x2="0.47" y2="0.73" layer="31"/>
+<circle x="-2.445" y="0.975" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.445" y="0.975" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="51"/>
+<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="1.55" x2="-1.55" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="-2.115" y1="1.8" x2="2.115" y2="1.8" width="0.05" layer="39"/>
+<wire x1="-2.115" y1="-1.8" x2="2.115" y2="-1.8" width="0.05" layer="39"/>
+<wire x1="-2.115" y1="1.8" x2="-2.115" y2="-1.8" width="0.05" layer="39"/>
+<wire x1="2.115" y1="1.8" x2="2.115" y2="-1.8" width="0.05" layer="39"/>
+<text x="-2.31" y="-1.727" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-2.31" y="1.727" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-1.485" y="0.975" dx="0.76" dy="0.32" layer="1" roundness="25"/>
+<smd name="2" x="-1.485" y="0.325" dx="0.76" dy="0.32" layer="1" roundness="25"/>
+<smd name="3" x="-1.485" y="-0.325" dx="0.76" dy="0.32" layer="1" roundness="25"/>
+<smd name="4" x="-1.485" y="-0.975" dx="0.76" dy="0.32" layer="1" roundness="25"/>
+<smd name="5" x="1.485" y="-0.975" dx="0.76" dy="0.32" layer="1" roundness="25"/>
+<smd name="6" x="1.485" y="-0.325" dx="0.76" dy="0.32" layer="1" roundness="25"/>
+<smd name="7" x="1.485" y="0.325" dx="0.76" dy="0.32" layer="1" roundness="25"/>
+<smd name="8" x="1.485" y="0.975" dx="0.76" dy="0.32" layer="1" roundness="25"/>
+<smd name="9" x="0" y="0" dx="1.5" dy="2.3" layer="1" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX5422ETA-T">
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.41" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.41" layer="94"/>
+<text x="-12.7" y="21.32" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-24.32" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="!CS" x="-17.78" y="12.7" length="middle" direction="in"/>
+<pin name="DIN" x="-17.78" y="10.16" length="middle" direction="in"/>
+<pin name="SCLK" x="-17.78" y="7.62" length="middle" direction="in" function="clk"/>
+<pin name="H" x="-17.78" y="2.54" length="middle"/>
+<pin name="L" x="-17.78" y="-2.54" length="middle"/>
+<pin name="W" x="-17.78" y="-7.62" length="middle"/>
+<pin name="VDD" x="17.78" y="17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="EPAD" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="17.78" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX5422ETA-T" prefix="U">
+<description> &lt;a href="https://pricing.snapeda.com/parts/MAX5422ETA/Analog%20Devices/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="MAX5422ETA-T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SON65P300X300X80-9N">
+<connects>
+<connect gate="A" pin="!CS" pad="4"/>
+<connect gate="A" pin="DIN" pad="3"/>
+<connect gate="A" pin="EPAD" pad="9"/>
+<connect gate="A" pin="GND" pad="5"/>
+<connect gate="A" pin="H" pad="8"/>
+<connect gate="A" pin="L" pad="6"/>
+<connect gate="A" pin="SCLK" pad="2"/>
+<connect gate="A" pin="VDD" pad="1"/>
+<connect gate="A" pin="W" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" Digital Potentiometer 50k Ohm 1 Circuit 256 Taps SPI Interface 8-TDFN-EP (3x3) "/>
+<attribute name="MF" value="Analog Devices"/>
+<attribute name="MP" value="MAX5422ETA"/>
+<attribute name="PACKAGE" value="TDFN-EP-8 Maxim"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search?q=MAX5422ETA&amp;ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17088,6 +17171,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$9" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="R60" library="microbuilder" deviceset="RESISTOR" device="0603" value="10k"/>
 <part name="IC12" library="SparkFun-RF" deviceset="NRF52832" device=""/>
+<part name="D3" library="microbuilder" deviceset="DIODE" device="SOD-123" value="512-SS24FL"/>
+<part name="U1" library="MAX5422ETA-T" deviceset="MAX5422ETA-T" device=""/>
+<part name="U$5" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="GND19" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17098,13 +17185,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 Additional diode in needed here
 512-SS24FL 40V 2A SCHOTTKY</text>
 <wire x1="160.02" y1="134.62" x2="160.02" y2="124.46" width="0.1524" layer="95"/>
-<wire x1="160.02" y1="124.46" x2="175.26" y2="124.46" width="0.1524" layer="95"/>
-<wire x1="175.26" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="95"/>
+<wire x1="160.02" y1="124.46" x2="177.8" y2="124.46" width="0.1524" layer="95"/>
+<wire x1="177.8" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="95"/>
 <wire x1="200.66" y1="124.46" x2="200.66" y2="134.62" width="0.1524" layer="95"/>
 <wire x1="200.66" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="95"/>
-<wire x1="175.26" y1="113.03" x2="175.26" y2="124.46" width="0.1524" layer="95"/>
-<wire x1="173.99" y1="114.3" x2="175.26" y2="113.03" width="0.1524" layer="95"/>
-<wire x1="175.26" y1="113.03" x2="176.53" y2="114.3" width="0.1524" layer="95"/>
+<wire x1="177.8" y1="118.11" x2="177.8" y2="124.46" width="0.1524" layer="95"/>
+<wire x1="176.53" y1="119.38" x2="177.8" y2="118.11" width="0.1524" layer="95"/>
+<wire x1="177.8" y1="118.11" x2="179.07" y2="119.38" width="0.1524" layer="95"/>
 <wire x1="38.1" y1="134.62" x2="38.1" y2="83.82" width="0.1524" layer="95"/>
 <wire x1="38.1" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="95"/>
 <wire x1="43.18" y1="83.82" x2="43.18" y2="134.62" width="0.1524" layer="95"/>
@@ -17330,6 +17417,20 @@ sufficient enough</text>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
+<instance part="D3" gate="G$1" x="177.8" y="111.76" smashed="yes">
+<attribute name="NAME" x="172.72" y="116.84" size="1.27" layer="95"/>
+<attribute name="VALUE" x="172.72" y="114.3" size="1.27" layer="96"/>
+</instance>
+<instance part="U1" gate="A" x="53.34" y="-50.8" smashed="yes">
+<attribute name="NAME" x="40.64" y="-29.48" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="40.64" y="-75.12" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="U$5" gate="G$1" x="73.66" y="-27.94" smashed="yes">
+<attribute name="VALUE" x="72.136" y="-26.924" size="1.27" layer="96"/>
+</instance>
+<instance part="GND19" gate="1" x="73.66" y="-71.12" smashed="yes">
+<attribute name="VALUE" x="71.12" y="-73.66" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17411,6 +17512,16 @@ sufficient enough</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="P$2"/>
 <pinref part="GND18" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="EPAD"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="71.12" y1="-63.5" x2="73.66" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-63.5" x2="73.66" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="GND"/>
+<wire x1="73.66" y1="-66.04" x2="73.66" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-66.04" x2="73.66" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="73.66" y="-66.04"/>
 </segment>
 </net>
 <net name="V-VCHG" class="0">
@@ -17555,6 +17666,12 @@ sufficient enough</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="P$1"/>
 <pinref part="U$2" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="VDD"/>
+<pinref part="U$5" gate="G$1" pin="3.3V"/>
+<wire x1="71.12" y1="-33.02" x2="73.66" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-33.02" x2="73.66" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PG" class="0">
@@ -17716,23 +17833,30 @@ sufficient enough</text>
 </net>
 <net name="BUCK-OUT-1" class="0">
 <segment>
-<pinref part="C2" gate="G$1" pin="P$1"/>
-<pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="171.45" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
-<junction x="172.72" y="111.76"/>
-<wire x1="185.42" y1="111.76" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="111.76" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="111.76" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="121.92" x2="200.66" y2="121.92" width="0.1524" layer="91"/>
-<junction x="177.8" y="111.76"/>
+<wire x1="182.88" y1="111.76" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="121.92" x2="200.66" y2="121.92" width="0.1524" layer="91"/>
 <label x="200.66" y="121.92" size="1.27" layer="95" xref="yes"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="180.34" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
+<junction x="182.88" y="111.76"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="25.4" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
 <label x="96.52" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="C2" gate="G$1" pin="P$1"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="171.45" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="111.76" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="172.72" y1="111.76" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
+<junction x="172.72" y="111.76"/>
 </segment>
 </net>
 </nets>

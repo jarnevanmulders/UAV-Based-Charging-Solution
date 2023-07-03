@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2781,35 +2781,41 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
-<library name="MAX5422ETA-T">
+<library name="diode" urn="urn:adsk.eagle:library:210">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SON65P300X300X80-9N">
-<rectangle x1="-0.47" y1="-0.73" x2="0.47" y2="0.73" layer="31"/>
-<circle x="-2.445" y="0.975" radius="0.1" width="0.2" layer="21"/>
-<circle x="-2.445" y="0.975" radius="0.1" width="0.2" layer="51"/>
-<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="51"/>
-<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.127" layer="51"/>
-<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="21"/>
-<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.127" layer="21"/>
-<wire x1="-1.55" y1="1.55" x2="-1.55" y2="-1.55" width="0.127" layer="51"/>
-<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.127" layer="51"/>
-<wire x1="-2.115" y1="1.8" x2="2.115" y2="1.8" width="0.05" layer="39"/>
-<wire x1="-2.115" y1="-1.8" x2="2.115" y2="-1.8" width="0.05" layer="39"/>
-<wire x1="-2.115" y1="1.8" x2="-2.115" y2="-1.8" width="0.05" layer="39"/>
-<wire x1="2.115" y1="1.8" x2="2.115" y2="-1.8" width="0.05" layer="39"/>
-<text x="-2.31" y="-1.727" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<text x="-2.31" y="1.727" size="1.27" layer="25">&gt;NAME</text>
-<smd name="1" x="-1.485" y="0.975" dx="0.76" dy="0.32" layer="1" roundness="25"/>
-<smd name="2" x="-1.485" y="0.325" dx="0.76" dy="0.32" layer="1" roundness="25"/>
-<smd name="3" x="-1.485" y="-0.325" dx="0.76" dy="0.32" layer="1" roundness="25"/>
-<smd name="4" x="-1.485" y="-0.975" dx="0.76" dy="0.32" layer="1" roundness="25"/>
-<smd name="5" x="1.485" y="-0.975" dx="0.76" dy="0.32" layer="1" roundness="25"/>
-<smd name="6" x="1.485" y="-0.325" dx="0.76" dy="0.32" layer="1" roundness="25"/>
-<smd name="7" x="1.485" y="0.325" dx="0.76" dy="0.32" layer="1" roundness="25"/>
-<smd name="8" x="1.485" y="0.975" dx="0.76" dy="0.32" layer="1" roundness="25"/>
-<smd name="9" x="0" y="0" dx="1.5" dy="2.3" layer="1" cream="no"/>
+<package name="SOD323-R" urn="urn:adsk.eagle:footprint:43204/1" library_version="8">
+<description>&lt;b&gt;SOD323 Reflow soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
+<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.1524" layer="21"/>
+<wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.1524" layer="51"/>
+<wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.1524" layer="21"/>
+<wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.1524" layer="51"/>
+<wire x1="-0.5" y1="0" x2="0.1" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="0.4" x2="0.1" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="-0.4" x2="-0.5" y2="0" width="0.1524" layer="21"/>
+<smd name="C" x="-1.1" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="A" x="1.1" y="0" dx="0.6" dy="0.6" layer="1"/>
+<text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.7" y1="-0.7" x2="-0.5" y2="0.7" layer="51"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="SOD323-R" urn="urn:adsk.eagle:package:43437/1" type="box" library_version="8">
+<description>SOD323 Reflow soldering Philips SC01_Mounting_1996.pdf</description>
+<packageinstances>
+<packageinstance name="SOD323-R"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -3379,17 +3385,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-7.18185" y="-60.124975" size="0.8128" layer="25" ratio="18"/>
 <attribute name="VALUE" x="-7.18185" y="-62.918975" size="0.4064" layer="27" ratio="10"/>
 </element>
-<element name="U1" library="MAX5422ETA-T" package="SON65P300X300X80-9N" value="MAX5422ETA-T" x="-5.756275" y="-67.052825" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="-5.756275" y="-67.052825" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" Digital Potentiometer 50k Ohm 1 Circuit 256 Taps SPI Interface 8-TDFN-EP (3x3) " x="-5.756275" y="-67.052825" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Analog Devices" x="-5.756275" y="-67.052825" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="MAX5422ETA" x="-5.756275" y="-67.052825" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-8.066275" y="-65.325825" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="TDFN-EP-8 Maxim" x="-5.756275" y="-67.052825" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="-5.756275" y="-67.052825" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search?q=MAX5422ETA&amp;ref=eda" x="-5.756275" y="-67.052825" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-8.066275" y="-68.779825" size="1.27" layer="27" align="top-left"/>
-</element>
 <element name="C7" library="microbuilder" package="0603" value="10u" x="-6.8453" y="-71.5645" smashed="yes">
 <attribute name="NAME" x="-5.0673" y="-71.6915" size="0.8128" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="-5.0673" y="-72.3265" size="0.4064" layer="27" font="vector" ratio="10"/>
@@ -3397,6 +3392,25 @@ design rules under a new name.</description>
 <element name="JP5" library="SparkFun-Jumpers" package="SMT-JUMPER_3_NO_NO-SILK" value="JUMPER-SMT_3_NO_NO-SILK" x="-10.5791" y="-70.786625" smashed="yes">
 <attribute name="NAME" x="-10.5791" y="-69.643625" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="-10.5791" y="-71.929625" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" package="SOD323-R" package3d_urn="urn:adsk.eagle:package:43437/1" value="" x="-15.401925" y="-75.765025" smashed="yes">
+<attribute name="NAME" x="-16.501925" y="-74.765025" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="4" x="-15.401925" y="-75.765025" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-16.501925" y="-78.065025" size="1.27" layer="27"/>
+</element>
+<element name="R16" library="microbuilder" package="0603" value="47k" x="-15.401925" y="-77.943075" smashed="yes">
+<attribute name="NAME" x="-13.623925" y="-78.070075" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="-13.623925" y="-78.705075" size="0.4064" layer="27" font="vector" ratio="10"/>
+</element>
+<element name="LS3" library="MIC94081YFT-TR" package="IC_MIC94081YFT-TR" value="MIC94081YFT-TR" x="-15.24635" y="-81.21015" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-15.24635" y="-81.21015" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Power Switch/Driver 1:1 P-Channel 2A 4-TMLF® (0.85x0.85) " x="-15.24635" y="-81.21015" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Microchip" x="-15.24635" y="-81.21015" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="MIC94081YFT-TR" x="-15.24635" y="-81.21015" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-16.49635" y="-80.21015" size="0.6096" layer="25"/>
+<attribute name="PACKAGE" value="UFDFN-4 Microchip" x="-15.24635" y="-81.21015" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-15.24635" y="-81.21015" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-16.49635" y="-82.21015" size="0.6096" layer="27" align="top-left"/>
 </element>
 </elements>
 <signals>
@@ -3495,14 +3509,14 @@ design rules under a new name.</description>
 <contactref element="X2" pad="1"/>
 <contactref element="UPDATE" pad="1"/>
 <contactref element="C29" pad="2"/>
-<contactref element="U1" pad="5"/>
-<contactref element="U1" pad="9"/>
 <contactref element="C7" pad="2"/>
 <contactref element="JP5" pad="1"/>
+<contactref element="D4" pad="A"/>
+<contactref element="LS3" pad="2"/>
+<wire x1="-14.301925" y1="-75.765025" x2="-15.44635" y2="-81.41015" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.3919" y1="-70.786625" x2="-14.301925" y2="-75.765025" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.9953" y1="-71.5645" x2="-11.3919" y2="-70.786625" width="0" layer="19" extent="1-1"/>
-<wire x1="-4.271275" y1="-68.027825" x2="-5.9953" y2="-71.5645" width="0" layer="19" extent="1-1"/>
-<wire x1="-5.756275" y1="-67.052825" x2="-4.271275" y2="-68.027825" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.627875" y1="-55.229125" x2="-5.756275" y2="-67.052825" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.627875" y1="-55.229125" x2="-5.9953" y2="-71.5645" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.0169" y1="-51.96205" x2="-1.627875" y2="-55.229125" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.8246" y1="-49.317275" x2="-1.0169" y2="-51.96205" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.780525" y1="-49.317275" x2="-1.8246" y2="-49.317275" width="0" layer="19" extent="1-1"/>
@@ -3803,8 +3817,6 @@ design rules under a new name.</description>
 <via x="12.912725" y="2.644775" extent="1-16" drill="0.3048"/>
 <wire x1="12.912725" y1="2.644775" x2="12.915" y2="2.6425" width="0.254" layer="1"/>
 <wire x1="12.915" y1="2.6425" x2="13.97" y2="2.6425" width="0.254" layer="1"/>
-<contactref element="U1" pad="1"/>
-<wire x1="11.745" y1="2.4925" x2="-7.241275" y2="-66.077825" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWDCLK">
 <contactref element="DEBUG" pad="4"/>
@@ -3947,8 +3959,8 @@ design rules under a new name.</description>
 <wire x1="50.476025" y1="6.62" x2="50.71745" y2="6.378575" width="0.254" layer="1"/>
 <wire x1="50.71745" y1="6.378575" x2="55.591075" y2="6.378575" width="0.254" layer="1"/>
 <wire x1="55.591075" y1="6.378575" x2="56.8325" y2="7.62" width="0.254" layer="1"/>
-<contactref element="IC12" pad="20"/>
-<wire x1="-4.533975" y1="-25.05165" x2="49.815" y2="6.62" width="0" layer="19" extent="1-1"/>
+<contactref element="IC12" pad="18"/>
+<wire x1="-5.333975" y1="-25.05165" x2="49.815" y2="6.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USART2_TX">
 <contactref element="IC2" pad="18"/>
@@ -4140,6 +4152,8 @@ design rules under a new name.</description>
 <wire x1="8.8925" y1="12.6325" x2="8.40105" y2="12.6325" width="0.6096" layer="1"/>
 <wire x1="8.8925" y1="12.6325" x2="8.861575" y2="12.601575" width="0.254" layer="1"/>
 <wire x1="8.861575" y1="12.601575" x2="8.40105" y2="12.601575" width="0.254" layer="1"/>
+<contactref element="R16" pad="1"/>
+<wire x1="21.624925" y1="4.822825" x2="-16.251925" y2="-77.943075" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R10" pad="1"/>
@@ -4321,7 +4335,7 @@ design rules under a new name.</description>
 <signal name="P22">
 <contactref element="IC12" pad="27"/>
 </signal>
-<signal name="P18">
+<signal name="SWO/TDO">
 <contactref element="IC12" pad="21"/>
 <contactref element="DEBUG1" pad="6"/>
 <wire x1="15.401925" y1="-20.21205" x2="-4.133975" y2="-25.05165" width="0" layer="19" extent="1-1"/>
@@ -4347,18 +4361,15 @@ design rules under a new name.</description>
 <signal name="P20">
 <contactref element="IC12" pad="23"/>
 </signal>
-<signal name="P19">
-<contactref element="IC12" pad="22"/>
-</signal>
 <signal name="N$50">
 <contactref element="C77" pad="2"/>
 <contactref element="IC12" pad="37"/>
 <wire x1="-2.933975" y1="-19.13165" x2="-4.242825" y2="-52.58435" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="P27">
+<signal name="I2C_SCL">
 <contactref element="IC12" pad="39"/>
 </signal>
-<signal name="P26">
+<signal name="I2C_SDA">
 <contactref element="C76" pad="2"/>
 <contactref element="IC12" pad="38"/>
 <wire x1="-3.333975" y1="-19.13165" x2="-6.732025" y2="-52.58435" width="0" layer="19" extent="1-1"/>
@@ -4372,9 +4383,6 @@ design rules under a new name.</description>
 <contactref element="IC12" pad="9"/>
 <contactref element="UART_INTERFACE" pad="4"/>
 <wire x1="4.12115" y1="-34.2265" x2="-8.093975" y2="-23.09165" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="P15">
-<contactref element="IC12" pad="18"/>
 </signal>
 <signal name="P16">
 <contactref element="IC12" pad="19"/>
@@ -4407,11 +4415,13 @@ design rules under a new name.</description>
 <contactref element="DEBUG1" pad="1"/>
 <contactref element="R50" pad="2"/>
 <contactref element="R60" pad="1"/>
-<wire x1="4.43955" y1="-57.56275" x2="-7.73645" y2="-49.317275" width="0" layer="19" extent="1-1"/>
+<contactref element="LS3" pad="3"/>
+<wire x1="4.43955" y1="-57.56275" x2="-15.04635" y2="-81.41015" width="0" layer="19" extent="1-1"/>
 <wire x1="6.13955" y1="-55.229125" x2="4.43955" y2="-57.56275" width="0" layer="19" extent="1-1"/>
 <wire x1="14.0852" y1="-45.4279" x2="6.13955" y2="-55.229125" width="0" layer="19" extent="1-1"/>
 <wire x1="15.03045" y1="-41.6941" x2="14.0852" y2="-45.4279" width="0" layer="19" extent="1-1"/>
 <wire x1="20.733775" y1="-45.4279" x2="14.0852" y2="-45.4279" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.73645" y1="-49.317275" x2="4.43955" y2="-57.56275" width="0" layer="19" extent="1-1"/>
 <wire x1="12.861925" y1="-21.48205" x2="15.03045" y2="-41.6941" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.173975" y1="-19.89165" x2="12.861925" y2="-21.48205" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.333975" y1="-19.13165" x2="-2.173975" y2="-19.89165" width="0" layer="19" extent="1-1"/>
@@ -4431,6 +4441,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="PWM-CHG">
 <contactref element="JP5" pad="3"/>
+<contactref element="IC12" pad="20"/>
+<wire x1="-4.533975" y1="-25.05165" x2="-9.7663" y2="-70.786625" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="WAKE-UP">
+<contactref element="D4" pad="C"/>
+<contactref element="R16" pad="2"/>
+<contactref element="IC12" pad="22"/>
+<wire x1="-14.551925" y1="-77.943075" x2="-16.501925" y2="-75.765025" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.733975" y1="-25.05165" x2="-16.501925" y2="-75.765025" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -4442,4 +4461,21 @@ design rules under a new name.</description>
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
