@@ -16370,13 +16370,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="UART_INTERFACE" library="microbuilder" deviceset="HEADER-1X4" device="ROUND"/>
 <part name="L5" library="microbuilder" deviceset="INDUCTOR" device="_0603MP" value="10uH"/>
 <part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
+<part name="GND33" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="X2" library="adafruit" deviceset="ANTENNA_U.FL" device=""/>
 <part name="L4" library="nrf52832-breakout-temp" deviceset="INDUCTOR" device="-0402-3.9NH" value="15nH"/>
+<part name="LS3" library="MIC94081YFT-TR" deviceset="MIC94081YFT-TR" device=""/>
 <part name="UPDATE" library="Eagle_SWITCHES (rev18c)" deviceset="434111043826" device=""/>
 <part name="GND76" library="supply1" deviceset="GND" device=""/>
 <part name="C29" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="100n"/>
 <part name="GND107" library="supply1" deviceset="GND" device=""/>
 <part name="R50" library="microbuilder" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="U$9" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="R60" library="microbuilder" deviceset="RESISTOR" device="0603" value="10k"/>
 <part name="IC12" library="SparkFun-RF" deviceset="NRF52832" device=""/>
 <part name="D3" library="microbuilder" deviceset="DIODE" device="SOD-123" value="512-SS24FL"/>
@@ -16919,6 +16922,9 @@ prevent entering debug mode</text>
 <instance part="JP4" gate="G$1" x="292.1" y="147.32" smashed="yes">
 <attribute name="NAME" x="289.56" y="149.86" size="1.778" layer="95"/>
 </instance>
+<instance part="GND33" gate="1" x="307.34" y="127" smashed="yes">
+<attribute name="VALUE" x="307.34" y="126.746" size="1.778" layer="96" align="top-center"/>
+</instance>
 <instance part="X2" gate="G$1" x="363.22" y="81.28" smashed="yes">
 <attribute name="NAME" x="360.68" y="84.582" size="1.27" layer="95"/>
 <attribute name="VALUE" x="360.68" y="71.12" size="1.27" layer="96"/>
@@ -16926,6 +16932,10 @@ prevent entering debug mode</text>
 <instance part="L4" gate="G$1" x="480.06" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="477.52" y="143.51" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="476.25" y="142.24" size="1.778" layer="96" align="top-left"/>
+</instance>
+<instance part="LS3" gate="G$1" x="292.1" y="137.16" smashed="yes">
+<attribute name="NAME" x="287.02" y="143.51" size="1.778" layer="95"/>
+<attribute name="VALUE" x="287.02" y="130.81" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="UPDATE" gate="G$1" x="284.48" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="280.924" y="90.17" size="1.778" layer="95" rot="R90"/>
@@ -16944,6 +16954,9 @@ prevent entering debug mode</text>
 <instance part="R50" gate="G$1" x="292.1" y="109.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="290.068" y="106.68" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="295.275" y="106.68" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="U$9" gate="G$1" x="279.4" y="152.4" smashed="yes">
+<attribute name="VALUE" x="277.876" y="153.416" size="1.27" layer="96"/>
 </instance>
 <instance part="R60" gate="G$1" x="292.1" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="290.068" y="53.34" size="1.27" layer="95" rot="R90"/>
@@ -17194,6 +17207,12 @@ prevent entering debug mode</text>
 <wire x1="373.38" y1="124.46" x2="373.38" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="GND33" gate="1" pin="GND"/>
+<wire x1="302.26" y1="134.62" x2="307.34" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="134.62" x2="307.34" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="LS3" gate="G$1" pin="GND"/>
+</segment>
+<segment>
 <pinref part="X2" gate="G$1" pin="GND@1"/>
 <pinref part="GND105" gate="1" pin="GND"/>
 <wire x1="360.68" y1="73.66" x2="358.14" y2="73.66" width="0.1524" layer="91"/>
@@ -17294,11 +17313,6 @@ prevent entering debug mode</text>
 <wire x1="281.94" y1="-180.34" x2="284.48" y2="-180.34" width="0.1524" layer="91"/>
 <label x="284.48" y="-180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="147.32" x2="279.4" y2="147.32" width="0.1524" layer="91"/>
-<label x="279.4" y="147.32" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -17398,6 +17412,16 @@ prevent entering debug mode</text>
 <pinref part="U$5" gate="G$1" pin="3.3V"/>
 <wire x1="71.12" y1="-33.02" x2="73.66" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-33.02" x2="73.66" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="147.32" x2="279.4" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="147.32" x2="279.4" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="139.7" x2="281.94" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="149.86" x2="279.4" y2="147.32" width="0.1524" layer="91"/>
+<junction x="279.4" y="147.32"/>
+<pinref part="LS3" gate="G$1" pin="VIN"/>
+<pinref part="U$9" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="PG" class="0">
@@ -17913,21 +17937,21 @@ prevent entering debug mode</text>
 <pinref part="IC12" gate="G$1" pin="P0.28/AIN4"/>
 </segment>
 </net>
-<net name="MISO" class="0">
+<net name="P29" class="0">
 <segment>
 <wire x1="439.42" y1="68.58" x2="441.96" y2="68.58" width="0.1524" layer="91"/>
 <label x="441.96" y="68.58" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC12" gate="G$1" pin="P0.29/AIN5"/>
 </segment>
 </net>
-<net name="MOSI" class="0">
+<net name="P30" class="0">
 <segment>
 <wire x1="439.42" y1="66.04" x2="441.96" y2="66.04" width="0.1524" layer="91"/>
 <label x="441.96" y="66.04" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC12" gate="G$1" pin="P0.30/AIN6"/>
 </segment>
 </net>
-<net name="SCK" class="0">
+<net name="P31" class="0">
 <segment>
 <wire x1="439.42" y1="63.5" x2="441.96" y2="63.5" width="0.1524" layer="91"/>
 <label x="441.96" y="63.5" size="1.27" layer="95" xref="yes"/>
@@ -18193,8 +18217,11 @@ prevent entering debug mode</text>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="297.18" y1="147.32" x2="304.8" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="147.32" x2="304.8" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="139.7" x2="302.26" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="139.7" x2="309.88" y2="139.7" width="0.1524" layer="91"/>
+<junction x="304.8" y="139.7"/>
 <label x="309.88" y="139.7" size="1.27" layer="95" xref="yes"/>
+<pinref part="LS3" gate="G$1" pin="VOUT"/>
 </segment>
 <segment>
 <pinref part="C66" gate="G$1" pin="1"/>
@@ -18245,6 +18272,15 @@ prevent entering debug mode</text>
 <pinref part="R60" gate="G$1" pin="1"/>
 <wire x1="292.1" y1="50.8" x2="292.1" y2="48.26" width="0.1524" layer="91"/>
 <label x="292.1" y="48.26" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="VDD_BLE_EN" class="0">
+<segment>
+<pinref part="LS3" gate="G$1" pin="EN"/>
+<wire x1="281.94" y1="134.62" x2="279.4" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="134.62" x2="279.4" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="121.92" x2="281.94" y2="121.92" width="0.1524" layer="91"/>
+<label x="281.94" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
