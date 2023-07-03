@@ -1,0 +1,15 @@
+{
+  "nrf-connect.topdir": "${nrf-connect.sdk:2.4.0}",
+  "nrf-connect.toolchain.path": "${nrf-connect.toolchain:2.4.0}",
+  "files.associations": {
+    "typeinfo": "c",
+    "printk.h": "c",
+    "array": "c",
+    "compare": "c",
+    "functional": "c",
+    "ratio": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "utility": "c"
+  }
+}
