@@ -1,0 +1,4 @@
+osource "/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/wpt-receiver/boards/shields/*/Kconfig.defconfig"
+osource "/ncs/v2.4.0/zephyr/boards/arm/boards/shields/*/Kconfig.defconfig"
+osource "c:/users/jarne/documents/github/iot_energystorage_charger_ble/firmware/power-receiving-unit/boards/shields/*/Kconfig.defconfig"
+osource "C:/ncs/v2.4.0/nrf/boards/shields/*/Kconfig.defconfig"
