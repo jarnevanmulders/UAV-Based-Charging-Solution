@@ -16359,8 +16359,8 @@ Disassembly of section text:
     a298:	00000908 	.word	0x00000908
 
 0000a29c <main>:
-// *** START THREADS *** //
-K_THREAD_DEFINE(start_adv_id, STACKSIZE, adv_start, NULL, NULL, NULL, PRIORITY, 0, 0);
+// };
+
 
 
 int main(void)
@@ -16376,9 +16376,11 @@ int main(void)
     a2a4:	f44f 11b0 	mov.w	r1, #1441792	; 0x160000
     a2a8:	480d      	ldr	r0, [pc, #52]	; (a2e0 <main+0x44>)
     a2aa:	f00b f923 	bl	154f4 <gpio_pin_configure_dt>
+		// 		continue;
+		// 	}
+		// }
 
-	// *** MAIN LOOP *** //
-	while(1){
+
 		k_msleep(1000);
     a2ae:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
     a2b2:	f00b f934 	bl	1551e <k_msleep>
@@ -16389,8 +16391,8 @@ int main(void)
 		adv_change_status(STAT_CHG);
     a2be:	2000      	movs	r0, #0
     a2c0:	f000 f868 	bl	a394 <adv_change_status>
-		k_msleep(1000);
-    a2c4:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+		k_msleep(500);
+    a2c4:	f44f 70fa 	mov.w	r0, #500	; 0x1f4
     a2c8:	f00b f929 	bl	1551e <k_msleep>
 		gpio_pin_toggle_dt(&led);
     a2cc:	4620      	mov	r0, r4

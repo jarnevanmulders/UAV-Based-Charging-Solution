@@ -1,0 +1,21 @@
+Circuit: * C:\Users\Jarne\Documents\GitHub\IoT_energystorage_charger_ble\hardware\power-receiving-unit\LT-SPICE-pwm-fb\design.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Jul 04 16:03:24 2023
+Total elapsed time: 0.144 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 17609
+traniter = 17606
+tranpoints = 8804
+accept = 8405
+rejected = 399
+matrix size = 5
+fillins = 0
+solver = Normal
+Matrix Compiler1: 114 bytes object code size  0.6/0.0/[0.0]
+Matrix Compiler2: off  [0.0]/0.0/0.0
+
