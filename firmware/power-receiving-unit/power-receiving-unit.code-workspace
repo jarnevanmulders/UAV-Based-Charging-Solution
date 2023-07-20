@@ -16,11 +16,29 @@
 			"ratio": "c",
 			"tuple": "c",
 			"type_traits": "c",
-			"utility": "c"
+			"utility": "c",
+			"iosfwd": "c",
+			"limits": "c",
+			"streambuf": "c"
 		},
 		"nrf-connect.boardRoots": [
 			"\\Users\\jarne\\Documents\\GitHub\\IoT_energystorage_charger_ble\\wpt-receiver\\boards",
 			"\\ncs\\v2.4.0\\zephyr\\boards\\arm"
+		],
+		"nrf-connect.debugging.bindings": {
+			"${workspaceFolder}/build": "Launch build"
+		}
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "nrf-connect",
+				"request": "launch",
+				"name": "Launch build",
+				"config": "${workspaceFolder}/build",
+				"runToEntryPoint": "main"
+			}
 		]
 	}
 }

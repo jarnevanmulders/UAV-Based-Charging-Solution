@@ -9,7 +9,7 @@
 
 
 
-/dts-v1/;
+ /dts-v1/;
 # 1 "C:/ncs/v2.4.0/zephyr/dts/arm/nordic/nrf52832_qfaa.dtsi" 1 3 4
 
 
@@ -730,23 +730,43 @@
 };
 # 11 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts" 2
 
-/ {
- model = "Nordic NRF52832 PRU";
- compatible = "nordic,nrf52-dk-nrf52832";
+ / {
+  model = "Nordic nRF52 DK NRF52832";
+  compatible = "nordic,nrf52-dk-nrf52832";
 
- chosen {
-  zephyr,console = &uart0;
-  zephyr,shell-uart = &uart0;
-  zephyr,uart-mcumgr = &uart0;
-  zephyr,bt-mon-uart = &uart0;
-  zephyr,bt-c2h-uart = &uart0;
-  zephyr,sram = &sram0;
-  zephyr,flash = &flash0;
-  zephyr,code-partition = &slot0_partition;
- };
+  chosen {
+   zephyr,console = &uart0;
+   zephyr,shell-uart = &uart0;
+   zephyr,uart-mcumgr = &uart0;
+   zephyr,bt-mon-uart = &uart0;
+   zephyr,bt-c2h-uart = &uart0;
+   zephyr,sram = &sram0;
+   zephyr,flash = &flash0;
+   zephyr,code-partition = &slot0_partition;
+  };
 
- leds {
+  leds {
   compatible = "gpio-leds";
+  en1: en_1 {
+   gpios = <&gpio0 11 (0 << 0)>;
+   label = "Control load switch 1 enable";
+  };
+  en2: en_2 {
+   gpios = <&gpio0 12 (0 << 0)>;
+   label = "Control load switch 2 enable";
+  };
+  bucken0: bucken_0 {
+   gpios = <&gpio0 13 (0 << 0)>;
+   label = "Control buck enable";
+  };
+  pg0: pg_0 {
+   gpios = <&gpio0 14 (0 << 0)>;
+   label = "Power good enable";
+  };
+  usrled0: usrled_0 {
+   gpios = <&gpio0 15 (0 << 0)>;
+   label = "Green LED";
+  };
   led0: led_0 {
    gpios = <&gpio0 17 (1 << 0)>;
    label = "Green LED 0";
@@ -763,62 +783,82 @@
    gpios = <&gpio0 20 (1 << 0)>;
    label = "Green LED 3";
   };
-  led4: led_4 {
-   gpios = <&gpio0 21 (1 << 0)>;
-   label = "Green LED 4";
+
+
+
+
   };
- };
 
- pwmleds {
-  compatible = "pwm-leds";
-  pwm_led0: pwm_led_0 {
-   pwms = <&pwm0 0 ((20) * 1000UL) (0 << 0)>;
+  pwmleds {
+   compatible = "pwm-leds";
+   pwm_led0: pwm_led_0 {
+    pwms = <&pwm0 0 ((20) * 1000UL) (0 << 0)>;
+   };
   };
- };
-# 78 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts"
- arduino_header: connector {
-  compatible = "arduino-header-r3";
-  #gpio-cells = <2>;
-  gpio-map-mask = <0xffffffff 0xffffffc0>;
-  gpio-map-pass-thru = <0 0x3f>;
-  gpio-map = <0 0 &gpio0 3 0>,
-      <1 0 &gpio0 4 0>,
-      <2 0 &gpio0 28 0>,
-      <3 0 &gpio0 29 0>,
-      <4 0 &gpio0 30 0>,
-      <5 0 &gpio0 31 0>,
-      <6 0 &gpio0 11 0>,
-      <7 0 &gpio0 12 0>,
-      <8 0 &gpio0 13 0>,
-      <9 0 &gpio0 14 0>,
-      <10 0 &gpio0 15 0>,
-      <11 0 &gpio0 16 0>,
-      <12 0 &gpio0 17 0>,
-      <13 0 &gpio0 18 0>,
-      <14 0 &gpio0 19 0>,
-      <15 0 &gpio0 20 0>,
-      <16 0 &gpio0 22 0>,
-      <17 0 &gpio0 23 0>,
-      <18 0 &gpio0 24 0>,
-      <19 0 &gpio0 25 0>,
-      <20 0 &gpio0 26 0>,
-      <21 0 &gpio0 27 0>;
- };
 
- arduino_adc: analog-connector {
-  compatible = "arduino,uno-adc";
-  #io-channel-cells = <1>;
-  io-channel-map = <0 &adc 0>, <1 &adc 2>, <2 &adc 4>, <3 &adc 5>, <4 &adc 6>, <5 &adc 7>;
- };
+  buttons {
+   compatible = "gpio-keys";
+   usrbutton0: usrbutton_0 {
+    gpios = <&gpio0 16 ((1 << 4) | (1 << 0))>;
+    label = "Push button switch 0";
+   };
+# 96 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts"
+  };
+
+  arduino_header: connector {
+   compatible = "arduino-header-r3";
+   #gpio-cells = <2>;
+   gpio-map-mask = <0xffffffff 0xffffffc0>;
+   gpio-map-pass-thru = <0 0x3f>;
+   gpio-map = <0 0 &gpio0 3 0>,
+    <1 0 &gpio0 4 0>,
+    <2 0 &gpio0 28 0>,
+    <3 0 &gpio0 29 0>,
+    <4 0 &gpio0 30 0>,
+    <5 0 &gpio0 31 0>,
+    <6 0 &gpio0 11 0>,
+    <7 0 &gpio0 12 0>,
+    <8 0 &gpio0 13 0>,
+    <9 0 &gpio0 14 0>,
+    <10 0 &gpio0 15 0>,
+    <11 0 &gpio0 16 0>,
+    <12 0 &gpio0 17 0>,
+    <13 0 &gpio0 18 0>,
+    <14 0 &gpio0 19 0>,
+    <15 0 &gpio0 20 0>,
+    <16 0 &gpio0 22 0>,
+    <17 0 &gpio0 23 0>,
+    <18 0 &gpio0 24 0>,
+    <19 0 &gpio0 25 0>,
+    <20 0 &gpio0 26 0>,
+    <21 0 &gpio0 27 0>;
+  };
+
+  arduino_adc: analog-connector {
+   compatible = "arduino,uno-adc";
+   #io-channel-cells = <1>;
+   io-channel-map = <0 &adc 1>,
+      <1 &adc 2>,
+      <2 &adc 4>,
+      <3 &adc 5>,
+      <4 &adc 6>,
+      <5 &adc 7>;
+  };
 
 
- aliases {
+  aliases {
+  en1 = &en1;
+  en2 = &en2;
+  bucken0 = &bucken0;
+  pg0 = &pg0;
+  usrled0 = &usrled0;
   led0 = &led0;
   led1 = &led1;
   led2 = &led2;
   led3 = &led3;
-  pwm-led0 = &pwm_led0;
 
+  pwm-led0 = &pwm_led0;
+  sw0 = &usrbutton0;
 
 
 
@@ -826,102 +866,151 @@
 
   mcuboot-led0 = &led0;
   watchdog0 = &wdt0;
+  };
+ };
+
+ &adc {
+  status = "okay";
+ };
+
+ &gpiote {
+  status = "okay";
+ };
+
+ &gpio0 {
+  status = "okay";
+ };
+
+ arduino_serial: &uart0 {
+  status = "okay";
+  compatible = "nordic,nrf-uarte";
+  current-speed = <115200>;
+  pinctrl-0 = <&uart0_default>;
+  pinctrl-1 = <&uart0_sleep>;
+  pinctrl-names = "default", "sleep";
+ };
+
+ arduino_i2c: &i2c0 {
+  compatible = "nordic,nrf-twi";
+  status = "okay";
+  pinctrl-0 = <&i2c0_default>;
+  pinctrl-1 = <&i2c0_sleep>;
+  pinctrl-names = "default", "sleep";
+ };
+
+ &i2c1 {
+  compatible = "nordic,nrf-twi";
+
+
+  pinctrl-0 = <&i2c1_default>;
+  pinctrl-1 = <&i2c1_sleep>;
+  pinctrl-names = "default", "sleep";
+ };
+
+ &pwm0 {
+  status = "okay";
+  pinctrl-0 = <&pwm0_default>;
+  pinctrl-1 = <&pwm0_sleep>;
+  pinctrl-names = "default", "sleep";
+ };
+
+ &spi0 {
+  compatible = "nordic,nrf-spi";
+
+
+  pinctrl-0 = <&spi0_default>;
+  pinctrl-1 = <&spi0_sleep>;
+  pinctrl-names = "default", "sleep";
+ };
+
+ &spi1 {
+  compatible = "nordic,nrf-spi";
+  status = "okay";
+  pinctrl-0 = <&spi1_default>;
+  pinctrl-1 = <&spi1_sleep>;
+  pinctrl-names = "default", "sleep";
+ };
+
+ arduino_spi: &spi2 {
+  compatible = "nordic,nrf-spi";
+  status = "okay";
+  cs-gpios = <&arduino_header 16 (1 << 0)>;
+  pinctrl-0 = <&spi2_default>;
+  pinctrl-1 = <&spi2_sleep>;
+  pinctrl-names = "default", "sleep";
+ };
+
+ &flash0 {
+
+  partitions {
+   compatible = "fixed-partitions";
+   #address-cells = <1>;
+   #size-cells = <1>;
+
+   boot_partition: partition@0 {
+    label = "mcuboot";
+    reg = <0x00000000 0xc000>;
+   };
+   slot0_partition: partition@c000 {
+    label = "image-0";
+    reg = <0x0000C000 0x37000>;
+   };
+   slot1_partition: partition@43000 {
+    label = "image-1";
+    reg = <0x00043000 0x37000>;
+   };
+   storage_partition: partition@7a000 {
+    label = "storage";
+    reg = <0x0007a000 0x00006000>;
+   };
+  };
+ };
+
+ &i2c0_default {
+  group1 {
+   psels = <((((((0) * 32U) + (26)) & 0x7FU) << 0U) | ((12U & 0xFFFFU) << 16U))>;
+  };
+ };
+# 0 "<command-line>" 2
+# 1 "c:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-receiving-unit/boards/nrf52832_pru.overlay" 1
+# 14 "c:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-receiving-unit/boards/nrf52832_pru.overlay"
+/ {
+ zephyr,user {
+  io-channels = <&adc 0>, <&adc 1>, <&adc 2>;
  };
 };
 
 &adc {
- status = "okay";
-};
+ #address-cells = <1>;
+ #size-cells = <0>;
 
-&gpiote {
- status = "okay";
-};
-
-&gpio0 {
- status = "okay";
-};
-
-arduino_serial: &uart0 {
- status = "okay";
- compatible = "nordic,nrf-uarte";
- current-speed = <115200>;
- pinctrl-0 = <&uart0_default>;
- pinctrl-1 = <&uart0_sleep>;
- pinctrl-names = "default", "sleep";
-};
-
-arduino_i2c: &i2c0 {
- compatible = "nordic,nrf-twi";
- status = "okay";
- pinctrl-0 = <&i2c0_default>;
- pinctrl-1 = <&i2c0_sleep>;
- pinctrl-names = "default", "sleep";
-};
-
-&i2c1 {
- compatible = "nordic,nrf-twi";
-
-
- pinctrl-0 = <&i2c1_default>;
- pinctrl-1 = <&i2c1_sleep>;
- pinctrl-names = "default", "sleep";
-};
-
-&pwm0 {
- status = "okay";
- pinctrl-0 = <&pwm0_default>;
- pinctrl-1 = <&pwm0_sleep>;
- pinctrl-names = "default", "sleep";
-};
-
-&spi0 {
- compatible = "nordic,nrf-spi";
-
-
- pinctrl-0 = <&spi0_default>;
- pinctrl-1 = <&spi0_sleep>;
- pinctrl-names = "default", "sleep";
-};
-# 193 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts"
-arduino_spi: &spi2 {
- compatible = "nordic,nrf-spi";
- status = "okay";
- cs-gpios = <&arduino_header 16 (1 << 0)>;
- pinctrl-0 = <&spi2_default>;
- pinctrl-1 = <&spi2_sleep>;
- pinctrl-names = "default", "sleep";
-};
-
-&flash0 {
-
- partitions {
-  compatible = "fixed-partitions";
-  #address-cells = <1>;
-  #size-cells = <1>;
-
-  boot_partition: partition@0 {
-   label = "mcuboot";
-   reg = <0x00000000 0xc000>;
-  };
-  slot0_partition: partition@c000 {
-   label = "image-0";
-   reg = <0x0000C000 0x37000>;
-  };
-  slot1_partition: partition@43000 {
-   label = "image-1";
-   reg = <0x00043000 0x37000>;
-  };
-  storage_partition: partition@7a000 {
-   label = "storage";
-   reg = <0x0007a000 0x00006000>;
-  };
+ channel@0 {
+  reg = <0>;
+  zephyr,gain = "ADC_GAIN_1_6";
+  zephyr,reference = "ADC_REF_INTERNAL";
+  zephyr,acquisition-time = <0>;
+  zephyr,input-positive = <1>;
+  zephyr,resolution = <12>;
  };
-};
 
-&i2c0_default {
- group1 {
-  psels = <((((((0) * 32U) + (26)) & 0x7FU) << 0U) | ((12U & 0xFFFFU) << 16U))>;
+ channel@1 {
+  reg = <1>;
+  zephyr,gain = "ADC_GAIN_1_6";
+  zephyr,reference = "ADC_REF_INTERNAL";
+  zephyr,acquisition-time = <0>;
+  zephyr,input-positive = <2>;
+  zephyr,resolution = <12>;
  };
+
+ channel@2 {
+  reg = <2>;
+  zephyr,gain = "ADC_GAIN_1_6";
+  zephyr,reference = "ADC_REF_INTERNAL";
+  zephyr,acquisition-time = <0>;
+  zephyr,input-positive = <3>;
+  zephyr,resolution = <12>;
+ };
+# 71 "c:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-receiving-unit/boards/nrf52832_pru.overlay"
 };
 # 0 "<command-line>" 2
 # 1 "C:/ncs/v2.4.0/zephyr/misc/empty_file.c"

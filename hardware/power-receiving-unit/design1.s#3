@@ -17000,12 +17000,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="JP12" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
 <part name="JP13" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
 <part name="JP14" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
-<part name="C27" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="100n"/>
-<part name="C28" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="100n"/>
-<part name="C29" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="100n"/>
-<part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17581,27 +17575,6 @@ prevent entering debug mode</text>
 <instance part="JP14" gate="G$1" x="502.92" y="71.12" smashed="yes">
 <attribute name="NAME" x="500.38" y="73.025" size="1.27" layer="95" font="vector"/>
 </instance>
-<instance part="C27" gate="G$1" x="492.76" y="55.88" smashed="yes">
-<attribute name="NAME" x="495.3" y="58.42" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="495.3" y="55.88" size="1.27" layer="96" font="vector"/>
-</instance>
-<instance part="C28" gate="G$1" x="502.92" y="55.88" smashed="yes">
-<attribute name="NAME" x="505.46" y="58.42" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="505.46" y="55.88" size="1.27" layer="96" font="vector"/>
-</instance>
-<instance part="C29" gate="G$1" x="513.08" y="55.88" smashed="yes">
-<attribute name="NAME" x="515.62" y="58.42" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="515.62" y="55.88" size="1.27" layer="96" font="vector"/>
-</instance>
-<instance part="GND3" gate="1" x="492.76" y="48.26" smashed="yes">
-<attribute name="VALUE" x="492.76" y="48.006" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="GND4" gate="1" x="502.92" y="48.26" smashed="yes">
-<attribute name="VALUE" x="502.92" y="48.006" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="GND5" gate="1" x="513.08" y="48.26" smashed="yes">
-<attribute name="VALUE" x="513.08" y="48.006" size="1.778" layer="96" align="top-center"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -17747,21 +17720,6 @@ prevent entering debug mode</text>
 <wire x1="378.46" y1="17.78" x2="373.38" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="17.78" x2="373.38" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C27" gate="G$1" pin="P$2"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="492.76" y1="53.34" x2="492.76" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C28" gate="G$1" pin="P$2"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="502.92" y1="53.34" x2="502.92" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C29" gate="G$1" pin="P$2"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="513.08" y1="53.34" x2="513.08" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V-VCHG" class="0">
@@ -18896,12 +18854,6 @@ prevent entering debug mode</text>
 <label x="441.96" y="129.54" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC12" gate="G$1" pin="P0.02/AIN0"/>
 </segment>
-<segment>
-<pinref part="C27" gate="G$1" pin="P$1"/>
-<wire x1="492.76" y1="60.96" x2="492.76" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="492.76" y1="63.5" x2="495.3" y2="63.5" width="0.1524" layer="91"/>
-<label x="495.3" y="63.5" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="P03" class="0">
 <segment>
@@ -18914,12 +18866,6 @@ prevent entering debug mode</text>
 <label x="441.96" y="127" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC12" gate="G$1" pin="P0.03/AIN1"/>
 </segment>
-<segment>
-<pinref part="C28" gate="G$1" pin="P$1"/>
-<wire x1="502.92" y1="60.96" x2="502.92" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="502.92" y1="63.5" x2="505.46" y2="63.5" width="0.1524" layer="91"/>
-<label x="505.46" y="63.5" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="P04" class="0">
 <segment>
@@ -18931,12 +18877,6 @@ prevent entering debug mode</text>
 <wire x1="439.42" y1="124.46" x2="441.96" y2="124.46" width="0.1524" layer="91"/>
 <label x="441.96" y="124.46" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC12" gate="G$1" pin="P0.04/AIN2"/>
-</segment>
-<segment>
-<pinref part="C29" gate="G$1" pin="P$1"/>
-<wire x1="513.08" y1="60.96" x2="513.08" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="513.08" y1="63.5" x2="515.62" y2="63.5" width="0.1524" layer="91"/>
-<label x="515.62" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

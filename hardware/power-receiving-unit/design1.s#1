@@ -16987,7 +16987,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$18" library="ble-antenna" deviceset="BLE-ANT" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R6" library="microbuilder" deviceset="RESISTOR" device="0402" value="10k"/>
-<part name="SENS" library="microbuilder" deviceset="HEADER-1X4" device="ROUND"/>
+<part name="SENSOR" library="microbuilder" deviceset="HEADER-1X4" device="ROUND"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP3" library="microbuilder" deviceset="HEADER-1X2" device="ROUND"/>
 <part name="U$23" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
@@ -17540,7 +17540,7 @@ prevent entering debug mode</text>
 <attribute name="NAME" x="290.068" y="106.68" size="1.27" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="295.275" y="106.68" size="1.27" layer="96" font="vector" rot="R90"/>
 </instance>
-<instance part="SENS" gate="A" x="381" y="20.32" smashed="yes">
+<instance part="SENSOR" gate="A" x="381" y="20.32" smashed="yes">
 <attribute name="NAME" x="374.65" y="28.575" size="1.778" layer="95"/>
 <attribute name="VALUE" x="374.65" y="12.7" size="1.778" layer="96"/>
 </instance>
@@ -17743,7 +17743,7 @@ prevent entering debug mode</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SENS" gate="A" pin="4"/>
+<pinref part="SENSOR" gate="A" pin="4"/>
 <wire x1="378.46" y1="17.78" x2="373.38" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="17.78" x2="373.38" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -18406,7 +18406,7 @@ prevent entering debug mode</text>
 <pinref part="IC12" gate="G$1" pin="P0.27"/>
 </segment>
 <segment>
-<pinref part="SENS" gate="A" pin="3"/>
+<pinref part="SENSOR" gate="A" pin="3"/>
 <wire x1="378.46" y1="20.32" x2="373.38" y2="20.32" width="0.1524" layer="91"/>
 <label x="373.38" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -18422,7 +18422,7 @@ prevent entering debug mode</text>
 <pinref part="C25" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="SENS" gate="A" pin="2"/>
+<pinref part="SENSOR" gate="A" pin="2"/>
 <wire x1="378.46" y1="22.86" x2="373.38" y2="22.86" width="0.1524" layer="91"/>
 <label x="373.38" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -18791,7 +18791,7 @@ prevent entering debug mode</text>
 </net>
 <net name="VDD_SENS" class="0">
 <segment>
-<pinref part="SENS" gate="A" pin="1"/>
+<pinref part="SENSOR" gate="A" pin="1"/>
 <wire x1="378.46" y1="25.4" x2="373.38" y2="25.4" width="0.1524" layer="91"/>
 <label x="373.38" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
