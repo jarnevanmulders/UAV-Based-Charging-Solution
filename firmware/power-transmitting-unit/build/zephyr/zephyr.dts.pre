@@ -772,7 +772,7 @@
  pwmleds {
   compatible = "pwm-leds";
   pwm_led0: pwm_led_0 {
-   pwms = <&pwm0 0 (((20) * 1000UL) * 1000UL) (1 << 0)>;
+   pwms = <&pwm0 0 ((20) * 1000UL) (0 << 0)>;
   };
  };
 

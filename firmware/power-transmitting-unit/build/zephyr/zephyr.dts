@@ -589,7 +589,7 @@
 	pwmleds {
 		compatible = "pwm-leds";
 		pwm_led0: pwm_led_0 {
-			pwms = < &pwm0 0x0 0x1312d00 0x1 >;
+			pwms = < &pwm0 0x0 0x4e20 0x0 >;
 		};
 	};
 	buttons {

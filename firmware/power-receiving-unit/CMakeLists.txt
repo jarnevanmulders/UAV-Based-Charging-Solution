@@ -12,4 +12,5 @@ endif()
 
 # NORDIC SDK APP START
 target_sources(app PRIVATE src/advertisement/advertisement.c)
+target_sources(app PRIVATE src/adc_update/adc_update.c)
 # NORDIC SDK APP END

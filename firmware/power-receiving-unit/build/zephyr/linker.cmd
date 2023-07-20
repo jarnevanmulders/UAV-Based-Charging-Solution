@@ -232,6 +232,12 @@ __ramfunc_load_start = LOADADDR(.ramfunc);
   KEEP(*(".z_devstate.*"));
                 __device_states_end = .;
         } > RAM AT > FLASH
+ pm_device_slots (NOLOAD) : ALIGN_WITH_INPUT
+ {
+  __pm_device_slots_start = .;
+  KEEP(*(".z_pm_device_slots"));
+  __pm_device_slots_end = .;
+ } > RAM AT > FLASH
  initshell : ALIGN_WITH_INPUT
  {
   __shell_module_start = .;

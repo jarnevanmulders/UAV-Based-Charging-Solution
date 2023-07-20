@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/observer/build/modules/cmsis/CMSIS/Core/cmake_install.cmake")
+  include("C:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/modules/cmsis/CMSIS/Core/cmake_install.cmake")
 endif()
 

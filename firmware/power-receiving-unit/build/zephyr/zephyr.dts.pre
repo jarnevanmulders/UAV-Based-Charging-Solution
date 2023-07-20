@@ -771,22 +771,7 @@
    gpios = <&gpio0 17 (1 << 0)>;
    label = "Green LED 0";
   };
-  led1: led_1 {
-   gpios = <&gpio0 18 (1 << 0)>;
-   label = "Green LED 1";
-  };
-  led2: led_2 {
-   gpios = <&gpio0 19 (1 << 0)>;
-   label = "Green LED 2";
-  };
-  led3: led_3 {
-   gpios = <&gpio0 20 (1 << 0)>;
-   label = "Green LED 3";
-  };
-
-
-
-
+# 69 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts"
   };
 
   pwmleds {
@@ -801,6 +786,10 @@
    usrbutton0: usrbutton_0 {
     gpios = <&gpio0 16 ((1 << 4) | (1 << 0))>;
     label = "Push button switch 0";
+   };
+   wakeup1: wakeup_1 {
+    gpios = <&gpio0 19 ((1 << 4) | (1 << 0))>;
+    label = "Wake up signal";
    };
 # 96 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts"
   };
@@ -853,12 +842,13 @@
   pg0 = &pg0;
   usrled0 = &usrled0;
   led0 = &led0;
-  led1 = &led1;
-  led2 = &led2;
-  led3 = &led3;
+
+
+
 
   pwm-led0 = &pwm_led0;
-  sw0 = &usrbutton0;
+  usrbutton0 = &usrbutton0;
+  wakeup1 = &wakeup1;
 
 
 
@@ -978,6 +968,30 @@
  zephyr,user {
   io-channels = <&adc 0>, <&adc 1>, <&adc 2>;
  };
+
+ gpio-map = <0 0 &gpio0 3 0>,
+      <1 0 &gpio0 4 0>,
+      <2 0 &gpio0 28 0>,
+      <3 0 &gpio0 29 0>,
+      <4 0 &gpio0 30 0>,
+      <5 0 &gpio0 31 0>,
+      <6 0 &gpio0 11 0>,
+      <7 0 &gpio0 12 0>,
+      <8 0 &gpio0 13 0>,
+      <9 0 &gpio0 14 0>,
+      <10 0 &gpio0 15 0>,
+      <11 0 &gpio0 16 0>,
+      <12 0 &gpio0 17 0>,
+      <13 0 &gpio0 18 0>,
+      <14 0 &gpio0 19 0>,
+      <15 0 &gpio0 20 0>,
+      <16 0 &gpio0 22 0>,
+      <17 0 &gpio0 23 0>,
+      <18 0 &gpio0 24 0>,
+      <19 0 &gpio0 25 0>,
+      <20 0 &gpio0 26 0>,
+      <21 0 &gpio0 27 0>;
+ io-channel-map = <0 &adc 1>, <1 &adc 2>, <2 &adc 4>, <3 &adc 5>, <4 &adc 6>, <5 &adc 7>;
 };
 
 &adc {
@@ -1010,7 +1024,7 @@
   zephyr,input-positive = <3>;
   zephyr,resolution = <12>;
  };
-# 71 "c:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-receiving-unit/boards/nrf52832_pru.overlay"
+# 95 "c:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-receiving-unit/boards/nrf52832_pru.overlay"
 };
 # 0 "<command-line>" 2
 # 1 "C:/ncs/v2.4.0/zephyr/misc/empty_file.c"

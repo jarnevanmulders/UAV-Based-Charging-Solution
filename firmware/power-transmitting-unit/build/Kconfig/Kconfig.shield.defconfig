@@ -1,2 +1,2 @@
-osource "c:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/observer/boards/shields/*/Kconfig.defconfig"
+osource "c:/users/jarne/documents/github/iot_energystorage_charger_ble/firmware/power-transmitting-unit/boards/shields/*/Kconfig.defconfig"
 osource "C:/ncs/v2.4.0/nrf/boards/shields/*/Kconfig.defconfig"
