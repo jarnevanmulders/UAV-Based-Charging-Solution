@@ -6,3 +6,17 @@
 # HW design
 
 - [BLE 2.4GHz antenna design](https://www.infineon.com/dgdl/Infineon-AN91445_Antenna_Design_and_RF_Layout_Guidelines-ApplicationNotes-v09_00-EN.pdf)
+
+# SW progress
+
+## Power Receiving Unit PCB
+
+Progress SW features implemented in the PRU firmware.
+
+- [x] Deep sleep mode
+- [x] ADC (read voltages)
+- [x] UART (debugging)
+- [x] ADV BLE messages
+- [ ] GPIO
+- [ ] State diagram
+- [ ] PWM
