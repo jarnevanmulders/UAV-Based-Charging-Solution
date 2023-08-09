@@ -2740,6 +2740,217 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="PowerMagnetics (rev18e)">
+<description>&lt;BR&gt;Wurth Elektronik - EMC Components, Power Magnetics, Signal &amp; Communications&lt;br&gt;&lt;Hr&gt;
+&lt;BR&gt;&lt;BR&gt; 
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-5000&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
+
+&lt;HR&gt;
+Eagle Version 6, Library Revision 2018e, 2018-11-12&lt;br&gt;
+
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="WE-DD_1210/1260/1280_CROSSED">
+<wire x1="-4.7625" y1="-1.5875" x2="-1.905" y2="-1.5978" width="0.127" layer="51"/>
+<wire x1="-1.905" y1="-1.5978" x2="-1.905" y2="-2.8575" width="0.127" layer="51"/>
+<wire x1="-1.905" y1="-2.8575" x2="0.9525" y2="-2.8575" width="0.127" layer="51"/>
+<wire x1="0.9525" y1="-2.8575" x2="0.9525" y2="1.5875" width="0.127" layer="51"/>
+<wire x1="0.9525" y1="1.5875" x2="4.95" y2="1.5875" width="0.127" layer="51"/>
+<wire x1="-4.8036" y1="1.5875" x2="-0.635" y2="1.5875" width="0.127" layer="51"/>
+<wire x1="-0.635" y1="1.5875" x2="-0.635" y2="-1.2903" width="0.127" layer="51"/>
+<wire x1="-0.635" y1="-1.2903" x2="4.95" y2="-1.2903" width="0.127" layer="51"/>
+<wire x1="-6.25" y1="6.25" x2="6.25" y2="6.25" width="0.127" layer="21"/>
+<wire x1="6.25" y1="6.25" x2="6.25" y2="-6.25" width="0.127" layer="51"/>
+<wire x1="6.25" y1="-6.25" x2="-6.25" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-6.25" x2="-6.25" y2="6.25" width="0.127" layer="51"/>
+<circle x="-5.59" y="3.71" radius="0.25" width="0.127" layer="21"/>
+<smd name="1" x="-4.975" y="1.75" dx="3.85" dy="2.5" layer="1"/>
+<smd name="4" x="4.975" y="1.75" dx="3.85" dy="2.5" layer="1"/>
+<smd name="2" x="-4.975" y="-1.75" dx="3.85" dy="2.5" layer="1"/>
+<smd name="3" x="4.975" y="-1.75" dx="3.85" dy="2.5" layer="1"/>
+<text x="-3.89" y="-8.2175" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="7.1375" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.6397" y1="0.0868" x2="0.3604" y2="0.4869" layer="51" rot="R90"/>
+<rectangle x1="-0.0736" y1="0.0457" x2="1.9265" y2="0.4458" layer="51" rot="R90"/>
+<polygon width="0.127" layer="39">
+<vertex x="-7.25" y="-6.5"/>
+<vertex x="-7.25" y="6.5"/>
+<vertex x="7.25" y="6.5"/>
+<vertex x="7.25" y="-6.5"/>
+</polygon>
+<wire x1="-6.25" y1="3.23" x2="-6.25" y2="6.25" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-3.23" x2="-6.25" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-6.25" x2="6.25" y2="-3.23" width="0.127" layer="21"/>
+<wire x1="6.25" y1="6.25" x2="6.25" y2="3.23" width="0.127" layer="21"/>
+<text x="-4.08" y="3.81" size="1.27" layer="48">1</text>
+<text x="-4.28" y="-4.73" size="1.27" layer="48">2</text>
+<text x="4.42" y="-4.59" size="1.27" layer="48">3</text>
+<text x="4.59" y="3.8" size="1.27" layer="48">4</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CM2W-H_1">
+<description>&lt;b&gt;WE-CMBH&lt;br&gt;
+Common Mode Power Line Choke</description>
+<pin name="1" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<text x="-4.74" y="3.51" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.44" y="-5.12" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="-4.445" y1="0.635" x2="4.445" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="-0.635" x2="4.445" y2="-0.635" width="0.254" layer="94"/>
+<circle x="-5.3" y="0.7" radius="0.1" width="0.254" layer="94"/>
+<circle x="-5.3" y="-0.6" radius="0.1" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WE-DD_1260_CROSSED" prefix="L" uservalue="yes">
+<description>&lt;b&gt; WE-DD SMD Shielded Coupled Inductor
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Characteristics 
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt;&lt;/b&gt; 1:1 transformer 
+&lt;br&gt;
+&lt;br&gt; Double inductor with two identical windings 
+&lt;br&gt;
+&lt;br&gt; 4 different sizes available 
+&lt;br&gt; 
+&lt;br&gt; Operating temperature: –40 ºC to +125 ºC 
+&lt;br&gt;
+&lt;br&gt; Recommended solder profile: Reflow 
+&lt;br&gt; 
+&lt;br&gt; Custom designs on request 
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Applications 
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt; For SEPIC and CUK topologies 
+&lt;br&gt;
+&lt;br&gt; Flyback applications 
+&lt;br&gt;
+&lt;br&gt; Switching regulators with second, unregulated output voltages 
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_WE-DD.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/images/v2/Family_WE-DD.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WE-DD"&gt;http://katalog.we-online.de/en/pbs/WE-DD&lt;/a&gt;&lt;p&gt;
+
+&lt;BR&gt;Updated by  Dan Xu 2014-06-10&lt;br&gt;
+2014 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="CM2W-H_1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WE-DD_1210/1260/1280_CROSSED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="4"/>
+<connect gate="G$1" pin="4" pad="2"/>
+</connects>
+<technologies>
+<technology name="_744871004">
+<attribute name="WE-NUMBER" value="744971004/4,7uH" constant="no"/>
+</technology>
+<technology name="_744871006">
+<attribute name="WE-NUMBER" value="744871006/6,8uH" constant="no"/>
+</technology>
+<technology name="_744871100">
+<attribute name="WE-NUMBER" value="744871100/10uH" constant="no"/>
+</technology>
+<technology name="_744871101">
+<attribute name="WE-NUMBER" value="744871101/100uH" constant="no"/>
+</technology>
+<technology name="_744871220">
+<attribute name="WE-NUMBER" value="744871220/22uH" constant="no"/>
+</technology>
+<technology name="_744871330">
+<attribute name="WE-NUMBER" value="744871330/33uH" constant="no"/>
+</technology>
+<technology name="_744871470">
+<attribute name="WE-NUMBER" value="744871470/47uH" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2808,6 +3019,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
 <part name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
 <part name="U$21" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
+<part name="L2" library="PowerMagnetics (rev18e)" deviceset="WE-DD_1260_CROSSED" device="" technology="_744871100"/>
 </parts>
 <sheets>
 <sheet>
@@ -2838,6 +3050,8 @@ EPC8010 rectricted to max. 6V</text>
 <wire x1="-43.18" y1="63.5" x2="-43.18" y2="99.06" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="55.88" y1="63.5" x2="55.88" y2="99.06" width="0.1524" layer="95" style="shortdash"/>
 <text x="-40.64" y="96.52" size="1.27" layer="95">buck (boost) converter</text>
+<text x="-185.42" y="53.34" size="1.27" layer="95">Input voltage will vary during flight</text>
+<text x="-185.42" y="50.8" size="1.27" layer="95">approx. 10 - 16.8 V</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="27.94" y="-30.48" smashed="yes">
@@ -3044,6 +3258,10 @@ EPC8010 rectricted to max. 6V</text>
 </instance>
 <instance part="U$21" gate="G$1" x="-157.48" y="40.64" smashed="yes">
 <attribute name="VALUE" x="-157.48" y="40.386" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="L2" gate="G$1" x="7.62" y="78.74" smashed="yes">
+<attribute name="NAME" x="2.88" y="82.25" size="1.778" layer="95"/>
+<attribute name="VALUE" x="3.18" y="73.62" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
