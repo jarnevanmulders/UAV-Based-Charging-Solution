@@ -3612,6 +3612,633 @@ Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WE-DD"&gt;http://kat
 </deviceset>
 </devicesets>
 </library>
+<library name="Kondensatoren (rev17a)">
+<description>&lt;BR&gt;Wurth Elektronik - Electrolytic Capacitors,Ceramic Capacitors &amp; Film Capacitors&lt;br&gt;&lt;Hr&gt;
+
+&lt;BR&gt;
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-5000&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
+
+Eagle Version 6, Library Revision 2017a, 2017-05-18&lt;br&gt;
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="WCAP-CSGP_0805_REFLOW">
+<description>&lt;b&gt;WCAP-CSGP_0805
+&lt;br&gt;&lt;br&gt;Solder type: Reflow
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;size code LxW; 2 x 1.25 ;</description>
+<smd name="1" x="-0.95" y="0" dx="0.9" dy="1.3" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="0.9" dy="1.3" layer="1"/>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="0.9" x2="1.65" y2="0.9" width="0.127" layer="39"/>
+<wire x1="1.65" y1="0.9" x2="1.65" y2="-0.9" width="0.127" layer="39"/>
+<wire x1="-1.65" y1="-0.9" x2="-1.65" y2="0.9" width="0.127" layer="39"/>
+<text x="-1" y="1.3" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1" y="-1.5" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="-0.9" x2="1.65" y2="-0.9" width="0.127" layer="39"/>
+<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
+</package>
+<package name="WCAP-CSGP_0805_WAVE">
+<description>&lt;b&gt;WCAP-CSGP_0805
+&lt;br&gt;
+&lt;br&gt;Solder type: Wave
+
+&lt;br&gt;&lt;br&gt;&lt;/b&gt;size code LxW: 2 x 1.25 ;</description>
+<smd name="1" x="-1.15" y="0" dx="0.9" dy="1.3" layer="1"/>
+<smd name="2" x="1.15" y="0" dx="0.9" dy="1.3" layer="1"/>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.625" x2="-0.7" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="-0.7" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="0.7" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="0.7" y1="0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1.85" y1="0.9" x2="1.85" y2="0.9" width="0.127" layer="39"/>
+<wire x1="1.85" y1="0.9" x2="1.85" y2="-0.9" width="0.127" layer="39"/>
+<wire x1="-1.85" y1="-0.9" x2="-1.85" y2="0.9" width="0.127" layer="39"/>
+<text x="-0.9" y="1.3" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9" y="-1.5" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-0.7" y1="0.625" x2="0.7" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1.85" y1="-0.9" x2="1.85" y2="-0.9" width="0.127" layer="39"/>
+<wire x1="-0.7" y1="-0.625" x2="0.7" y2="-0.625" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="C_NON-POLARIZED">
+<text x="2.794" y="4.191" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.794" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<rectangle x1="-1.905" y1="1.905" x2="1.905" y2="2.54" layer="94"/>
+<rectangle x1="-1.905" y1="0" x2="1.905" y2="0.635" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WCAP-CSGP_0805" prefix="C" uservalue="yes">
+<description>&lt;b&gt; WCAP-CSGP Ceramic Capacitors
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt;Characteristics
+&lt;/b&gt;&lt;br&gt;
+&lt;/b&gt;&lt;br&gt;Multilayer Ceramic Chip Capacitor
+&lt;br&gt;Recommended soldering:Reflow, for 0603 and 0805 wave soldering is also allowed
+&lt;br&gt;Operating temperature:-55 °C to +125 °C;
+&lt;br&gt;Ceramic characteristics: Class I - NPO ; Class II -X7R, X5R
+&lt;br&gt;High performance ceramic
+&lt;br&gt;High capacitance stability
+&lt;br&gt;Minimal aging 
+&lt;br&gt;Termination:Cu/Ni/Sn
+&lt;br&gt;
+
+
+&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/eisos/WCAP-CSGP_pf2.jpg" title="Enlarge picture"&gt;
+&lt;img src="http://katalog.we-online.de/media/thumbs2/eisos/thb_WCAP-CSGP_pf2.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WCAP-CSGP-0805?"&gt;http://katalog.we-online.de/en/pbs/WCAP-CSGP-0805?
+&lt;/a&gt;&lt;p&gt;Created:  2015-01-28
+&lt;br&gt;2015 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="C_NON-POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_REFLOW" package="WCAP-CSGP_0805_REFLOW">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="_885012006018"/>
+<technology name="_885012006082"/>
+<technology name="_885012007001"/>
+<technology name="_885012007002"/>
+<technology name="_885012007003"/>
+<technology name="_885012007004"/>
+<technology name="_885012007005"/>
+<technology name="_885012007006"/>
+<technology name="_885012007007"/>
+<technology name="_885012007008"/>
+<technology name="_885012007009"/>
+<technology name="_885012007010"/>
+<technology name="_885012007011"/>
+<technology name="_885012007012"/>
+<technology name="_885012007013"/>
+<technology name="_885012007014"/>
+<technology name="_885012007015"/>
+<technology name="_885012007016"/>
+<technology name="_885012007017"/>
+<technology name="_885012007018"/>
+<technology name="_885012007019"/>
+<technology name="_885012007020"/>
+<technology name="_885012007021"/>
+<technology name="_885012007022"/>
+<technology name="_885012007023"/>
+<technology name="_885012007024"/>
+<technology name="_885012007025"/>
+<technology name="_885012007026"/>
+<technology name="_885012007027"/>
+<technology name="_885012007028"/>
+<technology name="_885012007029"/>
+<technology name="_885012007030"/>
+<technology name="_885012007031"/>
+<technology name="_885012007032"/>
+<technology name="_885012007033"/>
+<technology name="_885012007034"/>
+<technology name="_885012007035"/>
+<technology name="_885012007036"/>
+<technology name="_885012007037"/>
+<technology name="_885012007038"/>
+<technology name="_885012007039"/>
+<technology name="_885012007040"/>
+<technology name="_885012007041"/>
+<technology name="_885012007042"/>
+<technology name="_885012007043"/>
+<technology name="_885012007044"/>
+<technology name="_885012007045"/>
+<technology name="_885012007046"/>
+<technology name="_885012007047"/>
+<technology name="_885012007048"/>
+<technology name="_885012007049"/>
+<technology name="_885012007050"/>
+<technology name="_885012007051"/>
+<technology name="_885012007052"/>
+<technology name="_885012007053"/>
+<technology name="_885012007054"/>
+<technology name="_885012007055"/>
+<technology name="_885012007056"/>
+<technology name="_885012007057"/>
+<technology name="_885012007058"/>
+<technology name="_885012007059"/>
+<technology name="_885012007060"/>
+<technology name="_885012007061"/>
+<technology name="_885012007062"/>
+<technology name="_885012007063"/>
+<technology name="_885012007064"/>
+<technology name="_885012007065"/>
+<technology name="_885012007066"/>
+<technology name="_885012007067"/>
+<technology name="_885012007076"/>
+<technology name="_885012007077"/>
+<technology name="_885012007079"/>
+<technology name="_885012007080"/>
+<technology name="_885012007081"/>
+<technology name="_885012007082"/>
+<technology name="_885012007083"/>
+<technology name="_885012007085"/>
+<technology name="_885012007086"/>
+<technology name="_885012007087"/>
+<technology name="_885012007088"/>
+<technology name="_885012007089"/>
+<technology name="_885012007091"/>
+<technology name="_885012007092"/>
+<technology name="_885012007094"/>
+<technology name="_885012007095"/>
+<technology name="_885012007096"/>
+<technology name="_885012007097"/>
+<technology name="_885012007098"/>
+<technology name="_885012007099"/>
+<technology name="_885012007100"/>
+<technology name="_885012007101"/>
+<technology name="_885012107001"/>
+<technology name="_885012107002"/>
+<technology name="_885012107003"/>
+<technology name="_885012107004"/>
+<technology name="_885012107005"/>
+<technology name="_885012107006"/>
+<technology name="_885012107007"/>
+<technology name="_885012107008"/>
+<technology name="_885012107009"/>
+<technology name="_885012107010"/>
+<technology name="_885012107011"/>
+<technology name="_885012107012"/>
+<technology name="_885012107013"/>
+<technology name="_885012107014"/>
+<technology name="_885012107015"/>
+<technology name="_885012107016"/>
+<technology name="_885012107017"/>
+<technology name="_885012107018"/>
+<technology name="_885012207001"/>
+<technology name="_885012207002"/>
+<technology name="_885012207003"/>
+<technology name="_885012207004"/>
+<technology name="_885012207005"/>
+<technology name="_885012207006"/>
+<technology name="_885012207007"/>
+<technology name="_885012207008"/>
+<technology name="_885012207009"/>
+<technology name="_885012207010"/>
+<technology name="_885012207011"/>
+<technology name="_885012207012"/>
+<technology name="_885012207013"/>
+<technology name="_885012207014"/>
+<technology name="_885012207015"/>
+<technology name="_885012207016"/>
+<technology name="_885012207017"/>
+<technology name="_885012207018"/>
+<technology name="_885012207019"/>
+<technology name="_885012207020"/>
+<technology name="_885012207021"/>
+<technology name="_885012207022"/>
+<technology name="_885012207023"/>
+<technology name="_885012207024"/>
+<technology name="_885012207025"/>
+<technology name="_885012207026"/>
+<technology name="_885012207027"/>
+<technology name="_885012207028"/>
+<technology name="_885012207029"/>
+<technology name="_885012207030"/>
+<technology name="_885012207031"/>
+<technology name="_885012207032"/>
+<technology name="_885012207033"/>
+<technology name="_885012207034"/>
+<technology name="_885012207035"/>
+<technology name="_885012207036"/>
+<technology name="_885012207037"/>
+<technology name="_885012207038"/>
+<technology name="_885012207039"/>
+<technology name="_885012207040"/>
+<technology name="_885012207041"/>
+<technology name="_885012207042"/>
+<technology name="_885012207043"/>
+<technology name="_885012207044"/>
+<technology name="_885012207045"/>
+<technology name="_885012207046"/>
+<technology name="_885012207047"/>
+<technology name="_885012207048"/>
+<technology name="_885012207049"/>
+<technology name="_885012207050"/>
+<technology name="_885012207051"/>
+<technology name="_885012207052"/>
+<technology name="_885012207053"/>
+<technology name="_885012207054"/>
+<technology name="_885012207055"/>
+<technology name="_885012207056"/>
+<technology name="_885012207057"/>
+<technology name="_885012207058"/>
+<technology name="_885012207059"/>
+<technology name="_885012207060"/>
+<technology name="_885012207061"/>
+<technology name="_885012207062"/>
+<technology name="_885012207063"/>
+<technology name="_885012207064"/>
+<technology name="_885012207065"/>
+<technology name="_885012207066"/>
+<technology name="_885012207067"/>
+<technology name="_885012207068"/>
+<technology name="_885012207069"/>
+<technology name="_885012207070"/>
+<technology name="_885012207071"/>
+<technology name="_885012207072"/>
+<technology name="_885012207073"/>
+<technology name="_885012207074"/>
+<technology name="_885012207075"/>
+<technology name="_885012207076"/>
+<technology name="_885012207077"/>
+<technology name="_885012207078"/>
+<technology name="_885012207079"/>
+<technology name="_885012207080"/>
+<technology name="_885012207081"/>
+<technology name="_885012207082"/>
+<technology name="_885012207083"/>
+<technology name="_885012207084"/>
+<technology name="_885012207085"/>
+<technology name="_885012207086"/>
+<technology name="_885012207087"/>
+<technology name="_885012207088"/>
+<technology name="_885012207089"/>
+<technology name="_885012207090"/>
+<technology name="_885012207091"/>
+<technology name="_885012207092"/>
+<technology name="_885012207093"/>
+<technology name="_885012207094"/>
+<technology name="_885012207095"/>
+<technology name="_885012207096"/>
+<technology name="_885012207097"/>
+<technology name="_885012207098"/>
+<technology name="_885012207099"/>
+<technology name="_885012207100"/>
+<technology name="_885012207101"/>
+<technology name="_885012207102"/>
+<technology name="_885012207103"/>
+<technology name="_885012207110"/>
+<technology name="_885012207111"/>
+<technology name="_885012207113"/>
+<technology name="_885012207114"/>
+<technology name="_885012207115"/>
+<technology name="_885012207116"/>
+<technology name="_885012207117"/>
+<technology name="_885012207119"/>
+<technology name="_885012207120"/>
+<technology name="_885012207121"/>
+<technology name="_885012207122"/>
+<technology name="_885012207123"/>
+<technology name="_885012207125"/>
+<technology name="_885012207126"/>
+<technology name="_885012207127"/>
+<technology name="_885012207128"/>
+</technologies>
+</device>
+<device name="_WAVE" package="WCAP-CSGP_0805_WAVE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="_885012006018"/>
+<technology name="_885012006082"/>
+<technology name="_885012007001"/>
+<technology name="_885012007002"/>
+<technology name="_885012007003"/>
+<technology name="_885012007004"/>
+<technology name="_885012007005"/>
+<technology name="_885012007006"/>
+<technology name="_885012007007"/>
+<technology name="_885012007008"/>
+<technology name="_885012007009"/>
+<technology name="_885012007010"/>
+<technology name="_885012007011"/>
+<technology name="_885012007012"/>
+<technology name="_885012007013"/>
+<technology name="_885012007014"/>
+<technology name="_885012007015"/>
+<technology name="_885012007016"/>
+<technology name="_885012007017"/>
+<technology name="_885012007018"/>
+<technology name="_885012007019"/>
+<technology name="_885012007020"/>
+<technology name="_885012007021"/>
+<technology name="_885012007022"/>
+<technology name="_885012007023"/>
+<technology name="_885012007024"/>
+<technology name="_885012007025"/>
+<technology name="_885012007026"/>
+<technology name="_885012007027"/>
+<technology name="_885012007028"/>
+<technology name="_885012007029"/>
+<technology name="_885012007030"/>
+<technology name="_885012007031"/>
+<technology name="_885012007032"/>
+<technology name="_885012007033"/>
+<technology name="_885012007034"/>
+<technology name="_885012007035"/>
+<technology name="_885012007036"/>
+<technology name="_885012007037"/>
+<technology name="_885012007038"/>
+<technology name="_885012007039"/>
+<technology name="_885012007040"/>
+<technology name="_885012007041"/>
+<technology name="_885012007042"/>
+<technology name="_885012007043"/>
+<technology name="_885012007044"/>
+<technology name="_885012007045"/>
+<technology name="_885012007046"/>
+<technology name="_885012007047"/>
+<technology name="_885012007048"/>
+<technology name="_885012007049"/>
+<technology name="_885012007050"/>
+<technology name="_885012007051"/>
+<technology name="_885012007052"/>
+<technology name="_885012007053"/>
+<technology name="_885012007054"/>
+<technology name="_885012007055"/>
+<technology name="_885012007056"/>
+<technology name="_885012007057"/>
+<technology name="_885012007058"/>
+<technology name="_885012007059"/>
+<technology name="_885012007060"/>
+<technology name="_885012007061"/>
+<technology name="_885012007062"/>
+<technology name="_885012007063"/>
+<technology name="_885012007064"/>
+<technology name="_885012007065"/>
+<technology name="_885012007066"/>
+<technology name="_885012007067"/>
+<technology name="_885012007076"/>
+<technology name="_885012007077"/>
+<technology name="_885012007079"/>
+<technology name="_885012007080"/>
+<technology name="_885012007081"/>
+<technology name="_885012007082"/>
+<technology name="_885012007083"/>
+<technology name="_885012007085"/>
+<technology name="_885012007086"/>
+<technology name="_885012007087"/>
+<technology name="_885012007088"/>
+<technology name="_885012007089"/>
+<technology name="_885012007091"/>
+<technology name="_885012007092"/>
+<technology name="_885012007094"/>
+<technology name="_885012007095"/>
+<technology name="_885012007096"/>
+<technology name="_885012007097"/>
+<technology name="_885012007098"/>
+<technology name="_885012007099"/>
+<technology name="_885012007100"/>
+<technology name="_885012007101"/>
+<technology name="_885012107001"/>
+<technology name="_885012107002"/>
+<technology name="_885012107003"/>
+<technology name="_885012107004"/>
+<technology name="_885012107005"/>
+<technology name="_885012107006"/>
+<technology name="_885012107007"/>
+<technology name="_885012107008"/>
+<technology name="_885012107009"/>
+<technology name="_885012107010"/>
+<technology name="_885012107011"/>
+<technology name="_885012107012"/>
+<technology name="_885012107013"/>
+<technology name="_885012107014"/>
+<technology name="_885012107015"/>
+<technology name="_885012107016"/>
+<technology name="_885012107017"/>
+<technology name="_885012107018"/>
+<technology name="_885012207001"/>
+<technology name="_885012207002"/>
+<technology name="_885012207003"/>
+<technology name="_885012207004"/>
+<technology name="_885012207005"/>
+<technology name="_885012207006"/>
+<technology name="_885012207007"/>
+<technology name="_885012207008"/>
+<technology name="_885012207009"/>
+<technology name="_885012207010"/>
+<technology name="_885012207011"/>
+<technology name="_885012207012"/>
+<technology name="_885012207013"/>
+<technology name="_885012207014"/>
+<technology name="_885012207015"/>
+<technology name="_885012207016"/>
+<technology name="_885012207017"/>
+<technology name="_885012207018"/>
+<technology name="_885012207019"/>
+<technology name="_885012207020"/>
+<technology name="_885012207021"/>
+<technology name="_885012207022"/>
+<technology name="_885012207023"/>
+<technology name="_885012207024"/>
+<technology name="_885012207025"/>
+<technology name="_885012207026"/>
+<technology name="_885012207027"/>
+<technology name="_885012207028"/>
+<technology name="_885012207029"/>
+<technology name="_885012207030"/>
+<technology name="_885012207031"/>
+<technology name="_885012207032"/>
+<technology name="_885012207033"/>
+<technology name="_885012207034"/>
+<technology name="_885012207035"/>
+<technology name="_885012207036"/>
+<technology name="_885012207037"/>
+<technology name="_885012207038"/>
+<technology name="_885012207039"/>
+<technology name="_885012207040"/>
+<technology name="_885012207041"/>
+<technology name="_885012207042"/>
+<technology name="_885012207043"/>
+<technology name="_885012207044"/>
+<technology name="_885012207045"/>
+<technology name="_885012207046"/>
+<technology name="_885012207047"/>
+<technology name="_885012207048"/>
+<technology name="_885012207049"/>
+<technology name="_885012207050"/>
+<technology name="_885012207051"/>
+<technology name="_885012207052"/>
+<technology name="_885012207053"/>
+<technology name="_885012207054"/>
+<technology name="_885012207055"/>
+<technology name="_885012207056"/>
+<technology name="_885012207057"/>
+<technology name="_885012207058"/>
+<technology name="_885012207059"/>
+<technology name="_885012207060"/>
+<technology name="_885012207061"/>
+<technology name="_885012207062"/>
+<technology name="_885012207063"/>
+<technology name="_885012207064"/>
+<technology name="_885012207065"/>
+<technology name="_885012207066"/>
+<technology name="_885012207067"/>
+<technology name="_885012207068"/>
+<technology name="_885012207069"/>
+<technology name="_885012207070"/>
+<technology name="_885012207071"/>
+<technology name="_885012207072"/>
+<technology name="_885012207073"/>
+<technology name="_885012207074"/>
+<technology name="_885012207075"/>
+<technology name="_885012207076"/>
+<technology name="_885012207077"/>
+<technology name="_885012207078"/>
+<technology name="_885012207079"/>
+<technology name="_885012207080"/>
+<technology name="_885012207081"/>
+<technology name="_885012207082"/>
+<technology name="_885012207083"/>
+<technology name="_885012207084"/>
+<technology name="_885012207085"/>
+<technology name="_885012207086"/>
+<technology name="_885012207087"/>
+<technology name="_885012207088"/>
+<technology name="_885012207089"/>
+<technology name="_885012207090"/>
+<technology name="_885012207091"/>
+<technology name="_885012207092"/>
+<technology name="_885012207093"/>
+<technology name="_885012207094"/>
+<technology name="_885012207095"/>
+<technology name="_885012207096"/>
+<technology name="_885012207097"/>
+<technology name="_885012207098"/>
+<technology name="_885012207099"/>
+<technology name="_885012207100"/>
+<technology name="_885012207101"/>
+<technology name="_885012207102"/>
+<technology name="_885012207103"/>
+<technology name="_885012207110"/>
+<technology name="_885012207111"/>
+<technology name="_885012207113"/>
+<technology name="_885012207114"/>
+<technology name="_885012207115"/>
+<technology name="_885012207116"/>
+<technology name="_885012207117"/>
+<technology name="_885012207119"/>
+<technology name="_885012207120"/>
+<technology name="_885012207121"/>
+<technology name="_885012207122"/>
+<technology name="_885012207123"/>
+<technology name="_885012207125"/>
+<technology name="_885012207126"/>
+<technology name="_885012207127"/>
+<technology name="_885012207128"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3722,6 +4349,7 @@ Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WE-DD"&gt;http://kat
 <part name="L3" library="PowerMagnetics (rev18e)" deviceset="WE-DD_1280" device="" technology="_744873150"/>
 <part name="U$34" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="U1" library="ADS1115IDGST" deviceset="ADS1115IDGST" device=""/>
+<part name="C23" library="Kondensatoren (rev17a)" deviceset="WCAP-CSGP_0805" device="_WAVE" technology="_885012207103"/>
 </parts>
 <sheets>
 <sheet>
@@ -4126,6 +4754,10 @@ EPC8010 rectricted to max. 6V</text>
 <instance part="U1" gate="A" x="-96.52" y="314.96" smashed="yes">
 <attribute name="NAME" x="-101.8886" y="336.816" size="2.08636875" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="-99.19075" y="285.1239" size="2.08573125" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="C23" gate="G$1" x="-96.52" y="248.92" smashed="yes">
+<attribute name="NAME" x="-93.726" y="253.111" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-93.726" y="245.491" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>

@@ -1,7 +1,7 @@
-C:\Users\Jarne\Documents\GitHub\IoT_energystorage_charger_ble\firmware\power-receiving-unit\build\Kconfig\Kconfig.dts
-C:\Users\Jarne\Documents\GitHub\IoT_energystorage_charger_ble\firmware\power-receiving-unit\build\Kconfig\Kconfig.modules
-C:\Users\Jarne\Documents\GitHub\IoT_energystorage_charger_ble\firmware\power-receiving-unit\build\Kconfig\Kconfig.shield
-C:\Users\Jarne\Documents\GitHub\IoT_energystorage_charger_ble\firmware\power-receiving-unit\build\Kconfig\Kconfig.shield.defconfig
+C:\Users\jarne\Documents\GitHub\IoT_energystorage_charger_ble\firmware\power-receiving-unit\build\Kconfig\Kconfig.dts
+C:\Users\jarne\Documents\GitHub\IoT_energystorage_charger_ble\firmware\power-receiving-unit\build\Kconfig\Kconfig.modules
+C:\Users\jarne\Documents\GitHub\IoT_energystorage_charger_ble\firmware\power-receiving-unit\build\Kconfig\Kconfig.shield
+C:\Users\jarne\Documents\GitHub\IoT_energystorage_charger_ble\firmware\power-receiving-unit\build\Kconfig\Kconfig.shield.defconfig
 C:\ncs\toolchains\31f4403e35\opt\zephyr-sdk\cmake\zephyr\Kconfig
 C:\ncs\v2.4.0\modules\debug\TraceRecorder\config\Kconfig
 C:\ncs\v2.4.0\modules\debug\TraceRecorder\kernelports\Zephyr\Kconfig

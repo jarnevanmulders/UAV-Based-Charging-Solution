@@ -771,7 +771,10 @@
    gpios = <&gpio0 17 (1 << 0)>;
    label = "Green LED 0";
   };
-# 69 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts"
+  sensen0: sensen_0 {
+   gpios = <&gpio0 20 (0 << 0)>;
+   label = "Control sensor VDD enable";
+  };
   };
 
   pwmleds {
@@ -791,7 +794,7 @@
     gpios = <&gpio0 19 ((1 << 4) | (1 << 0))>;
     label = "Wake up signal";
    };
-# 96 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts"
+# 84 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts"
   };
 
   arduino_header: connector {
@@ -839,19 +842,13 @@
   en1 = &en1;
   en2 = &en2;
   bucken0 = &bucken0;
+  sensen0 = &sensen0;
   pg0 = &pg0;
   usrled0 = &usrled0;
   led0 = &led0;
-
-
-
-
   pwm-led0 = &pwm_led0;
   usrbutton0 = &usrbutton0;
   wakeup1 = &wakeup1;
-
-
-
   bootloader-led0 = &led0;
 
   mcuboot-led0 = &led0;
@@ -1018,13 +1015,14 @@
 
  channel@2 {
   reg = <2>;
-  zephyr,gain = "ADC_GAIN_1_6";
+  zephyr,gain = "ADC_GAIN_1_2";
   zephyr,reference = "ADC_REF_INTERNAL";
   zephyr,acquisition-time = <0>;
   zephyr,input-positive = <3>;
   zephyr,resolution = <12>;
+  zephyr,oversampling = <4>;
  };
-# 95 "c:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-receiving-unit/boards/nrf52832_pru.overlay"
+# 96 "c:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-receiving-unit/boards/nrf52832_pru.overlay"
 };
 # 0 "<command-line>" 2
 # 1 "C:/ncs/v2.4.0/zephyr/misc/empty_file.c"

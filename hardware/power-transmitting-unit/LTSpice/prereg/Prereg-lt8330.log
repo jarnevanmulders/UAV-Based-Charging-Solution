@@ -1,0 +1,51 @@
+Circuit: * C:\Users\jarne\Documents\GitHub\IoT_energystorage_charger_ble\hardware\power-transmitting-unit\LTSpice\prereg\Prereg-lt8330.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+vernier = 0.5
+Gmin = 2.7607e-07
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195312
+vernier = 0.000976562
+vernier = 0.000488281
+Gmin = 2.7607e-07
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Ignoring empty pin current: Ix(u1:2)
+Ignoring empty pin current: Ix(u1:4)
+Ignoring empty pin current: Ix(u1:2)
+Ignoring empty pin current: Ix(u1:4)
+
+Date: Thu Aug 10 09:03:48 2023
+Total elapsed time: 10.962 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 797633
+traniter = 796112
+tranpoints = 244468
+accept = 192359
+rejected = 52109
+matrix size = 44
+fillins = 2
+solver = Normal
+Avg thread counts: 1.0/1.0/1.0/1.0
+Matrix Compiler1:      87 opcodes  0.6/[0.4]/0.5
+Matrix Compiler2: off  [0.3]/0.6/0.4
+

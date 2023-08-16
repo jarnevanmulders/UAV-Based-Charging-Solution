@@ -996,7 +996,7 @@ design rules under a new name.</description>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search?q=74LVC1G00GW&amp;ref=eda" x="-61.25" y="-30.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-64.7077" y="-34.949240625" size="2.084790625" layer="27" ratio="10" rot="SR0"/>
 </element>
-<element name="IC6" library="74LVC1G00GW" package="SOT65P210X110-5N" value="74LVC1G00GW" x="-61.25" y="-37.25" smashed="yes">
+<element name="IC6" library="74LVC1G00GW" package="SOT65P210X110-5N" value="74LVC1G08GW" x="-61.25" y="-37.25" smashed="yes">
 <attribute name="AVAILABILITY" value="In Stock" x="-61.25" y="-37.25" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" NAND Gate IC 1 Channel - 5-TSSOP " x="-61.25" y="-37.25" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Nexperia USA" x="-61.25" y="-37.25" size="1.778" layer="27" display="off"/>
@@ -1310,6 +1310,8 @@ design rules under a new name.</description>
 <contactref element="R6" pad="2"/>
 <contactref element="IC5" pad="2"/>
 <contactref element="IC6" pad="2"/>
+<contactref element="TP5" pad="TP"/>
+<wire x1="-63.85" y1="-52.75" x2="-64.25" y2="-57" width="0" layer="19" extent="1-1"/>
 <wire x1="-62.2152" y1="-37.25" x2="-63.85" y2="-52.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-62.2152" y1="-30.5" x2="-62.2152" y2="-37.25" width="0" layer="19" extent="1-1"/>
 </signal>

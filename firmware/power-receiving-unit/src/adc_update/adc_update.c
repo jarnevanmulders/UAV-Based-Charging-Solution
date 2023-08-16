@@ -31,7 +31,6 @@ void adc_read_start(void){
 	}
 
 
-
 	while (1)
 	{
 		// Check every 100 ms
@@ -65,7 +64,13 @@ void update_adc_readings(struct adc_sequence *sequence){
 		val_mv = (int32_t)buf;
 		err = adc_raw_to_millivolts_dt(&adc_channels[i], &val_mv);
 
-		// Convert ??? voltage divider ToDo
+		// Conversion (take into account voltage dividers)
+		switch (i){
+			case 0: val_mv = (int32_t)(val_mv * 2247/47); break;
+			case 1: break;
+			case 2: val_mv = (int32_t)(val_mv * (10/100.0) / 0.1 - 20); break; // 20 mA offset
+			default: break;;
+		}
 
 		// Store in global variable via pointer array
 		*adc_results_m [i] = val_mv;
