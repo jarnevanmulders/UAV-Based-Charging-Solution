@@ -763,16 +763,12 @@
    gpios = <&gpio0 20 (1 << 0)>;
    label = "Green LED 3";
   };
-  led4: led_4 {
-   gpios = <&gpio0 21 (1 << 0)>;
-   label = "Green LED 4";
-  };
  };
 
  pwmleds {
   compatible = "pwm-leds";
   pwm_led0: pwm_led_0 {
-   pwms = <&pwm0 0 ((20) * 1000UL) (0 << 0)>;
+   pwms = <&pwm0 0 (((20) * 1000UL) * 1000UL) (1 << 0)>;
   };
  };
 
@@ -948,12 +944,6 @@ arduino_spi: &spi2 {
    label = "storage";
    reg = <0x0007a000 0x00006000>;
   };
- };
-};
-
-&i2c0_default {
- group1 {
-  psels = <((((((0) * 32U) + (26)) & 0x7FU) << 0U) | ((12U & 0xFFFFU) << 16U))>;
  };
 };
 # 0 "<command-line>" 2

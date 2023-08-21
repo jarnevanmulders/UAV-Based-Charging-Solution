@@ -459,7 +459,7 @@
 		i2c0_default: i2c0_default {
 			phandle = < 0x4 >;
 			group1 {
-				psels = < 0xc001a >;
+				psels = < 0xc001a >, < 0xb001b >;
 			};
 		};
 		i2c0_sleep: i2c0_sleep {
@@ -581,15 +581,11 @@
 			gpios = < &gpio0 0x14 0x1 >;
 			label = "Green LED 3";
 		};
-		led4: led_4 {
-			gpios = < &gpio0 0x15 0x1 >;
-			label = "Green LED 4";
-		};
 	};
 	pwmleds {
 		compatible = "pwm-leds";
 		pwm_led0: pwm_led_0 {
-			pwms = < &pwm0 0x0 0x4e20 0x0 >;
+			pwms = < &pwm0 0x0 0x1312d00 0x1 >;
 		};
 	};
 	buttons {

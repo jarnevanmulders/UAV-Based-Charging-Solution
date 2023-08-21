@@ -30,3 +30,8 @@ __devicehdl_dts_ord_97[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE
  */
 const Z_DECL_ALIGN(device_handle_t) __attribute__((__section__(".__device_handles_pass2")))
 __devicehdl_dts_ord_10[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
+
+/* 7 : /soc/pwm@4001c000:
+ */
+const Z_DECL_ALIGN(device_handle_t) __attribute__((__section__(".__device_handles_pass2")))
+__devicehdl_dts_ord_57[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };

@@ -10,6 +10,20 @@
     "ratio": "c",
     "tuple": "c",
     "type_traits": "c",
-    "utility": "c"
+    "utility": "c",
+    "adc_update.h": "c",
+    "state_machine.h": "c",
+    "devicetree.h": "c",
+    "gpio.h": "c",
+    "nrf_gpio.h": "c",
+    "kernel.h": "c",
+    "device.h": "c",
+    "gpio_control.h": "c",
+    "*.tcc": "c",
+    "cmath": "c",
+    "numeric": "c",
+    "cinttypes": "c",
+    "cstdlib": "c",
+    "system_error": "c"
   }
 }

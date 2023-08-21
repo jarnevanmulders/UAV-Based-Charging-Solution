@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-08-10T09:03:48.350Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="lrKde6UonYP1T2Iadxvc" version="21.6.5" type="device">
+<mxfile host="Electron" modified="2023-08-17T11:42:38.853Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="ojW7S1Pr2oz8-MSwVFU5" version="21.6.5" type="device">
   <diagram name="Page-1" id="AzwJGs6xZ2qGH026OkKW">
     <mxGraphModel dx="1434" dy="964" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -34,11 +34,11 @@
         <mxCell id="5BrET9XCrMvolj7ojVA5-12" value="SEPIC out" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="140" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="5BrET9XCrMvolj7ojVA5-13" value="I2C interface" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="130" y="380" width="90" height="20" as="geometry" />
+        <mxCell id="5BrET9XCrMvolj7ojVA5-13" value="I2C interface (in)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="380" width="100" height="20" as="geometry" />
         </mxCell>
         <mxCell id="5BrET9XCrMvolj7ojVA5-15" value="ADS1115&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;(I2C 4CH ADC)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="70" y="290" width="80" height="65" as="geometry" />
+          <mxGeometry x="50" y="290" width="80" height="65" as="geometry" />
         </mxCell>
         <mxCell id="5BrET9XCrMvolj7ojVA5-16" value="Meas. IBAT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="260" width="130" height="25" as="geometry" />
@@ -57,6 +57,63 @@
             <mxPoint x="24" y="480" as="sourcePoint" />
             <mxPoint x="804" y="480" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="550" width="300" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-22" value="Connector LC tank" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="561" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-23" value="GaN Halve Bridge&lt;br&gt;Inverter" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="616" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-25" value="GaN FET driver" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="696" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-26" value="Oscillator" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="696" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-27" value="5V in" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="810" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-28" value="3V3 in" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="810" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-29" value="VAMP in" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="810" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-30" value="ZVS LC" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="590" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-31" value="NRF52832 BLE SoC" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="750" width="215" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-32" value="UART&lt;br&gt;Betaflight" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="750" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-33" value="2.4 GHz&lt;br&gt;Antenna" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="700" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-36" value="I2C interface (out)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="810" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-37" value="Tasks&lt;br&gt;- Amplify oscillator signal&lt;br&gt;- Control VAMP voltage via I2C&lt;br&gt;- Measure VAMP, I-AMP, I-Betaflight&lt;br&gt;&lt;br&gt;&amp;nbsp;Building blocks:&lt;br&gt;- LC (ZVS)&lt;br&gt;- Half bridge inverter (GaN Fets)&lt;br&gt;- FET driver&lt;br&gt;- Oscillator (6.78 MHz)&lt;br&gt;- NRF52832 (SoC BLE MCU)&lt;br&gt;- 2.4 GHz (UFL connector --&amp;gt; external antena)&lt;br&gt;&lt;br&gt;Input/output&lt;br&gt;- Interface SDA/SCL (I2C)&lt;br&gt;- Input VAMP&lt;br&gt;- GND&lt;br&gt;- Input 3V3&lt;br&gt;- Input 5V&lt;br&gt;- Input VAMP" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="367" y="525" width="460" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-38" value="3V3 LDO" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="178" width="56" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-39" value="5V LDO" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="200" width="56" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-40" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Current&lt;br&gt;sense&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="309" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-41" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Current&lt;br&gt;sense&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="277" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5BrET9XCrMvolj7ojVA5-44" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Current&lt;br&gt;sense&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="132.5" y="341" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

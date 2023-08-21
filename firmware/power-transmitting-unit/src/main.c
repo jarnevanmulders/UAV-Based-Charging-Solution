@@ -19,6 +19,12 @@ int main(void)
 {
 	int err;
 
+	gpio_pin_configure_dt(&led, GPIO_OUTPUT_INACTIVE);		// 
+
+	printk("Start");
+
+	gpio_pin_set_dt(&led, 1);
+
 	/* Initialize the Bluetooth Subsystem */
 	err = bt_enable(NULL);
 	if (err) {

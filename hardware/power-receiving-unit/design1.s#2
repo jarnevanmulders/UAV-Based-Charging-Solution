@@ -16875,7 +16875,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$4" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="Q1" library="microbuilder" deviceset="MOSFET-N" device="REFLOW" value="BSS138"/>
 <part name="R8" library="microbuilder" deviceset="RESISTOR" device="0603" value="220k"/>
-<part name="R9" library="microbuilder" deviceset="RESISTOR" device="0603" value="4k7"/>
+<part name="R9" library="microbuilder" deviceset="RESISTOR" device="0603" value="10k"/>
 <part name="Q2" library="transistor-power" deviceset="SI3481DV" device=""/>
 <part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="100n"/>
 <part name="U$2" library="microbuilder" deviceset="3.3V" device=""/>
@@ -17315,6 +17315,7 @@ sufficient enough</text>
 <text x="154.94" y="155.575" size="1.27" layer="95">SOLDER</text>
 <text x="134.62" y="115.57" size="1.778" layer="95">DNP</text>
 <text x="132.715" y="108.585" size="1.778" layer="95">MIC94081YFT-TR VOLTAGE RANGE (1.7 - 5.5V)</text>
+<text x="173.355" y="93.98" size="1.27" layer="94">CHANGE TO 68K</text>
 </plain>
 <instances>
 <instance part="IC3" gate="G$1" x="45.72" y="124.46" smashed="yes">
@@ -17883,6 +17884,7 @@ prevent entering debug mode</text>
 <text x="38.1" y="60.96" size="1.27" layer="95">https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_nrf52832_pdk%2FUG%2Fnrf52_PDK%2Fhw_debug_out.html</text>
 <text x="178.435" y="30.48" size="1.778" layer="91">ToDo: ADD Load Switch + Voltage Div to read output voltage</text>
 <text x="136.525" y="141.605" size="1.27" layer="94">Footprint updated (14/08/23)</text>
+<text x="-21.59" y="97.79" size="6.35" layer="94">Change to pull up !!!</text>
 </plain>
 <instances>
 <instance part="LED1" gate="G$1" x="15.24" y="25.4" smashed="yes" rot="R270">

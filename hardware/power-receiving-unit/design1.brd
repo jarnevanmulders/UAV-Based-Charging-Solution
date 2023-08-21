@@ -3974,6 +3974,7 @@
 <text x="29.68625" y="2.69875" size="0.6096" layer="25" font="vector" ratio="6">GND</text>
 <text x="54.45125" y="31.75" size="0.6096" layer="25" font="vector" ratio="6" rot="R90">VDD</text>
 <text x="54.45125" y="25.4" size="0.6096" layer="25" font="vector" ratio="6" rot="R90">GND</text>
+<text x="48.26" y="17.78" size="1.778" layer="21">EMC filter</text>
 </plain>
 <libraries>
 <library name="TPS54308DDCR">
@@ -6030,6 +6031,26 @@ Height 4.2mm Max</description>
 <vertex x="-3.1" y="-4.1"/>
 </polygon>
 </package>
+<package name="WE-CBF_0603(W=2.2)">
+<smd name="1" x="-0.725" y="0" dx="0.75" dy="0.7" layer="1"/>
+<smd name="2" x="0.725" y="0" dx="0.75" dy="0.7" layer="1"/>
+<wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<text x="-0.57" y="0.82" size="0.254" layer="25">&gt;NAME</text>
+<text x="-0.57" y="-1.07" size="0.254" layer="27">&gt;VALUE</text>
+<wire x1="-0.8" y1="-0.4" x2="-0.2" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="-0.4" x2="0.2" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.2" y1="-0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="0.4" x2="-0.2" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="0.4" x2="0.2" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.2" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<polygon width="0.127" layer="39">
+<vertex x="-1.35" y="0.65"/>
+<vertex x="1.35" y="0.65"/>
+<vertex x="1.35" y="-0.65"/>
+<vertex x="-1.35" y="-0.65"/>
+</polygon>
+</package>
 </packages>
 </library>
 <library name="diode">
@@ -6636,6 +6657,32 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="TPL0401A-10DCKR">
+<packages>
+<package name="SOT65P210X110-6N">
+<wire x1="-0.625" y1="-1" x2="0.625" y2="-1" width="0.127" layer="51"/>
+<wire x1="0.625" y1="-1" x2="0.625" y2="1" width="0.127" layer="51"/>
+<wire x1="0.625" y1="1" x2="-0.625" y2="1" width="0.127" layer="51"/>
+<wire x1="-0.625" y1="1" x2="-0.625" y2="-1" width="0.127" layer="51"/>
+<wire x1="-0.625" y1="1.17" x2="0.625" y2="1.17" width="0.127" layer="21"/>
+<wire x1="-0.625" y1="-1.17" x2="0.625" y2="-1.17" width="0.127" layer="21"/>
+<wire x1="-1.805" y1="-1.25" x2="1.805" y2="-1.25" width="0.05" layer="39"/>
+<wire x1="1.805" y1="-1.25" x2="1.805" y2="1.25" width="0.05" layer="39"/>
+<wire x1="1.805" y1="1.25" x2="-1.805" y2="1.25" width="0.05" layer="39"/>
+<wire x1="-1.805" y1="1.25" x2="-1.805" y2="-1.25" width="0.05" layer="39"/>
+<circle x="-2.1" y="0.802" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.1" y="0.802" radius="0.1" width="0.2" layer="51"/>
+<text x="-2.5" y="1.5" size="1.016" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-1.5" size="1.016" layer="27" align="top-left">&gt;VALUE</text>
+<smd name="1" x="-0.96" y="0.65" dx="1.19" dy="0.4" layer="1" roundness="25"/>
+<smd name="2" x="-0.96" y="0" dx="1.19" dy="0.4" layer="1" roundness="25"/>
+<smd name="3" x="-0.96" y="-0.65" dx="1.19" dy="0.4" layer="1" roundness="25"/>
+<smd name="4" x="0.96" y="-0.65" dx="1.19" dy="0.4" layer="1" roundness="25" rot="R180"/>
+<smd name="5" x="0.96" y="0" dx="1.19" dy="0.4" layer="1" roundness="25" rot="R180"/>
+<smd name="6" x="0.96" y="0.65" dx="1.19" dy="0.4" layer="1" roundness="25" rot="R180"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6920,7 +6967,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="IC-11991" x="45.4279" y="24.603075" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="44.4754" y="24.412575" size="0.4064" layer="27"/>
 </element>
-<element name="R2" library="microbuilder" package="0603" value="39k" x="48.9204" y="22.063075" smashed="yes">
+<element name="R2" library="microbuilder" package="0603" value="56k" x="48.9204" y="22.063075" smashed="yes">
 <attribute name="NAME" x="50.6984" y="21.936075" size="0.6096" layer="25" font="vector" ratio="6"/>
 <attribute name="VALUE" x="50.6984" y="21.301075" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
@@ -6932,7 +6979,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="50.6984" y="26.381075" size="0.6096" layer="25" font="vector" ratio="6"/>
 <attribute name="VALUE" x="50.6984" y="26.063575" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="R5" library="microbuilder" package="0603" value="39k" x="48.9204" y="25.238075" smashed="yes">
+<element name="R5" library="microbuilder" package="0603" value="56k" x="48.9204" y="25.238075" smashed="yes">
 <attribute name="NAME" x="50.6984" y="25.111075" size="0.6096" layer="25" font="vector" ratio="6"/>
 <attribute name="VALUE" x="50.6984" y="24.476075" size="0.4064" layer="27" font="vector" ratio="10"/>
 </element>
@@ -7028,7 +7075,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="37.6682" y="29.4259" size="0.6096" layer="25" font="vector" ratio="6" rot="R270"/>
 <attribute name="VALUE" x="38.204775" y="27.178" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C7" library="microbuilder" package="0603" value="DNP" x="23.098125" y="21.282025" smashed="yes" rot="R180">
+<element name="C7" library="microbuilder" package="0603" value="100n" x="23.098125" y="21.282025" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.320125" y="21.409025" size="0.6096" layer="25" font="vector" ratio="6" rot="R180"/>
 <attribute name="VALUE" x="21.320125" y="22.044025" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
@@ -7245,6 +7292,40 @@ design rules under a new name.</description>
 <attribute name="NAME" x="34.925" y="16.15875" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="34.925" y="9.55875" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
+<element name="R10" library="microbuilder" package="0603" value="100k" x="-5.23875" y="-6.0325" smashed="yes">
+<attribute name="NAME" x="-3.46075" y="-6.1595" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="-3.46075" y="-6.7945" size="0.4064" layer="27" font="vector" ratio="10"/>
+</element>
+<element name="C30" library="microbuilder" package="0603" value="100n" x="-5.23875" y="-8.41375" smashed="yes">
+<attribute name="NAME" x="-3.46075" y="-8.54075" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="-3.46075" y="-9.17575" size="0.4064" layer="27" font="vector" ratio="10"/>
+</element>
+<element name="IC5" library="TPL0401A-10DCKR" package="SOT65P210X110-6N" value="" x="-3.96875" y="-12.7" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-3.96875" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/TPL0401A-10DCKR/Texas+Instruments/view-part/?ref=eda" x="-3.96875" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" 128-tap single-channel digital potentiometer (digipot) with I2C interface (address 0101110) " x="-3.96875" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Texas Instruments" x="-3.96875" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="TPL0401A-10DCKR" x="-3.96875" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-6.46875" y="-11.2" size="1.016" layer="25"/>
+<attribute name="PACKAGE" value="SOT-SC70-6 Texas Instruments" x="-3.96875" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-3.96875" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search?q=TPL0401A-10DCKR&amp;ref=eda" x="-3.96875" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/TPL0401A-10DCKR/Texas+Instruments/view-part/?ref=snap" x="-3.96875" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-6.46875" y="-14.2" size="1.016" layer="27" align="top-left"/>
+</element>
+<element name="C31" library="microbuilder" package="0603" value="100n" x="-5.23875" y="-15.08125" smashed="yes">
+<attribute name="NAME" x="-3.46075" y="-15.20825" size="0.8128" layer="25" font="vector" ratio="18"/>
+<attribute name="VALUE" x="-3.46075" y="-15.84325" size="0.4064" layer="27" font="vector" ratio="10"/>
+</element>
+<element name="C32" library="microbuilder" package="0402" value="100n" x="10.31875" y="10.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="10.12825" y="8.763" size="0.8128" layer="25" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="9.68375" y="8.763" size="0.4064" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="L7" library="PowerMagnetics (rev18e)" package="WE-CBF_0603(W=2.2)" value="742792692" x="27.14625" y="17.78" smashed="yes">
+<attribute name="NAME" x="26.57625" y="18.6" size="0.254" layer="25"/>
+<attribute name="VALUE" x="26.57625" y="16.71" size="0.254" layer="27"/>
+<attribute name="WE-NUMBER" value="742792692/1800Ω(Z@100MHz)" x="27.14625" y="17.78" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -7394,20 +7475,19 @@ design rules under a new name.</description>
 <wire x1="37.03" y1="13.05875" x2="36.83" y2="12.85875" width="0.2032" layer="1"/>
 <via x="13.22705" y="19.685" extent="1-16" drill="0.381"/>
 <via x="13.0683" y="18.415" extent="1-16" drill="0.381"/>
+<contactref element="C32" pad="2"/>
 </signal>
 <signal name="V-VCHG">
 <contactref element="R11" pad="1"/>
 <contactref element="D2" pad="A"/>
 <contactref element="R12" pad="1"/>
 <contactref element="C7" pad="1"/>
-<contactref element="JP13" pad="2"/>
 <wire x1="23.9275" y1="22.86" x2="26.19375" y2="22.86" width="0.2032" layer="1"/>
 <wire x1="26.19375" y1="22.86" x2="26.51125" y2="22.5425" width="0.2032" layer="1"/>
 <wire x1="26.51125" y1="22.5425" x2="27.4075" y2="22.5425" width="0.2032" layer="1"/>
 <wire x1="27.4075" y1="24.13" x2="27.4075" y2="22.5425" width="0.2032" layer="1"/>
 <wire x1="23.948125" y1="21.282025" x2="23.948125" y2="22.839375" width="0.2032" layer="1"/>
 <wire x1="23.948125" y1="22.839375" x2="23.9275" y2="22.86" width="0.2032" layer="1"/>
-<via x="18.25625" y="13.4239" extent="1-16" drill="0.35"/>
 <wire x1="18.25625" y1="13.4239" x2="18.25625" y2="15.84835" width="0.2032" layer="16"/>
 <wire x1="17.744653125" y1="22.260346875" x2="17.62125" y2="22.13694375" width="0.2032" layer="16"/>
 <wire x1="17.62125" y1="22.13694375" x2="17.62125" y2="21.93415" width="0.2032" layer="16"/>
@@ -7595,6 +7675,10 @@ design rules under a new name.</description>
 <wire x1="35.8775" y1="38.4175" x2="35.56" y2="38.1" width="0.2032" layer="1"/>
 <wire x1="43.5356" y1="27.7659" x2="43.5356" y2="29.65365625" width="0.2032" layer="16"/>
 <wire x1="43.5356" y1="30.91815" x2="43.5356" y2="34.80435" width="0.2032" layer="1"/>
+<contactref element="IC5" pad="1"/>
+<contactref element="C31" pad="1"/>
+<wire x1="-4.92875" y1="-12.05" x2="42.8879" y2="24.935575" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.08875" y1="-15.08125" x2="-4.92875" y2="-12.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWDCLK">
 <contactref element="DEBUG1" pad="4"/>
@@ -7850,6 +7934,12 @@ design rules under a new name.</description>
 <via x="17.93875" y="22.90275" extent="1-16" drill="0.35"/>
 <wire x1="17.93875" y1="22.90275" x2="17.664" y2="22.90275" width="0.2032" layer="16"/>
 <wire x1="17.664" y1="22.90275" x2="17.24565625" y2="22.48440625" width="0.2032" layer="16"/>
+<contactref element="R10" pad="1"/>
+<contactref element="C30" pad="2"/>
+<contactref element="R10" pad="2"/>
+<wire x1="-4.38875" y1="-6.0325" x2="16.66875" y2="13.4239" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.08875" y1="-6.0325" x2="-4.38875" y2="-6.0325" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.38875" y1="-8.41375" x2="-4.38875" y2="-6.0325" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="R5" pad="1"/>
@@ -8194,6 +8284,8 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="39"/>
 <wire x1="36.325" y1="16.5121" x2="36.325" y2="15.81875" width="0.2032" layer="1"/>
 <wire x1="36.16835" y1="16.66875" x2="36.325" y2="16.5121" width="0.2032" layer="1"/>
+<contactref element="IC5" pad="3"/>
+<wire x1="-4.92875" y1="-13.35" x2="27.94" y2="1.5875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C_SDA">
 <contactref element="C25" pad="1"/>
@@ -8215,6 +8307,8 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="38"/>
 <wire x1="36.725" y1="15.81875" x2="36.725" y2="16.9325" width="0.2032" layer="1"/>
 <wire x1="36.725" y1="16.9325" x2="36.48975" y2="17.16775" width="0.2032" layer="1"/>
+<contactref element="IC5" pad="4"/>
+<wire x1="-3.00875" y1="-13.35" x2="25.4" y2="1.5875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P08">
 <contactref element="UART_INTERFACE" pad="1"/>
@@ -8298,7 +8392,6 @@ design rules under a new name.</description>
 <wire x1="34.07625" y1="19.1855" x2="34.0995" y2="19.20875" width="0.2032" layer="1"/>
 </signal>
 <signal name="VDD_BLE">
-<contactref element="JP4" pad="2"/>
 <contactref element="DEBUG1" pad="1"/>
 <contactref element="R60" pad="1"/>
 <contactref element="LS3" pad="3"/>
@@ -8315,7 +8408,6 @@ design rules under a new name.</description>
 <wire x1="31.88165" y1="18.57375" x2="31.88165" y2="17.1721" width="0.2032" layer="1"/>
 <wire x1="31.7229" y1="18.7325" x2="29.21" y2="18.7325" width="0.2032" layer="1"/>
 <wire x1="29.21" y1="18.7325" x2="28.800425" y2="19.142075" width="0.2032" layer="1"/>
-<wire x1="53.34" y1="19.2405" x2="52.197" y2="19.2405" width="0.4064" layer="1"/>
 <wire x1="52.197" y1="19.2405" x2="51.59375" y2="19.84375" width="0.4064" layer="1"/>
 <wire x1="51.59375" y1="19.84375" x2="39.0525" y2="19.84375" width="0.4064" layer="1"/>
 <wire x1="39.0525" y1="19.84375" x2="38.735" y2="19.52625" width="0.4064" layer="1"/>
@@ -8368,6 +8460,10 @@ design rules under a new name.</description>
 <wire x1="32.725" y1="9.23" x2="32.575925" y2="9.080925" width="0.2032" layer="1"/>
 <wire x1="32.725" y1="16.32875" x2="32.725" y2="15.81875" width="0.2032" layer="1"/>
 <wire x1="31.88165" y1="17.1721" x2="32.725" y2="16.32875" width="0.2032" layer="1"/>
+<contactref element="JP13" pad="2"/>
+<contactref element="L7" pad="2"/>
+<wire x1="27.961325" y1="19.142075" x2="27.87125" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="18.25625" y1="13.4239" x2="17.62125" y2="19.09815" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="C2" pad="1"/>
@@ -8430,6 +8526,8 @@ design rules under a new name.</description>
 <wire x1="26.035" y1="21.46489375" x2="26.035" y2="21.08835" width="0.1524" layer="16"/>
 <wire x1="26.6192" y1="21.48205" x2="27.9908" y2="21.48205" width="0.1524" layer="1"/>
 <wire x1="27.9908" y1="21.48205" x2="28.3289" y2="21.82015" width="0.1524" layer="1"/>
+<contactref element="IC5" pad="5"/>
+<wire x1="-3.00875" y1="-12.7" x2="13.49375" y2="17.2339" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="WAKE-UP">
 <contactref element="D4" pad="C"/>
@@ -8665,6 +8763,14 @@ design rules under a new name.</description>
 <via x="22.225" y="38.89375" extent="1-16" drill="0.35"/>
 <via x="14.44625" y="38.735" extent="1-16" drill="0.35"/>
 <via x="8.5725" y="39.0525" extent="1-16" drill="0.35"/>
+<contactref element="C30" pad="1"/>
+<contactref element="IC5" pad="6"/>
+<contactref element="IC5" pad="2"/>
+<contactref element="C31" pad="2"/>
+<wire x1="-3.00875" y1="-12.05" x2="-4.92875" y2="-12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.38875" y1="-15.08125" x2="-4.92875" y2="-12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.08875" y1="-8.41375" x2="-4.92875" y2="-12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="3.65125" y1="21.74875" x2="-6.08875" y2="-8.41375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MIFA">
 <contactref element="L2" pad="1"/>
@@ -8843,6 +8949,8 @@ design rules under a new name.</description>
 <contactref element="IC2" pad="22"/>
 <wire x1="36.325" y1="9.89875" x2="36.325" y2="8.28375" width="0.2032" layer="1"/>
 <wire x1="36.325" y1="8.28375" x2="36.5125" y2="8.09625" width="0.2032" layer="1"/>
+<contactref element="C32" pad="1"/>
+<wire x1="10.31875" y1="10.81" x2="11.90625" y2="16.4211" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P02">
 <contactref element="JP12" pad="1"/>
@@ -8961,6 +9069,11 @@ design rules under a new name.</description>
 </signal>
 <signal name="P23">
 <contactref element="IC2" pad="28"/>
+</signal>
+<signal name="N$7">
+<contactref element="L7" pad="1"/>
+<contactref element="JP4" pad="2"/>
+<wire x1="26.42125" y1="17.78" x2="53.34" y2="19.2405" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

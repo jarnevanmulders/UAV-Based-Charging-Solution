@@ -3,6 +3,10 @@
 
 int16_t buf;
 
+int32_t input_voltage_mv;
+int32_t supply_voltage_mv;
+int32_t buck_current_ma;
+
 // Start advertisements
 void adc_read_start(void){
 
@@ -66,14 +70,11 @@ void update_adc_readings(struct adc_sequence *sequence){
 
 		// Conversion (take into account voltage dividers)
 		switch (i){
-			case 0: val_mv = (int32_t)(val_mv * 2247/47); break;
-			case 1: break;
-			case 2: val_mv = (int32_t)(val_mv * (10/100.0) / 0.1 - 20); break; // 20 mA offset
-			default: break;;
+			case 0: input_voltage_mv = (int32_t)(val_mv * 2247/47); 				break;
+			case 1: supply_voltage_mv = val_mv; 									break;
+			case 2: buck_current_ma = (int32_t)(val_mv * (12/560.0) / 0.02)/1.16; 	break; // 1.16 --> measured calibration factor
+			default: break;
 		}
-
-		// Store in global variable via pointer array
-		*adc_results_m [i] = val_mv;
 	}
 }
 

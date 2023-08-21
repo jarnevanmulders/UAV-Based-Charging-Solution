@@ -18,13 +18,20 @@
 #define STAT_NC 			0x02
 #define STAT_CHG_THROTTLED	0x03
 
+#define BT_LE_ADV_CUSTOM BT_LE_ADV_PARAM(0, BT_GAP_PER_ADV_SLOW_INT_MIN, \
+					BT_GAP_PER_ADV_SLOW_INT_MAX, NULL)
+
+extern int32_t input_voltage_mv;
+extern int32_t supply_voltage_mv;
+extern int32_t buck_current_ma;
+
 // Filter name of incoming ADV messages
 static char name [] = "wpt-receiver";
 
 // *** Default advertisement message content ***
 static const struct bt_data ad[] = {
 	BT_DATA(BT_DATA_NAME_COMPLETE, name, sizeof(name) - 1),
-	BT_DATA_BYTES(BT_DATA_FLAGS, BT_LE_AD_NO_BREDR)
+	//BT_DATA_BYTES(BT_DATA_FLAGS, BT_LE_AD_NO_BREDR)
 };
 
 // Default size ADV message
@@ -52,6 +59,8 @@ struct adv_params {
 void adv_start();
 
 void adv_change_status(uint8_t stat);
+
+void adv_update_adc_readings(void);
 
 
 #endif /* ADVERTISEMENT_H_ */

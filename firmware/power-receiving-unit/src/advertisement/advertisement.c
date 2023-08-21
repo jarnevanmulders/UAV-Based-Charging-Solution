@@ -37,17 +37,20 @@ void adv_start(void){
 
 	while (1)
 	{
-		// Check every 100 ms
-		k_msleep(100);
+		// Check every 150 ms * 5
+		k_msleep(150*5);
 
 		if(ap.update){
 			ap.update = false;
 
 			// Stop advertising
 			bt_le_adv_stop();
+
+			// Update measured voltages and currents
+			adv_update_adc_readings();
 			
-			// Start advertising 
-			bt_le_adv_start(BT_LE_ADV_NCONN, ap.adv_buffer, ARRAY_SIZE(ap.adv_buffer), NULL, 0);
+			// Start advertising (*** BT_LE_ADV_NCONN --> 150ms *** BT_LE_ADV_CUSTOM --> 1000 ms adv interval)
+			bt_le_adv_start(BT_LE_ADV_CUSTOM, ap.adv_buffer, ARRAY_SIZE(ap.adv_buffer), NULL, 0);
 		}
 	}
 }
@@ -64,6 +67,20 @@ void adv_change_status(uint8_t stat){
 void adv_update_input_voltage(uint16_t value){
 	ap.usr_tx_buffer[VOLT_IN_NR] = (uint8_t)value;
 	ap.usr_tx_buffer[VOLT_IN_NR + 1] = (uint8_t)(value >> 8);
+
+	copy_to_adv_buffer();
+}
+
+void adv_update_adc_readings(void){
+	uint16_t adc_send_buf[3];
+	if(input_voltage_mv > 0) 	{ adc_send_buf[0] = (uint16_t)(input_voltage_mv);	} else { adc_send_buf[0] = 0; }
+	if(supply_voltage_mv > 0)	{ adc_send_buf[1] = (uint16_t)(supply_voltage_mv);	} else { adc_send_buf[1] = 0; }
+	if(buck_current_ma > 0)	 	{ adc_send_buf[2] = (uint16_t)(buck_current_ma);	} else { adc_send_buf[2] = 0; }
+
+	for(uint8_t i = 0; i < 3; i++){
+		ap.usr_tx_buffer[VOLT_IN_NR + i*2] = (uint8_t)(adc_send_buf[i] >> 8);
+		ap.usr_tx_buffer[VOLT_IN_NR + 1 + i*2] = (uint8_t)adc_send_buf[i];	
+	}
 
 	copy_to_adv_buffer();
 }

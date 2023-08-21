@@ -846,7 +846,7 @@
   pg0 = &pg0;
   usrled0 = &usrled0;
   led0 = &led0;
-  pwm-led0 = &pwm_led0;
+  pwmled0 = &pwm_led0;
   usrbutton0 = &usrbutton0;
   wakeup1 = &wakeup1;
   bootloader-led0 = &led0;

@@ -1,6 +1,3 @@
-
-
-
 #ifndef ADC_UPDATE_H_
 #define ADC_UPDATE_H_
 
@@ -11,14 +8,10 @@
 #include <zephyr/devicetree.h>
 #include <zephyr/drivers/adc.h>
 
-// ADC
-// int16_t buf;
-// int32_t input_voltage_mv = 0;
-// int32_t buck_output_voltage_mv = 0;
-// int32_t buck_current_ma = 0;
-// int32_t* adc_results_m [] = {&input_voltage_mv, &buck_output_voltage_mv, &buck_current_ma}; // Create pointer array
-
-extern int32_t* adc_results_m [];
+// *** Extern variables defined in .c file *** //
+extern int32_t input_voltage_mv;
+extern int32_t supply_voltage_mv;
+extern int32_t buck_current_ma;
 
 
 // *** ADC - Device three - check *** //
@@ -38,9 +31,6 @@ static const struct adc_dt_spec adc_channels[] = {
 
 
 void adc_read_start();
-
-
-
 
 #endif /* ADC_UPDATE_H_ */
 

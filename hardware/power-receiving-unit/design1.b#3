@@ -213,7 +213,7 @@
 <vertex x="46.7995" y="14.1605"/>
 </polygon>
 <text x="0.79375" y="38.735" size="0.6096" layer="25" font="vector" ratio="6">Power Receiving Unit</text>
-<text x="0.79375" y="37.62375" size="0.6096" layer="25" font="vector" ratio="6">V1.0</text>
+<text x="0.79375" y="37.62375" size="0.6096" layer="25" font="vector" ratio="6">V1.1</text>
 <rectangle x1="8.4874125" y1="1.80213125" x2="8.50773125" y2="1.80466875" layer="21"/>
 <rectangle x1="8.48233125" y1="1.80466875" x2="8.5128125" y2="1.80720625" layer="21"/>
 <rectangle x1="8.477253125" y1="1.807209375" x2="8.517890625" y2="1.809746875" layer="21"/>
@@ -7392,6 +7392,8 @@ design rules under a new name.</description>
 <via x="36.83" y="12.85875" extent="1-16" drill="0.31"/>
 <wire x1="37.885" y1="13.05875" x2="37.03" y2="13.05875" width="0.2032" layer="1"/>
 <wire x1="37.03" y1="13.05875" x2="36.83" y2="12.85875" width="0.2032" layer="1"/>
+<via x="13.22705" y="19.685" extent="1-16" drill="0.381"/>
+<via x="13.0683" y="18.415" extent="1-16" drill="0.381"/>
 </signal>
 <signal name="V-VCHG">
 <contactref element="R11" pad="1"/>
@@ -8348,9 +8350,9 @@ design rules under a new name.</description>
 <wire x1="24.135925" y1="4.445" x2="29.39875" y2="4.445" width="0.254" layer="16"/>
 <wire x1="29.39875" y1="4.445" x2="30.01875" y2="5.065" width="0.254" layer="16"/>
 <wire x1="23.93305" y1="4.24805" x2="24.13" y2="4.445" width="0.254" layer="1"/>
-<wire x1="6.985" y1="19.05" x2="12.3825" y2="19.05" width="0.2032" layer="16"/>
-<via x="12.3825" y="19.05" extent="1-16" drill="0.35"/>
-<wire x1="12.3825" y1="19.05" x2="17.30375" y2="19.05" width="0.2032" layer="1"/>
+<wire x1="6.985" y1="19.05" x2="15.4305" y2="19.05" width="0.2032" layer="16"/>
+<via x="15.4305" y="19.05" extent="1-16" drill="0.35"/>
+<wire x1="15.4305" y1="19.05" x2="17.30375" y2="19.05" width="0.2032" layer="1"/>
 <wire x1="17.30375" y1="19.09815" x2="17.62125" y2="19.09815" width="0.2032" layer="1"/>
 <wire x1="17.30375" y1="19.09815" x2="17.30375" y2="19.05" width="0.2032" layer="1"/>
 <via x="17.62125" y="19.09815" extent="1-16" drill="0.35"/>

@@ -20,7 +20,7 @@ set_target_properties(devicetree_target PROPERTIES "DT_ALIAS|led0" "/leds/led_0"
 set_target_properties(devicetree_target PROPERTIES "DT_ALIAS|bootloader-led0" "/leds/led_0")
 set_target_properties(devicetree_target PROPERTIES "DT_ALIAS|mcuboot-led0" "/leds/led_0")
 set_target_properties(devicetree_target PROPERTIES "DT_ALIAS|sensen0" "/leds/sensen_0")
-set_target_properties(devicetree_target PROPERTIES "DT_ALIAS|pwm-led0" "/pwmleds/pwm_led_0")
+set_target_properties(devicetree_target PROPERTIES "DT_ALIAS|pwmled0" "/pwmleds/pwm_led_0")
 set_target_properties(devicetree_target PROPERTIES "DT_ALIAS|usrbutton0" "/buttons/usrbutton_0")
 set_target_properties(devicetree_target PROPERTIES "DT_ALIAS|wakeup1" "/buttons/wakeup_1")
 set_target_properties(devicetree_target PROPERTIES "DT_NODE|/" TRUE)
