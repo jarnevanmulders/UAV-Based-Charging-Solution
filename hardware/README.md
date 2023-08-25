@@ -8,3 +8,4 @@ Updates from v1.0 to v1.1
 - Additional RC filter after current limiter OPAMP
 - Button from pull-up to pull down
 - Additional filter (ferrite bead) on VDD_BLE supply line
+- Other load switches?
