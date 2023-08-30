@@ -10,3 +10,10 @@ Updates from v1.0 to v1.1
 - Additional filter (ferrite bead) on VDD_BLE supply line
 - Other load switches?
 - Diode and shunt resistor location changed
+- MIFA antenna tuning
+  - Measured impedance 25+j25
+    - Measured with R&S ZVL 3GHz VNA
+    - Used a calibrated UFL connector cable (calibrated with ZVL one port calibration procedure)
+    - Blank PCB board was used for measurement
+  - Added 1.2 pF parallel with antenna (as compensation (see Smith V4.1))
+  - Total [Pi] matching circuit (MCU - 0.8 pF capacitor - 3.9 nH inductor - 1.2 pF capacitor)
