@@ -17,6 +17,6 @@ Progress SW features implemented in the PRU firmware.
 - [x] ADC (read voltages)
 - [x] UART (debugging)
 - [x] ADV BLE messages
-- [ ] GPIO
-- [ ] State diagram
-- [ ] PWM
+- [x] GPIO
+- [x] State diagram
+- [ ] I2C
