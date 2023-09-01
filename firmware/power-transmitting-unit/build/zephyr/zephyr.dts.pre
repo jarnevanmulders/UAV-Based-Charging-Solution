@@ -877,11 +877,12 @@
   pinctrl-names = "default", "sleep";
  };
 
- arduino_i2c: &i2c0 {
+ &i2c0 {
   compatible = "nordic,nrf-twi";
   status = "okay";
   pinctrl-0 = <&i2c0_default>;
   pinctrl-1 = <&i2c0_sleep>;
+  clock-frequency = <100000>;
   pinctrl-names = "default", "sleep";
  };
 
@@ -950,12 +951,6 @@
     label = "storage";
     reg = <0x0007a000 0x00006000>;
    };
-  };
- };
-
- &i2c0_default {
-  group1 {
-   psels = <((((((0) * 32U) + (26)) & 0x7FU) << 0U) | ((12U & 0xFFFFU) << 16U))>;
   };
  };
 # 0 "<command-line>" 2

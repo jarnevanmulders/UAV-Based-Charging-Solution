@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -4131,6 +4131,7 @@ EPC8010 rectricted to max. 6V</text>
 <text x="191.77" y="43.18" size="1.27" layer="95">IO EXPANDER REQUIRED?
 PCA9570GMH</text>
 <text x="6.35" y="6.35" size="6.4516" layer="95">DRAMCO</text>
+<text x="137.16" y="124.46" size="1.778" layer="95">I2C ADDR 0x2E</text>
 </plain>
 <instances>
 <instance part="C3" gate="G$1" x="135.89" y="22.86" smashed="yes">
@@ -4754,6 +4755,8 @@ https://www.st.com/resource/en/application_note/an4304-how-to-filter-the-input-o
 <text x="165.1" y="134.62" size="1.778" layer="95">Amplification 50V/V</text>
 <text x="165.1" y="132.08" size="1.778" layer="95">SEPIC current</text>
 <text x="6.35" y="6.35" size="6.4516" layer="95">DRAMCO</text>
+<text x="203.2" y="71.12" size="1.778" layer="95">I2C ADDR 0x48</text>
+<text x="203.2" y="71.12" size="1.778" layer="95">I2C ADDR 0x48</text>
 </plain>
 <instances>
 <instance part="R7" gate="G$1" x="162.56" y="43.18" smashed="yes">

@@ -16,7 +16,10 @@
 
 int observer_start(void);
 
-#define LED0_NODE DT_ALIAS(usrled0)	// The devicetree node identifier for the "led0" alias.
+// #define LED0_NODE DT_ALIAS(usrled0)	// The devicetree node identifier for the "led0" alias.
+#define LED0_NODE DT_ALIAS(led0)	// The devicetree node identifier for the "led0" alias.
+
+const struct device *dev = DEVICE_DT_GET(DT_NODELABEL(i2c0));
 
 static int write(uint8_t devaddr, uint8_t regaddr, uint8_t regval);
 
@@ -54,9 +57,9 @@ int main(void)
 	{
 		gpio_pin_toggle_dt(&led);
 		k_msleep(1000);
-		uint8_t buf [2];
-		read(0x10, 0x04, buf);
-		//write(0x01, 0x01, 0x01);
+		uint8_t buf [10];
+		read(0x48, 0x01, buf);
+		// write(0x4B, 0x01, 0x01);
 	}
 
 
@@ -68,17 +71,16 @@ static int read(uint8_t devaddr, uint8_t regaddr, uint8_t *regval)
 {
     int ret;
 
-    const struct device *dev = DEVICE_DT_GET(DT_NODELABEL(i2c0));
-
     if (!device_is_ready(dev)) {
         // LOG_ERR("Device not ready");
+        printk("Device not ready\n");
         return -ENODEV;
     }
 
-    ret = i2c_write_read(dev, devaddr, &regaddr, 1, regval, 1);
+    ret = i2c_write_read(dev, devaddr, &regaddr, 1, regval, 2);
     if (ret) {
         // LOG_ERR("Call `i2c_write_read` failed: %d", ret);
-		printk("Call `i2c_write_read` failed: %d", ret);
+		printk("Call `i2c_write_read` failed: %d\n", ret);
         return ret;
     }
 
@@ -89,11 +91,9 @@ static int read(uint8_t devaddr, uint8_t regaddr, uint8_t *regval)
 static int write(uint8_t devaddr, uint8_t regaddr, uint8_t regval){
     int ret;
 
-    const struct device *dev = DEVICE_DT_GET(DT_NODELABEL(i2c0));
-
     if (!device_is_ready(dev)) {
         // LOG_ERR("Device not ready");
-		printk("Device not ready");
+		printk("Device not ready\n");
         return -ENODEV;
     }
 
@@ -102,6 +102,7 @@ static int write(uint8_t devaddr, uint8_t regaddr, uint8_t regval){
     ret = i2c_write(dev, buf, 2, devaddr);
     if (ret) {
         // LOG_ERR("Call `i2c_write` failed: %d", ret);
+        printk("Call `i2c_write` failed: %d\n", ret);
         return ret;
     }
 

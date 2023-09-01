@@ -4128,7 +4128,7 @@ EPC8010 rectricted to max. 6V</text>
 <text x="19.05" y="40.64" size="1.27" layer="95">Input voltage will vary during flight</text>
 <text x="19.05" y="38.1" size="1.27" layer="95">approx. 10 - 16.8 V</text>
 <text x="100.33" y="76.2" size="1.27" layer="95">3V3 MCU + OSC</text>
-<text x="-1.27" y="320.04" size="7.62" layer="95">IO EXPANDER REQUIRED?
+<text x="191.77" y="43.18" size="1.27" layer="95">IO EXPANDER REQUIRED?
 PCA9570GMH</text>
 <text x="6.35" y="6.35" size="6.4516" layer="95">DRAMCO</text>
 </plain>
@@ -4754,6 +4754,7 @@ https://www.st.com/resource/en/application_note/an4304-how-to-filter-the-input-o
 <text x="165.1" y="134.62" size="1.778" layer="95">Amplification 50V/V</text>
 <text x="165.1" y="132.08" size="1.778" layer="95">SEPIC current</text>
 <text x="6.35" y="6.35" size="6.4516" layer="95">DRAMCO</text>
+<text x="203.2" y="71.12" size="1.778" layer="95">I2C ADDR 0x48</text>
 </plain>
 <instances>
 <instance part="R7" gate="G$1" x="162.56" y="43.18" smashed="yes">

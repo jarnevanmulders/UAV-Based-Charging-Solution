@@ -112,7 +112,7 @@
 			pinctrl-1 = < &uart0_sleep >;
 			pinctrl-names = "default", "sleep";
 		};
-		i2c0: arduino_i2c: i2c@40003000 {
+		i2c0: i2c@40003000 {
 			compatible = "nordic,nrf-twi";
 			#address-cells = < 0x1 >;
 			#size-cells = < 0x0 >;
@@ -459,7 +459,7 @@
 		i2c0_default: i2c0_default {
 			phandle = < 0x4 >;
 			group1 {
-				psels = < 0xc001a >;
+				psels = < 0xc001a >, < 0xb001b >;
 			};
 		};
 		i2c0_sleep: i2c0_sleep {

@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2023-08-30T12:25:29Z",
+        "CreationDate": "2023-09-01T12:38:44Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -15,7 +15,7 @@
         "Name": {
             "ProjectId": "design1"
         },
-        "Owner": "Jarne Van Mulders <jarne.vanmulders@kuleuven.be>",
+        "Owner": "  <>",
         "Size": {
             "X": 55,
             "Y": 40
