@@ -172,6 +172,9 @@ C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-tra
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/gpio/CMakeFiles/edit_cache.dir
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/gpio/CMakeFiles/rebuild_cache.dir
+C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/i2c/CMakeFiles/drivers__i2c.dir
+C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/i2c/CMakeFiles/edit_cache.dir
+C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/i2c/CMakeFiles/rebuild_cache.dir
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/pinctrl/CMakeFiles/edit_cache.dir
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/pinctrl/CMakeFiles/rebuild_cache.dir

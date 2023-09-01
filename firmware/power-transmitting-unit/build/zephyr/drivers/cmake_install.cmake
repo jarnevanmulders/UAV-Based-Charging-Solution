@@ -89,6 +89,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/i2c/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/pinctrl/cmake_install.cmake")
 endif()
 

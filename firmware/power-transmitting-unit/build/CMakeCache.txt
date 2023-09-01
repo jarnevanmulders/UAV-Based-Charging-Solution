@@ -15,16 +15,16 @@
 ########################
 
 //Application Binary Directory
-APPLICATION_BINARY_DIR:PATH=C:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build
+APPLICATION_BINARY_DIR:PATH=C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build
 
 //Application Source Directory
-APPLICATION_SOURCE_DIR:PATH=C:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit
+APPLICATION_SOURCE_DIR:PATH=C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit
 
 //Selected board
-BOARD:STRING=nrf52dk_nrf52832
+BOARD:STRING=nrf52832_ptu
 
 //Path to a file.
-BOARD_DIR:PATH=C:/ncs/v2.4.0/zephyr/boards/arm/nrf52dk_nrf52832
+BOARD_DIR:PATH=C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_ptu
 
 //No help, variable specified on the command line.
 BOARD_ROOT:STRING=c:/users/jarne/documents/github/iot_energystorage_charger_ble/firmware/power-transmitting-unit
@@ -33,7 +33,7 @@ BOARD_ROOT:STRING=c:/users/jarne/documents/github/iot_energystorage_charger_ble/
 BOSSAC:FILEPATH=BOSSAC-NOTFOUND
 
 //Selected board
-CACHED_BOARD:STRING=nrf52dk_nrf52832
+CACHED_BOARD:STRING=nrf52832_ptu
 
 //If desired, you can build the application usingthe configuration
 // settings specified in an alternate .conf file using this parameter.
@@ -42,7 +42,7 @@ CACHED_BOARD:STRING=nrf52dk_nrf52832
 // listed, e.g. CONF_FILE="prj1.conf;prj2.conf" The CACHED_CONF_FILE
 // is internal Zephyr variable used between CMake runs. To change
 // CONF_FILE, use the CONF_FILE variable.
-CACHED_CONF_FILE:STRING=c:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/prj.conf
+CACHED_CONF_FILE:STRING=c:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/prj.conf
 
 //Selected shield
 CACHED_SHIELD:STRING=
@@ -145,7 +145,7 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=C:/msys64/mingw64/bin/dlltool.exe
+CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -387,7 +387,7 @@ observer_SOURCE_DIR:STATIC=C:/Users/jarne/Documents/GitHub/IoT_energystorage_cha
 ########################
 
 //The application configuration folder
-APPLICATION_CONFIG_DIR:INTERNAL=C:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit
+APPLICATION_CONFIG_DIR:INTERNAL=C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit
 //DT bindings root directories
 CACHED_DTS_ROOT_BINDINGS:INTERNAL=C:/ncs/v2.4.0/nrf/dts/bindings;C:/ncs/v2.4.0/zephyr/dts/bindings
 CLI_CONFIG_DEBUG_OPTIMIZATIONS:INTERNAL=y
@@ -483,7 +483,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit
+CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
 CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -499,7 +499,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=140
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=141
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -561,8 +561,4 @@ _Python3_EXECUTABLE:INTERNAL=C:/ncs/toolchains/31f4403e35/opt/bin/python.exe
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;8;2;64;;cp38-win_amd64.pyd;C:\ncs\toolchains\31f4403e35\opt\bin\Lib;C:\ncs\toolchains\31f4403e35\opt\bin\Lib;C:\ncs\toolchains\31f4403e35\opt\bin\Lib\site-packages;C:\ncs\toolchains\31f4403e35\opt\bin\Lib\site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=9936cc1185dd290ffc538db04f12edce
-//Test check_fmacro_prefix_map_C__Users_Jarne_Documents_GitHub_IoT_energystorage_charger_ble_firmware_power_transmitting_unit_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem__c__ncs_toolchains_31f4403e35_opt_zephyr_sdk_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_2_0_include___isystem__c__ncs_toolchains_31f4403e35_opt_zephyr_sdk_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0
-check_fmacro_prefix_map_C__Users_Jarne_Documents_GitHub_IoT_energystorage_charger_ble_firmware_power_transmitting_unit_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem__c__ncs_toolchains_31f4403e35_opt_zephyr_sdk_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_2_0_include___isystem__c__ncs_toolchains_31f4403e35_opt_zephyr_sdk_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0:INTERNAL=1
-//Test check_fmacro_prefix_map_C__Users_jarne_Documents_GitHub_IoT_energystorage_charger_ble_firmware_power_transmitting_unit_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem__c__ncs_toolchains_31f4403e35_opt_zephyr_sdk_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_2_0_include___isystem__c__ncs_toolchains_31f4403e35_opt_zephyr_sdk_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0
-check_fmacro_prefix_map_C__Users_jarne_Documents_GitHub_IoT_energystorage_charger_ble_firmware_power_transmitting_unit_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem__c__ncs_toolchains_31f4403e35_opt_zephyr_sdk_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_2_0_include___isystem__c__ncs_toolchains_31f4403e35_opt_zephyr_sdk_arm_zephyr_eabi_bin____lib_gcc_arm_zephyr_eabi_12_2_0_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0:INTERNAL=1
 

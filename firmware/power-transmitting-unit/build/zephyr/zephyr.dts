@@ -18,17 +18,17 @@
 		zephyr,code-partition = &slot0_partition;
 	};
 	aliases {
+		en1 = &en1;
+		en2 = &en2;
+		bucken0 = &bucken0;
+		sensen0 = &sensen0;
+		pg0 = &pg0;
+		usrled0 = &usrled0;
 		led0 = &led0;
-		led1 = &led1;
-		led2 = &led2;
-		led3 = &led3;
-		pwm-led0 = &pwm_led0;
-		sw0 = &button0;
-		sw1 = &button1;
-		sw2 = &button2;
-		sw3 = &button3;
+		pwmled0 = &pwm_led0;
+		usrbutton0 = &usrbutton0;
+		wakeup1 = &wakeup1;
 		bootloader-led0 = &led0;
-		mcuboot-button0 = &button0;
 		mcuboot-led0 = &led0;
 		watchdog0 = &wdt0;
 	};
@@ -459,7 +459,7 @@
 		i2c0_default: i2c0_default {
 			phandle = < 0x4 >;
 			group1 {
-				psels = < 0xc001a >, < 0xb001b >;
+				psels = < 0xc001a >;
 			};
 		};
 		i2c0_sleep: i2c0_sleep {
@@ -565,46 +565,50 @@
 	};
 	leds {
 		compatible = "gpio-leds";
+		en1: en_1 {
+			gpios = < &gpio0 0xb 0x0 >;
+			label = "Control load switch 1 enable";
+		};
+		en2: en_2 {
+			gpios = < &gpio0 0xc 0x0 >;
+			label = "Control load switch 2 enable";
+		};
+		bucken0: bucken_0 {
+			gpios = < &gpio0 0xd 0x0 >;
+			label = "Control buck enable";
+		};
+		pg0: pg_0 {
+			gpios = < &gpio0 0xe 0x0 >;
+			label = "Power good enable";
+		};
+		usrled0: usrled_0 {
+			gpios = < &gpio0 0xf 0x0 >;
+			label = "Green LED";
+		};
 		led0: led_0 {
 			gpios = < &gpio0 0x11 0x1 >;
 			label = "Green LED 0";
 		};
-		led1: led_1 {
-			gpios = < &gpio0 0x12 0x1 >;
-			label = "Green LED 1";
-		};
-		led2: led_2 {
-			gpios = < &gpio0 0x13 0x1 >;
-			label = "Green LED 2";
-		};
-		led3: led_3 {
-			gpios = < &gpio0 0x14 0x1 >;
-			label = "Green LED 3";
+		sensen0: sensen_0 {
+			gpios = < &gpio0 0x14 0x0 >;
+			label = "Control sensor VDD enable";
 		};
 	};
 	pwmleds {
 		compatible = "pwm-leds";
 		pwm_led0: pwm_led_0 {
-			pwms = < &pwm0 0x0 0x1312d00 0x1 >;
+			pwms = < &pwm0 0x0 0x4e20 0x0 >;
 		};
 	};
 	buttons {
 		compatible = "gpio-keys";
-		button0: button_0 {
-			gpios = < &gpio0 0xd 0x11 >;
+		usrbutton0: usrbutton_0 {
+			gpios = < &gpio0 0x10 0x11 >;
 			label = "Push button switch 0";
 		};
-		button1: button_1 {
-			gpios = < &gpio0 0xe 0x11 >;
-			label = "Push button switch 1";
-		};
-		button2: button_2 {
-			gpios = < &gpio0 0xf 0x11 >;
-			label = "Push button switch 2";
-		};
-		button3: button_3 {
-			gpios = < &gpio0 0x10 0x11 >;
-			label = "Push button switch 3";
+		wakeup1: wakeup_1 {
+			gpios = < &gpio0 0x13 0x11 >;
+			label = "Wake up signal";
 		};
 	};
 	arduino_header: connector {
