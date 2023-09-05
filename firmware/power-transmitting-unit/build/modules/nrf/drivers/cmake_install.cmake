@@ -39,21 +39,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/modules/nrf/drivers/mpsl/cmake_install.cmake")
+  include("C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/modules/nrf/drivers/mpsl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/modules/nrf/drivers/hw_cc310/cmake_install.cmake")
+  include("C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/modules/nrf/drivers/hw_cc310/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/modules/nrf/drivers/entropy/cmake_install.cmake")
+  include("C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/modules/nrf/drivers/entropy/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/modules/nrf/drivers/serial/cmake_install.cmake")
+  include("C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/modules/nrf/drivers/serial/cmake_install.cmake")
 endif()
 
