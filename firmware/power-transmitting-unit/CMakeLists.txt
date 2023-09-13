@@ -7,4 +7,7 @@ project(observer)
 target_sources(app PRIVATE
   src/main.c
   src/observer.c
+  src/ADS1115/ADS1115.c
+  src/twowire/twowire.c
+  src/peripherals/peripherals.c
 )

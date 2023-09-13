@@ -7084,7 +7084,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="42.2275" y="14.097" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
 <element name="DEBUG1" library="SparkFun-Connectors" package="2X5-PTH-1.27MM" value="CORTEX_DEBUGPTH" x="42.2275" y="2.2225" smashed="yes">
-<attribute name="NAME" x="40.6527" y="2.8829" size="0.6096" layer="25" font="vector"/>
+<attribute name="NAME" x="40.6527" y="3.8354" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="40.3987" y="-0.2413" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="R49" library="microbuilder" package="0402" value="10k" x="33.677225" y="4.168775" smashed="yes">

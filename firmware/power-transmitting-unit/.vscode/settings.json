@@ -4,6 +4,8 @@
   "files.associations": {
     "i2c.h": "c",
     "cstddef": "c",
-    "limits": "c"
+    "limits": "c",
+    "ads1115.h": "c",
+    "peripherals.h": "c"
   }
 }
