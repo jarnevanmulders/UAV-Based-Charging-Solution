@@ -10,4 +10,5 @@ target_sources(app PRIVATE
   src/ADS1115/ADS1115.c
   src/twowire/twowire.c
   src/peripherals/peripherals.c
+  src/TPL0401x/TPL0401x.c
 )

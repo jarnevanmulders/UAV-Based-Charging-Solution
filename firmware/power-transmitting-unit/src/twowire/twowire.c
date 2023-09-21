@@ -41,6 +41,17 @@ uint8_t twowire_read_register_data(uint8_t devaddr, uint8_t regaddr, uint8_t *re
     return 0;
 }
 
+uint8_t twowire_write_register_byte(uint8_t devaddr, uint8_t regaddr, uint8_t regval){
+    int ret;
+    if (!device_is_ready(dev))
+        return -ENODEV;
+    uint8_t buf [2] = {regaddr, regval};
+    ret = i2c_write(dev, buf, 2, devaddr);
+    if (ret)
+        return ret;
+    return 0;
+}
+
 uint8_t twowire_write_register_data(uint8_t devaddr, uint8_t regaddr, uint16_t regval){
     int ret;
     if (!device_is_ready(dev))

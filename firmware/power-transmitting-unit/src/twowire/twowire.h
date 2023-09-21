@@ -18,6 +18,7 @@ uint8_t twowire_write(uint8_t devaddr);
 uint8_t twowire_write_register(uint8_t devaddr, uint8_t regaddr);
 
 uint8_t twowire_read_register_data(uint8_t devaddr, uint8_t regaddr, uint8_t *regval);
+uint8_t twowire_write_register_byte(uint8_t devaddr, uint8_t regaddr, uint8_t regval);
 uint8_t twowire_write_register_data(uint8_t devaddr, uint8_t regaddr, uint16_t regval);
 
 #endif
