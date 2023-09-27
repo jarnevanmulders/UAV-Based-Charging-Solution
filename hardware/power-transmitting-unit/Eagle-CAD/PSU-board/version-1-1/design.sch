@@ -4031,7 +4031,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="U$44" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="C55" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="100n"/>
 <part name="U$47" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
-<part name="R27" library="microbuilder" deviceset="RESISTOR" device="0805" value="0.01"/>
+<part name="R27" library="microbuilder" deviceset="RESISTOR" device="0805" value="DNP"/>
 <part name="SJ1" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="R28" library="microbuilder" deviceset="RESISTOR" device="0402" value="1k"/>
 <part name="U$50" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
@@ -4063,8 +4063,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="SJ3" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="R17" library="microbuilder" deviceset="RESISTOR" device="0402" value="1k"/>
 <part name="U$55" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
-<part name="R18" library="microbuilder" deviceset="RESISTOR" device="0603" value="100"/>
-<part name="R19" library="microbuilder" deviceset="RESISTOR" device="0603" value="100"/>
+<part name="R18" library="microbuilder" deviceset="RESISTOR" device="0603" value="100k"/>
+<part name="R19" library="microbuilder" deviceset="RESISTOR" device="0603" value="47k"/>
 <part name="U$56" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -4770,6 +4770,7 @@ https://www.st.com/resource/en/application_note/an4304-how-to-filter-the-input-o
 <text x="6.35" y="6.35" size="6.4516" layer="95">DRAMCO</text>
 <text x="203.2" y="71.12" size="1.778" layer="95">I2C ADDR 0x48</text>
 <text x="203.2" y="71.12" size="1.778" layer="95">I2C ADDR 0x48</text>
+<text x="106.68" y="144.78" size="1.778" layer="95">Max current 12.81A</text>
 </plain>
 <instances>
 <instance part="R7" gate="G$1" x="162.56" y="43.18" smashed="yes">

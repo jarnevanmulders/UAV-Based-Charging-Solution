@@ -62,7 +62,7 @@ void peripherals_convert_readings(){
     for(uint8_t i = 0; i < ADS1115_NUMBER_OF_CHANNELS; i++){
         switch (i){
             case 0: uav_battery_voltage_mv = channel_voltage[i]*110/10;     break;
-            case 1: uav_current_ma = channel_voltage[i]*100/50;             break; // multiply by 100   ===== dividing by 0.01
+            case 1: uav_current_ma = channel_voltage[i]*147*100/50/47;      break; // multiply by 100   ===== dividing by 0.01 (voltage divider 100k - 47k)
             case 2: pre_reg_input_current_ma = channel_voltage[i]*10/50;    break; // multiply by 10    ===== dividing by 0.1
             case 3: pre_reg_output_current_ma = channel_voltage[i]*10/50;   break; // multiply by 10    ===== dividing by 0.1
             default: break;

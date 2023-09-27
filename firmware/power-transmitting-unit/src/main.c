@@ -55,7 +55,7 @@ int main(void)
 	}
 
 	
-	gpio_pin_configure_dt(&led, GPIO_OUTPUT_INACTIVE);
+	// gpio_pin_configure_dt(&led, GPIO_OUTPUT_INACTIVE);
 
 	
 	gpio_pin_toggle_dt(&led);
