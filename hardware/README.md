@@ -17,9 +17,3 @@ Updates from v1.0 to v1.1
     - Blank PCB board was used for measurement
   - Added 1.2 pF parallel with antenna (as compensation (see Smith V4.1))
   - Total [Pi] matching circuit (MCU - 0.8 pF capacitor - 3.9 nH inductor - 1.2 pF capacitor)
-
-
-## PTU
-
-### Architecture
-![architecture](https://github.com/jarnevanmulders/IoT_energystorage_charger_ble/blob/main/hardware/power-transmitting-unit/drawio/PTU-block-diagram-overview.drawio.png)
