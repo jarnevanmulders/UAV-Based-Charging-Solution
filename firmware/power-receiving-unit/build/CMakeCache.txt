@@ -63,7 +63,7 @@ CMAKE_AR:FILEPATH=C:/ncs/toolchains/31f4403e35/opt/zephyr-sdk/arm-zephyr-eabi/bi
 CMAKE_AS:FILEPATH=C:/ncs/toolchains/31f4403e35/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-as.exe
 
 //ASM compiler
-CMAKE_ASM_COMPILER:FILEPATH=C:/ncs/toolchains/31f4403e35/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe
+CMAKE_ASM_COMPILER:STRING=C:/ncs/toolchains/31f4403e35/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler

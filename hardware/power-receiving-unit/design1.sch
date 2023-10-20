@@ -17408,8 +17408,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="IC3" library="TPS54308DDCR" deviceset="TPS54308DDCR" device=""/>
 <part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10u"/>
 <part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10u"/>
-<part name="D1" library="microbuilder" deviceset="DIODE" device="SOD-523" value="SDM03U40"/>
-<part name="D2" library="microbuilder" deviceset="DIODE" device="SOD-523" value="SDM03U40"/>
+<part name="D1" library="microbuilder" deviceset="DIODE" device="SOD-523" value="RB751S40T1G"/>
+<part name="D2" library="microbuilder" deviceset="DIODE" device="SOD-523" value="RB751S40T1G"/>
 <part name="R11" library="microbuilder" deviceset="RESISTOR" device="0603" value="56k"/>
 <part name="R12" library="microbuilder" deviceset="RESISTOR" device="0603" value="15k"/>
 <part name="C16" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="100p"/>
@@ -17425,7 +17425,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3" library="microbuilder" deviceset="RESISTOR" device="0603" value="1k2"/>
 <part name="R4" library="microbuilder" deviceset="RESISTOR" device="0603" value="1k2"/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="0603" value="56k"/>
-<part name="IC1" library="microbuilder" deviceset="VREG_SOT23" device=""/>
+<part name="IC1" library="microbuilder" deviceset="VREG_SOT23" device="" value="AP7381-33SA-7"/>
 <part name="U$1" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10u"/>
 <part name="U$3" library="microbuilder" deviceset="3.3V" device=""/>
@@ -17515,7 +17515,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C20" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="6p"/>
 <part name="C21" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="100n"/>
 <part name="C22" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="100n"/>
-<part name="C23" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="0.8p"/>
+<part name="C23" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="1.2p"/>
 <part name="C24" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="0.8p"/>
 <part name="C25" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="12p"/>
 <part name="C26" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="12p"/>
@@ -17545,7 +17545,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R10" library="microbuilder" deviceset="RESISTOR" device="0603" value="100k"/>
 <part name="C30" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="100n"/>
 <part name="U$24" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
-<part name="IC5" library="TPL0401A-10DCKR" deviceset="TPL0401A-10DCKR" device=""/>
+<part name="IC5" library="TPL0401A-10DCKR" deviceset="TPL0401A-10DCKR" device="" value="TPL0401A-10DCKR"/>
 <part name="U$25" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="U$26" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="C31" library="microbuilder" deviceset="CAP_CERAMIC" device="0402" value="100n"/>
@@ -17879,6 +17879,7 @@ to control output voltage and reduce
 sufficient enough</text>
 <text x="6.35" y="6.35" size="6.4516" layer="95">DRAMCO</text>
 <text x="175.26" y="93.98" size="1.27" layer="95">Current limited to 0.508 A</text>
+<text x="10.16" y="160.02" size="1.778" layer="95">MAX 40V input</text>
 </plain>
 <instances>
 <instance part="IC3" gate="G$1" x="45.72" y="124.46" smashed="yes">

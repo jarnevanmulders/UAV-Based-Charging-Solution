@@ -296,12 +296,8 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Path to a program.
 DTC:FILEPATH=C:/ncs/toolchains/31f4403e35/opt/bin/dtc.exe
 
-//If desired, you can build the application using the DT configuration
-// settings specified in an alternate .overlay file using this
-// parameter. These settings will override the settings in the
-// board's .dts file. Multiple files may be listed, e.g. DTC_OVERLAY_FILE="dts1.overlay
-// dts2.overlay"
-DTC_OVERLAY_FILE:STRING=
+//No help, variable specified on the command line.
+DTC_OVERLAY_FILE:STRING=c:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/boards/nrf52832_ptu.overlay
 
 //Linker BFD compatibility (compiler reported)
 GNULD_LINKER_IS_BFD:BOOL=ON
@@ -499,7 +495,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=141
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=142
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

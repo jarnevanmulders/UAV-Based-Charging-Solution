@@ -22,7 +22,8 @@
 			"streambuf": "c"
 		},
 		"nrf-connect.boardRoots": [
-			"\\Users\\jarne\\Documents\\GitHub\\IoT_energystorage_charger_ble\\wpt-receiver\\boards",
+			// "\\Users\\jarne\\Documents\\GitHub\\IoT_energystorage_charger_ble\\wpt-receiver\\boards",
+			"\\Users\\jarne\\Documents\\GitHub\\IoT_energystorage_charger_ble\\firmware\\power-receiving-unit\\boards",
 			"\\ncs\\v2.4.0\\zephyr\\boards\\arm"
 		],
 		"nrf-connect.debugging.bindings": {

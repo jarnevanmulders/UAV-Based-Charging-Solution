@@ -19,10 +19,13 @@
 
 #include "peripherals/peripherals.h"
 
+// verplaatsen naar peripherals!!!
+#include "adc_update/adc_update.h"
+
 int observer_start(void);
 
-// #define LED0_NODE DT_ALIAS(usrled0)	// The devicetree node identifier for the "led0" alias.
-#define LED0_NODE DT_ALIAS(led0)	// The devicetree node identifier for the "led0" alias.
+#define LED0_NODE DT_ALIAS(usrled0)	// The devicetree node identifier for the "led0" alias.
+// #define LED0_NODE DT_ALIAS(led0)	// The devicetree node identifier for the "led0" alias.
 
 
 /* STATIC constants */
@@ -36,6 +39,20 @@ extern int16_t uav_battery_voltage_mv;
 extern int16_t uav_current_ma;
 extern int16_t pre_reg_input_current_ma;
 extern int16_t pre_reg_output_current_ma; 
+
+/* size of stack area used by each thread */
+#define STACKSIZE 1024
+
+/* scheduling priority used by each thread */
+#define ADC_PRIORITY 8
+
+// *** START THREADS *** //
+K_THREAD_DEFINE(start_adc_read_id, STACKSIZE, adc_read_start, NULL, NULL, NULL, ADC_PRIORITY, 0, 0);
+
+
+extern int32_t three_volt_supply_voltage_mv;
+extern int32_t five_volt_supply_voltage_mv;
+extern int32_t vamp_supply_voltage_mv;
 
 int main(void)
 {
@@ -67,19 +84,24 @@ int main(void)
     perihperals_init();
 
 	// Set prereg on 10V
-	peripherals_set_pre_reg_voltage(10000);
+	peripherals_set_pre_reg_voltage(4000);
 
 	while (1)
 	{
 		gpio_pin_toggle_dt(&led);
-		k_msleep(2000);
+		k_msleep(500);
 
         peripherals_update_all_ads1115_channels();
 
+		printk("\n");
 		printk("uav_battery_voltage_mv: %d\n", uav_battery_voltage_mv);
 		printk("uav_current_ma: %d\n", uav_current_ma);
 		printk("pre_reg_input_current_ma: %d\n", pre_reg_input_current_ma);
 		printk("pre_reg_output_current_ma: %d\n", pre_reg_output_current_ma);
+
+		printk("three_volt_supply_voltage_mv: %d\n", three_volt_supply_voltage_mv);
+		printk("five_volt_supply_voltage_mv: %d\n", five_volt_supply_voltage_mv);
+		printk("vamp_supply_voltage_mv: %d\n", vamp_supply_voltage_mv);
 
         // for(int i = 0; i < ADS1115_NUMBER_OF_CHANNELS; i++){
         //     //printk("Channel %d: %d mV\n", i, channel_voltage[i]);

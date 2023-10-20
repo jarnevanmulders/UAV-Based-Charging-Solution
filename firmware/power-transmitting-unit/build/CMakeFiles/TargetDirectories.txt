@@ -160,6 +160,9 @@ C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-tra
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/usb/CMakeFiles/rebuild_cache.dir
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/usb_c/CMakeFiles/edit_cache.dir
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/usb_c/CMakeFiles/rebuild_cache.dir
+C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/adc/CMakeFiles/drivers__adc.dir
+C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/adc/CMakeFiles/edit_cache.dir
+C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/adc/CMakeFiles/rebuild_cache.dir
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/clock_control/CMakeFiles/edit_cache.dir
 C:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/build/zephyr/drivers/clock_control/CMakeFiles/rebuild_cache.dir

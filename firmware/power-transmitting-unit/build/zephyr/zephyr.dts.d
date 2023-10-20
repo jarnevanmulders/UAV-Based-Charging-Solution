@@ -18,4 +18,5 @@ empty_file.o: C:/ncs/v2.4.0/zephyr/misc/empty_file.c \
  C:/ncs/v2.4.0/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
  C:/ncs/v2.4.0/zephyr/dts/common/freq.h \
  C:/ncs/v2.4.0/zephyr/dts/arm/nordic/override.dtsi \
- C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_ptu/nrf52832_ptu-pinctrl.dtsi
+ C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_ptu/nrf52832_ptu-pinctrl.dtsi \
+ c:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/boards/nrf52832_ptu.overlay
