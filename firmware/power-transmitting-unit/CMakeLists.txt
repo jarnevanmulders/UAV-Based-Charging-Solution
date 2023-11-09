@@ -12,4 +12,5 @@ target_sources(app PRIVATE
   src/peripherals/peripherals.c
   src/TPL0401x/TPL0401x.c
   src/adc_update/adc_update.c
+  src/advertisement/advertisement.c
 )

@@ -3,9 +3,9 @@
 
 int16_t buf;
 
-int32_t three_volt_supply_voltage_mv;
-int32_t five_volt_supply_voltage_mv;
-int32_t vamp_supply_voltage_mv;
+int16_t three_volt_supply_voltage_mv;
+int16_t five_volt_supply_voltage_mv;
+int16_t vamp_supply_voltage_mv;
 
 // Start advertisements
 void adc_read_start(void){
@@ -64,8 +64,8 @@ void update_adc_readings(struct adc_sequence *sequence){
 		}
 
 		// Convert to mv
-		int32_t val_mv;
-		val_mv = (int32_t)buf;
+		int16_t val_mv;
+		val_mv = (int16_t)buf;
 		err = adc_raw_to_millivolts_dt(&adc_channels[i], &val_mv);
 
 		// Conversion (take into account voltage dividers)
@@ -75,8 +75,8 @@ void update_adc_readings(struct adc_sequence *sequence){
 			// case 2: break;
 			// case 3: break;
 			// case 4: break;
-			case 1: vamp_supply_voltage_mv = (int32_t)(val_mv * (110/10)); 	break;
-			case 2: five_volt_supply_voltage_mv = (int32_t)(val_mv * 2); 	break;
+			case 1: vamp_supply_voltage_mv = (int16_t)(val_mv * (110/10)); 	break;
+			case 2: five_volt_supply_voltage_mv = (int16_t)(val_mv * 2); 	break;
 			default: break;
 		}
 	}

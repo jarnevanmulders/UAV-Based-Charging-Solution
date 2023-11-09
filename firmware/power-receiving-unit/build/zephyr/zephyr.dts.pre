@@ -767,13 +767,17 @@
    gpios = <&gpio0 15 (0 << 0)>;
    label = "Green LED";
   };
-  led0: led_0 {
-   gpios = <&gpio0 17 (1 << 0)>;
-   label = "Green LED 0";
+  i2cpulluppin: i2c_pullup_pin {
+   gpios = <&gpio0 17 (0 << 0)>;
+   label = "I2C pullup pin";
   };
   sensen0: sensen_0 {
    gpios = <&gpio0 20 (0 << 0)>;
    label = "Control sensor VDD enable";
+  };
+  mdmen0: mdmen_0 {
+   gpios = <&gpio0 22 (0 << 0)>;
+   label = "Control modem VDD enable";
   };
   };
 
@@ -794,7 +798,7 @@
     gpios = <&gpio0 19 ((1 << 4) | (1 << 0))>;
     label = "Wake up signal";
    };
-# 84 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts"
+# 88 "C:/ncs/v2.4.0/zephyr/boards/arm/nrf52832_pru/nrf52832_pru.dts"
   };
 
   arduino_header: connector {
@@ -843,15 +847,17 @@
   en2 = &en2;
   bucken0 = &bucken0;
   sensen0 = &sensen0;
+  mdmen0 = &mdmen0;
   pg0 = &pg0;
   usrled0 = &usrled0;
-  led0 = &led0;
+
   pwmled0 = &pwm_led0;
   usrbutton0 = &usrbutton0;
   wakeup1 = &wakeup1;
-  bootloader-led0 = &led0;
+  i2cpulluppin = &i2cpulluppin;
 
-  mcuboot-led0 = &led0;
+
+
   watchdog0 = &wdt0;
   };
  };
@@ -877,11 +883,12 @@
   pinctrl-names = "default", "sleep";
  };
 
- arduino_i2c: &i2c0 {
+ &i2c0 {
   compatible = "nordic,nrf-twi";
   status = "okay";
   pinctrl-0 = <&i2c0_default>;
   pinctrl-1 = <&i2c0_sleep>;
+  clock-frequency = <100000>;
   pinctrl-names = "default", "sleep";
  };
 
@@ -950,12 +957,6 @@
     label = "storage";
     reg = <0x0007a000 0x00006000>;
    };
-  };
- };
-
- &i2c0_default {
-  group1 {
-   psels = <((((((0) * 32U) + (26)) & 0x7FU) << 0U) | ((12U & 0xFFFFU) << 16U))>;
   };
  };
 # 0 "<command-line>" 2

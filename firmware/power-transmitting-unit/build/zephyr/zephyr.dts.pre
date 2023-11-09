@@ -998,7 +998,7 @@
   zephyr,input-positive = <1>;
   zephyr,resolution = <12>;
  };
-# 93 "c:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/boards/nrf52832_ptu.overlay"
+
  channel@1 {
   reg = <1>;
   zephyr,gain = "ADC_GAIN_1_6";
@@ -1016,7 +1016,7 @@
   zephyr,input-positive = <7>;
   zephyr,resolution = <12>;
  };
-# 150 "c:/Users/jarne/Documents/GitHub/IoT_energystorage_charger_ble/firmware/power-transmitting-unit/boards/nrf52832_ptu.overlay"
+
 };
 # 0 "<command-line>" 2
 # 1 "C:/ncs/v2.4.0/zephyr/misc/empty_file.c"

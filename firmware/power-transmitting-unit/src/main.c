@@ -19,6 +19,8 @@
 
 #include "peripherals/peripherals.h"
 
+#include "advertisement/advertisement.h"
+
 // verplaatsen naar peripherals!!!
 #include "adc_update/adc_update.h"
 
@@ -45,14 +47,16 @@ extern int16_t pre_reg_output_current_ma;
 
 /* scheduling priority used by each thread */
 #define ADC_PRIORITY 8
+#define ADV_PRIORITY 7
 
 // *** START THREADS *** //
 K_THREAD_DEFINE(start_adc_read_id, STACKSIZE, adc_read_start, NULL, NULL, NULL, ADC_PRIORITY, 0, 0);
+K_THREAD_DEFINE(start_adv_id, STACKSIZE, adv_start, NULL, NULL, NULL, ADV_PRIORITY, 0, 0);
 
 
-extern int32_t three_volt_supply_voltage_mv;
-extern int32_t five_volt_supply_voltage_mv;
-extern int32_t vamp_supply_voltage_mv;
+extern int16_t three_volt_supply_voltage_mv;
+extern int16_t five_volt_supply_voltage_mv;
+extern int16_t vamp_supply_voltage_mv;
 
 int main(void)
 {
@@ -77,14 +81,14 @@ int main(void)
 	
 	gpio_pin_toggle_dt(&led);
 
-    // Start observer
-	(void)observer_start();
+    // Start observer *** CURRENTLY DISABLE OBSERVER ***
+	// (void)observer_start();
 
     // Init peripherals (ADS and programmable load)
     perihperals_init();
 
 	// Set prereg on 10V
-	peripherals_set_pre_reg_voltage(4000);
+	peripherals_set_pre_reg_voltage(8000);
 
 	while (1)
 	{

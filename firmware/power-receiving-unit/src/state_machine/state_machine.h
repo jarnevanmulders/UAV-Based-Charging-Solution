@@ -11,7 +11,7 @@
 #include "../adc_update/adc_update.h"
 
 // DISABLE/ENABLE
-// #define DEEP_SLEEP_ENABLE
+#define DEEP_SLEEP_ENABLE
 // #define PWM_ENABLE
 
 // *** SETTINGS CHARGER *** //

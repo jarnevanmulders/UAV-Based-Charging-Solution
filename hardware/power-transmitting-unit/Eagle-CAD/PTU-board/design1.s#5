@@ -6301,20 +6301,6 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <pinref part="IC2" gate="G$1" pin="P0.28/AIN4"/>
 </segment>
 </net>
-<net name="MISO" class="0">
-<segment>
-<wire x1="170.18" y1="68.58" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
-<label x="172.72" y="68.58" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="P0.29/AIN5"/>
-</segment>
-</net>
-<net name="MOSI" class="0">
-<segment>
-<wire x1="170.18" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
-<label x="172.72" y="66.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="P0.30/AIN6"/>
-</segment>
-</net>
 <net name="SCK" class="0">
 <segment>
 <wire x1="170.18" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
@@ -6464,9 +6450,9 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <label x="22.86" y="48.26" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<wire x1="170.18" y1="127" x2="172.72" y2="127" width="0.1524" layer="91"/>
-<label x="172.72" y="127" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="P0.03/AIN1"/>
+<wire x1="170.18" y1="68.58" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
+<label x="172.72" y="68.58" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="P0.29/AIN5"/>
 </segment>
 </net>
 <net name="UFL" class="0">
@@ -6559,11 +6545,6 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 </net>
 <net name="V-5V" class="0">
 <segment>
-<wire x1="170.18" y1="124.46" x2="172.72" y2="124.46" width="0.1524" layer="91"/>
-<label x="172.72" y="124.46" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC2" gate="G$1" pin="P0.04/AIN2"/>
-</segment>
-<segment>
 <pinref part="C3" gate="G$1" pin="P$1"/>
 <wire x1="200.66" y1="83.82" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91"/>
@@ -6574,6 +6555,11 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <junction x="210.82" y="86.36"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="86.36" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="170.18" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<label x="172.72" y="66.04" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="P0.30/AIN6"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -6600,6 +6586,20 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <wire x1="231.14" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
 <label x="228.6" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="TP10" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="P03" class="0">
+<segment>
+<wire x1="170.18" y1="127" x2="172.72" y2="127" width="0.1524" layer="91"/>
+<label x="172.72" y="127" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="P0.03/AIN1"/>
+</segment>
+</net>
+<net name="P04" class="0">
+<segment>
+<wire x1="170.18" y1="124.46" x2="172.72" y2="124.46" width="0.1524" layer="91"/>
+<label x="172.72" y="124.46" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="P0.04/AIN2"/>
 </segment>
 </net>
 </nets>
@@ -7395,14 +7395,14 @@ for driving EPC2038</text>
 <label x="193.04" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SDA" class="0">
+<net name="I2C_SDA" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="10"/>
 <wire x1="40.64" y1="142.24" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
 <label x="45.72" y="142.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SCL" class="0">
+<net name="I2C_SCL" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="9"/>
 <wire x1="30.48" y1="142.24" x2="25.4" y2="142.24" width="0.1524" layer="91"/>

@@ -1,0 +1,78 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange25512714}{RGB}{255,127,14}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={Vertical coil distance [mm]},
+xmajorgrids,
+xmin=47.5, xmax=102.5,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel=\textcolor{steelblue31119180}{Efficiency [\%]},
+ymajorgrids,
+ymin=10, ymax=40,
+ytick style={color=black}
+]
+\addplot [draw=steelblue31119180, fill=steelblue31119180, mark=*, only marks]
+table{%
+x  y
+50 39.1759067761457
+60 32.4109801263586
+70 27.933804332413
+80 21.6999110659383
+90 17.1362216542939
+100 13.2687751107448
+};
+\addplot [semithick, steelblue31119180]
+table {%
+50 39.1759067761457
+60 32.4109801263586
+70 27.933804332413
+80 21.6999110659383
+90 17.1362216542939
+100 13.2687751107448
+};
+\end{axis}
+
+\begin{axis}[
+axis y line=right,
+tick align=outside,
+x grid style={darkgray176},
+xmin=47.5, xmax=102.5,
+xtick pos=left,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel=\textcolor{darkorange25512714}{Inverter input [V]},
+ymin=5, ymax=20,
+ytick pos=right,
+ytick style={color=black},
+yticklabel style={anchor=west}
+]
+\addplot [draw=darkorange25512714, fill=darkorange25512714, mark=*, only marks]
+table{%
+x  y
+50 9.91
+60 10.9
+70 11.87
+80 13.89
+90 15.84
+100 17.85
+};
+\addplot [semithick, darkorange25512714]
+table {%
+50 9.91
+60 10.9
+70 11.87
+80 13.89
+90 15.84
+100 17.85
+};
+\end{axis}
+
+\end{tikzpicture}

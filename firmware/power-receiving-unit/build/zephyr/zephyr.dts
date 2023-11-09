@@ -24,14 +24,13 @@
 		en2 = &en2;
 		bucken0 = &bucken0;
 		sensen0 = &sensen0;
+		mdmen0 = &mdmen0;
 		pg0 = &pg0;
 		usrled0 = &usrled0;
-		led0 = &led0;
 		pwmled0 = &pwm_led0;
 		usrbutton0 = &usrbutton0;
 		wakeup1 = &wakeup1;
-		bootloader-led0 = &led0;
-		mcuboot-led0 = &led0;
+		i2cpulluppin = &i2cpulluppin;
 		watchdog0 = &wdt0;
 	};
 	soc {
@@ -114,7 +113,7 @@
 			pinctrl-1 = < &uart0_sleep >;
 			pinctrl-names = "default", "sleep";
 		};
-		i2c0: arduino_i2c: i2c@40003000 {
+		i2c0: i2c@40003000 {
 			compatible = "nordic,nrf-twi";
 			#address-cells = < 0x1 >;
 			#size-cells = < 0x0 >;
@@ -488,7 +487,7 @@
 		i2c0_default: i2c0_default {
 			phandle = < 0x6 >;
 			group1 {
-				psels = < 0xc001a >;
+				psels = < 0xc001a >, < 0xb001b >;
 			};
 		};
 		i2c0_sleep: i2c0_sleep {
@@ -614,13 +613,17 @@
 			gpios = < &gpio0 0xf 0x0 >;
 			label = "Green LED";
 		};
-		led0: led_0 {
-			gpios = < &gpio0 0x11 0x1 >;
-			label = "Green LED 0";
+		i2cpulluppin: i2c_pullup_pin {
+			gpios = < &gpio0 0x11 0x0 >;
+			label = "I2C pullup pin";
 		};
 		sensen0: sensen_0 {
 			gpios = < &gpio0 0x14 0x0 >;
 			label = "Control sensor VDD enable";
+		};
+		mdmen0: mdmen_0 {
+			gpios = < &gpio0 0x16 0x0 >;
+			label = "Control modem VDD enable";
 		};
 	};
 	pwmleds {

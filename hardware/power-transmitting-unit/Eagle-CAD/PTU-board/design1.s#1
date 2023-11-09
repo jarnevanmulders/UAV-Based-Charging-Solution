@@ -5696,7 +5696,7 @@ Updated on 2014-06-19&lt;br&gt;
 <part name="FET3" library="EPC-MOS" deviceset="EPC2038" device="" value="EPC2038"/>
 <part name="SJ1" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="JP1" library="microbuilder" deviceset="HEADER-1X3" device="ROUND"/>
+<part name="UART" library="microbuilder" deviceset="HEADER-1X3" device="ROUND"/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="POWER" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
 <part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1"/>
@@ -5713,10 +5713,10 @@ Updated on 2014-06-19&lt;br&gt;
 <part name="R9" library="microbuilder" deviceset="RESISTOR" device="0402" value="10k"/>
 <part name="R10" library="microbuilder" deviceset="RESISTOR" device="0402" value="100k"/>
 <part name="L2" library="PowerMagnetics (rev18e)" deviceset="WE-CBF_0603" device="_WB_HS" technology="_742792692" value="742792692"/>
-<part name="TP9" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPTP10SQ"/>
-<part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPTP10SQ"/>
-<part name="TP11" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPTP10SQ"/>
-<part name="TP12" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPTP10SQ"/>
+<part name="P14" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPTP10SQ"/>
+<part name="P15" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPTP10SQ"/>
+<part name="P16" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPTP10SQ"/>
+<part name="P17" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10SQ" package3d_urn="urn:adsk.eagle:package:27962/1" value="TPTP10SQ"/>
 <part name="U$8" library="SparkFun-PowerSymbols" deviceset="AGND" device=""/>
 <part name="U$21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SJ2" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="NO"/>
@@ -5899,7 +5899,7 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <instance part="+3V3" gate="G$1" x="15.24" y="152.4" smashed="yes">
 <attribute name="VALUE" x="12.7" y="147.32" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP1" gate="A" x="152.4" y="15.24" smashed="yes">
+<instance part="UART" gate="A" x="152.4" y="15.24" smashed="yes">
 <attribute name="NAME" x="146.05" y="20.955" size="1.778" layer="95"/>
 <attribute name="VALUE" x="146.05" y="7.62" size="1.778" layer="96"/>
 </instance>
@@ -5935,19 +5935,19 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <attribute name="NAME" x="35.56" y="149.86" size="1.27" layer="95"/>
 <attribute name="VALUE" x="35.56" y="144.78" size="1.27" layer="96"/>
 </instance>
-<instance part="TP9" gate="G$1" x="233.68" y="137.16" smashed="yes" rot="R270">
+<instance part="P14" gate="G$1" x="233.68" y="137.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="234.95" y="138.43" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="232.41" y="135.89" size="1.778" layer="97" rot="R270"/>
 </instance>
-<instance part="TP10" gate="G$1" x="233.68" y="132.08" smashed="yes" rot="R270">
+<instance part="P15" gate="G$1" x="233.68" y="132.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="234.95" y="133.35" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="232.41" y="130.81" size="1.778" layer="97" rot="R270"/>
 </instance>
-<instance part="TP11" gate="G$1" x="233.68" y="127" smashed="yes" rot="R270">
+<instance part="P16" gate="G$1" x="233.68" y="127" smashed="yes" rot="R270">
 <attribute name="NAME" x="234.95" y="128.27" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="232.41" y="125.73" size="1.778" layer="97" rot="R270"/>
 </instance>
-<instance part="TP12" gate="G$1" x="233.68" y="121.92" smashed="yes" rot="R270">
+<instance part="P17" gate="G$1" x="233.68" y="121.92" smashed="yes" rot="R270">
 <attribute name="NAME" x="234.95" y="123.19" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="232.41" y="120.65" size="1.778" layer="97" rot="R270"/>
 </instance>
@@ -6105,7 +6105,7 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="UART" gate="A" pin="3"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="149.86" y1="12.7" x2="144.78" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="12.7" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
@@ -6327,7 +6327,7 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <wire x1="149.86" y1="17.78" x2="144.78" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="17.78" x2="144.78" y2="20.32" width="0.1524" layer="91"/>
 <label x="134.62" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="UART" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="P05" class="0">
@@ -6363,7 +6363,7 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <wire x1="149.86" y1="15.24" x2="142.24" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="15.24" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
 <label x="134.62" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="UART" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="P07" class="0">
@@ -6382,7 +6382,7 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <segment>
 <wire x1="231.14" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
 <label x="228.6" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="TP11" gate="G$1" pin="TP"/>
+<pinref part="P16" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="P24" class="0">
@@ -6484,7 +6484,7 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <segment>
 <wire x1="231.14" y1="137.16" x2="228.6" y2="137.16" width="0.1524" layer="91"/>
 <label x="228.6" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="TP9" gate="G$1" pin="TP"/>
+<pinref part="P14" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="P17" class="0">
@@ -6496,7 +6496,7 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <segment>
 <wire x1="231.14" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
 <label x="228.6" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="TP12" gate="G$1" pin="TP"/>
+<pinref part="P17" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="P19" class="0">
@@ -6574,7 +6574,7 @@ CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y</text>
 <segment>
 <wire x1="231.14" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
 <label x="228.6" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="TP10" gate="G$1" pin="TP"/>
+<pinref part="P15" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="P03" class="0">

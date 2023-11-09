@@ -6641,6 +6641,8 @@ for driving EPC2038</text>
 <wire x1="144.78" y1="101.6" x2="144.78" y2="134.62" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="144.78" y1="134.62" x2="71.12" y2="134.62" width="0.1524" layer="95" style="shortdash"/>
 <text x="6.35" y="6.35" size="6.4516" layer="95">DRAMCO</text>
+<wire x1="220.98" y1="38.1" x2="226.06" y2="43.18" width="2.54" layer="94"/>
+<wire x1="220.98" y1="43.18" x2="226.06" y2="38.1" width="2.54" layer="94"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="180.34" y="38.1" smashed="yes">
