@@ -20,8 +20,14 @@ X = np.asarray(df[df['zmove'] == zmove]['xmove']).reshape(5, 5) #np.linspace(-5,
 Y = np.asarray(df[df['zmove'] == zmove]['ymove']).reshape(5, 5) #np.linspace(-5, 5, 100)
 # X, Y = np.meshgrid(x, y)
 
+print(X)
+
+print(Y)
+
 # Define a function to plot (in this case, a simple quadratic function)
 Z = np.asarray(df[df['zmove'] == zmove]['k']).reshape(5, 5)
+
+print(Z)
 
 # print(X, Y, Z)
 
@@ -52,6 +58,6 @@ ax.view_init(20, 40)
 plt.tight_layout()
 
 # Show the plot
-# plt.show()
+plt.show()
 
-fig.savefig(f'fem-coupling-zmove-{zmove}.pdf', bbox_inches='tight', transparent=True)
+# fig.savefig(f'fem-coupling-zmove-{zmove}.pdf', bbox_inches='tight', transparent=True)
