@@ -7,6 +7,8 @@
     "limits": "c",
     "ads1115.h": "c",
     "peripherals.h": "c",
-    "advertisement.h": "c"
+    "advertisement.h": "c",
+    "twowire.h": "c",
+    "device.h": "c"
   }
 }
