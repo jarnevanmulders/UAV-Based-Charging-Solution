@@ -7,4 +7,4 @@
 - [BLE 2.4GHz antenna design](https://www.infineon.com/dgdl/Infineon-AN91445_Antenna_Design_and_RF_Layout_Guidelines-ApplicationNotes-v09_00-EN.pdf)
 
 # Image hardware
-![Image measurement setup]([https://github.com/jarnevanmulders/](https://github.com/jarnevanmulders/UAV-Based-Charging-Solution/blob/main/measurement-efficiency.pdf))
+![Image measurement setup](https://github.com/jarnevanmulders/UAV-Based-Charging-Solution/blob/main/measurement-efficiency.pdf)
